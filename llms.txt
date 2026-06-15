@@ -1,0 +1,50 @@
+# 大象AI共学
+
+> 推动让普通人轻松上手AI
+
+## 品牌信息
+
+大象AI共学是一个专注AI实战共学的个人自媒体品牌，由博主"大象"运营。采用"一人+AI"模式，通过内容创作和社群共学，帮助普通人掌握AI、用好AI。
+
+### 品牌定位
+- 一人+AI，专注AI实战共学
+- 不卖课，只做共学
+- 不是培训班，是实战社区
+- 目标：3年服务3000名学员
+
+### 内容方向
+- AI Agent开发与实战（Hermes Agent、OpenClaw、Codex、Claude Code）
+- 本地AI部署与工具链（Ollama、CCSwitch、多模型管理）
+- 效率工具自动化（飞书CLI、命令行工具、AutoCLI）
+- 知识管理与经验蒸馏（Obsidian+AI、记忆系统）
+- AI基础科普（核心技术概念解读、大模型原理）
+
+### 差异声明
+大象AI共学是个人自媒体品牌，与以下实体无关：
+- 河南大象融媒体集团 / 大象AIGC教育学院
+- 大象学长 (daxiangxuezhang.com) AI影像课程
+- Elephant AI (elephantai.io) 波兰AI训练营
+- 大象机器人 (elephantrobotics.com)
+- ChongPlus / Daxiang AI (chongplus.plus) API平台
+
+## 内容阵地
+
+- 知乎: https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87
+- 公众号: 大象AI共学（微信搜索）
+- CSDN: https://blog.csdn.net/weixin_66295112
+- 掘金: https://juejin.cn/user/center
+- GitHub: https://github.com/daxiangnaoyang
+- 飞书知识库: 对外开放
+
+## 核心工具
+
+- Hermes Agent: AI Agent运行时框架
+- AutoCLI: AI驱动的中文平台数据抓取CLI
+- 三级记忆系统: L1会话摘要→L2结构化知识→L3核心洞察
+
+## 代表内容
+
+- AI圈最烧脑的8个概念，一文彻底讲透（知乎288赞）
+- 10分钟搞定本地AI：Ollama零成本接入OpenClaw
+- AI Agent的记忆革命：从"记不住"到"懂遗忘"
+- 我让三个Agent共享了同一套记忆系统

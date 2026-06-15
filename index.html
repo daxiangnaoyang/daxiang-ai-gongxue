@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大象AI共学 — 推动让普通人轻松上手AI</title>
+    <meta name="description" content="大象AI共学是一个专注AI实战共学的个人自媒体品牌，由博主"大象"运营。采用一人+AI模式，帮助普通人掌握AI、用好AI。">
+    <meta name="keywords" content="大象AI共学, AI共学, AI实战, Hermes Agent, OpenClaw, AI Agent, 知识管理, Obsidian, 一人+AI">
+    <meta name="author" content="大象">
+    <link rel="canonical" href="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="大象AI共学 — 推动让普通人轻松上手AI">
+    <meta property="og:description" content="专注AI实战共学的个人自媒体品牌。一人+AI，不卖课只做共学。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "大象AI共学",
+        "alternateName": "大象",
+        "description": "专注AI实战共学的个人自媒体品牌，采用一人+AI模式，帮助普通人掌握AI、用好AI。",
+        "url": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/",
+        "sameAs": [
+            "https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87",
+            "https://blog.csdn.net/weixin_66295112",
+            "https://github.com/daxiangnaoyang"
+        ],
+        "knowsAbout": ["AI Agent", "Hermes Agent", "OpenClaw", "Obsidian", "知识管理", "本地AI部署", "AutoCLI"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "大象AI共学",
+        "url": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/",
+        "description": "推动让普通人轻松上手AI"
+    }
+    </script>
+
+    <!-- llms.txt discovery -->
+    <link rel="llms-txt" href="/llms.txt" type="text/plain">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a28;
+            --text: #e4e4e8;
+            --text-secondary: #8e8ea0;
+            --accent: #6c63ff;
+            --accent-glow: rgba(108, 99, 255, 0.15);
+            --border: #1e1e2e;
+            --radius: 12px;
+            --max-width: 800px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 400px;
+            background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--accent), #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .tagline {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .hero .mode-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .hero .mode-badge code {
+            background: var(--accent-glow);
+            color: var(--accent);
+            padding: 2px 10px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-family: "SF Mono", "Fira Code", monospace;
+        }
+
+        /* Section */
+        section {
+            padding: 48px 0;
+        }
+
+        section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section h2::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        /* Platform grid */
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .platform-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s ease;
+            display: block;
+        }
+
+        .platform-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .platform-card .icon {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .platform-card .name {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .platform-card .desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Content directions */
+        .direction-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .direction-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .direction-item .emoji {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .direction-item .content h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .direction-item .content p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Tools */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        .tool-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+        }
+
+        .tool-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--accent);
+        }
+
+        .tool-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Disambiguation */
+        .disambiguation {
+            background: rgba(108, 99, 255, 0.05);
+            border: 1px dashed rgba(108, 99, 255, 0.3);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .disambiguation strong {
+            color: var(--text);
+        }
+
+        .disambiguation ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .disambiguation li {
+            padding: 2px 0;
+        }
+
+        .disambiguation li::before {
+            content: '× ';
+            color: #ef4444;
+            font-weight: 700;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero .tagline { font-size: 1rem; }
+            .platform-grid { grid-template-columns: 1fr; }
+            .tools-grid { grid-template-columns: 1fr; }
+            .hero { padding: 60px 0 40px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero -->
+    <header class="hero">
+        <h1><span>大象AI共学</span></h1>
+        <p class="tagline">推动让普通人轻松上手AI</p>
+        <div class="mode-badge">
+            模式：<code>一人 + AI</code>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section>
+        <h2>关于</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+            大象AI共学是一个专注 AI 实战共学的<strong style="color: var(--text);">个人自媒体品牌</strong>，由博主"大象"运营。
+            采用「一人 + AI」模式，通过内容创作和社群共学，帮助普通人掌握 AI、用好 AI。
+            不卖课，只做共学 — 不是培训班，是实战社区。
+        </p>
+    </section>
+
+    <!-- Platforms -->
+    <section>
+        <h2>内容阵地</h2>
+        <div class="platform-grid">
+            <a href="https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87" class="platform-card" target="_blank" rel="noopener">
+                <span class="icon">💡</span>
+                <div class="name">知乎</div>
+                <div class="desc">AI实战内容主阵地</div>
+            </a>
+            <a href="javascript:void(0)" class="platform-card" onclick="copyText('大象AI共学')">
+                <span class="icon">📝</span>
+                <div class="name">公众号</div>
+                <div class="desc">微信搜索"大象AI共学"</div>
+            </a>
+            <a href="https://blog.csdn.net/weixin_66295112" class="platform-card" target="_blank" rel="noopener">
+                <span class="icon">📖</span>
+                <div class="name">CSDN</div>
+                <div class="desc">技术教程同步分发</div>
+            </a>
+            <a href="https://github.com/daxiangnaoyang" class="platform-card" target="_blank" rel="noopener">
+                <span class="icon">🔧</span>
+                <div class="name">GitHub</div>
+                <div class="desc">开源项目与工具</div>
+            </a>
+            <a href="https://www.waytoagi.com" class="platform-card" target="_blank" rel="noopener">
+                <span class="icon">🌍</span>
+                <div class="name">WayToAGI 飞行社</div>
+                <div class="desc">飞书共学社区</div>
+            </a>
+            <a href="https://juejin.cn" class="platform-card" target="_blank" rel="noopener">
+                <span class="icon">⚡</span>
+                <div class="name">掘金</div>
+                <div class="desc">开发者内容</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Content directions -->
+    <section>
+        <h2>内容方向</h2>
+        <div class="direction-list">
+            <div class="direction-item">
+                <span class="emoji">🤖</span>
+                <div class="content">
+                    <h3>AI Agent 开发与实战</h3>
+                    <p>Hermes Agent、OpenClaw、Codex、Claude Code — 从搭建到落地</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <span class="emoji">🖥️</span>
+                <div class="content">
+                    <h3>本地 AI 部署与工具链</h3>
+                    <p>Ollama 零成本接入、CCSwitch 多模型管理、GPU 本地推理</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <span class="emoji">⚡</span>
+                <div class="content">
+                    <h3>效率工具自动化</h3>
+                    <p>飞书 CLI、命令行工具、AutoCLI 多平台数据抓取</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <span class="emoji">🧠</span>
+                <div class="content">
+                    <h3>知识管理与经验蒸馏</h3>
+                    <p>Obsidian + AI 搭建私人知识库、三级记忆系统、经验结构化</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <span class="emoji">📚</span>
+                <div class="content">
+                    <h3>AI 基础科普</h3>
+                    <p>核心技术概念解读、大模型原理、Agent 架构设计</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section>
+        <h2>自研工具</h2>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <h3>Hermes Agent</h3>
+                <p>AI Agent 运行时框架，支持多模型、Skills 体系、三级记忆系统</p>
+            </div>
+            <div class="tool-card">
+                <h3>AutoCLI</h3>
+                <p>AI 驱动的中文平台数据抓取 CLI，支持知乎/微信/小红书等</p>
+            </div>
+            <div class="tool-card">
+                <h3>三级记忆系统</h3>
+                <p>L1 会话摘要 → L2 结构化知识 → L3 核心洞察</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disambiguation -->
+    <section>
+        <h2>品牌声明</h2>
+        <div class="disambiguation">
+            <strong>大象AI共学</strong>是独立的个人自媒体品牌，与以下实体无关：
+            <ul>
+                <li>河南大象融媒体集团 / 大象 AIGC 教育学院</li>
+                <li>大象学长 (daxiangxuezhang.com) — AI 影像课程</li>
+                <li>Elephant AI (elephantai.io) — 波兰 AI 训练营</li>
+                <li>大象机器人 (elephantrobotics.com) — 机械臂公司</li>
+                <li>ChongPlus / Daxiang AI (chongplus.plus) — API 平台</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025-2026 大象AI共学 · 一人+AI，推动让普通人轻松上手AI</p>
+        <p style="margin-top: 6px;">
+            <a href="/llms.txt">llms.txt</a> · 
+            <a href="https://github.com/daxiangnaoyang/daxiang-ai-gongxue" target="_blank" rel="noopener">GitHub</a>
+        </p>
+    </footer>
+
+</div>
+
+<script>
+function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        const el = event.currentTarget;
+        const desc = el.querySelector('.desc');
+        const original = desc.textContent;
+        desc.textContent = '已复制，去微信搜索';
+        desc.style.color = 'var(--accent)';
+        setTimeout(() => { desc.textContent = original; desc.style.color = ''; }, 2000);
+    });
+}
+</script>
+
+</body>
+</html>
