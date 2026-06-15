@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大象AI共学 — 推动让普通人轻松上手AI</title>
-    <meta name="description" content="大象AI共学是一个专注AI实战共学的个人自媒体品牌，由博主"大象"运营。采用一人+AI模式，帮助普通人掌握AI、用好AI。">
-    <meta name="keywords" content="大象AI共学, AI共学, AI实战, Hermes Agent, OpenClaw, AI Agent, 知识管理, Obsidian, 一人+AI">
+    <meta name="description" content="大象AI共学是一个专注AI实战共学的个人自媒体品牌，由博主"大象"运营。采用一人+AI模式，帮助普通人掌握AI、用好AI。包含AI通识、工具实操、智能体构建、AI编程、AIGC内容生产五大阶段，200+节体系化课程。">
+    <meta name="keywords" content="大象AI共学, AI共学, AI实战, Hermes Agent, OpenClaw, AI Agent, 知识管理, Obsidian, Coze, Claude Code, 一人+AI, AI课程">
     <meta name="author" content="大象">
     <link rel="canonical" href="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="大象AI共学 — 推动让普通人轻松上手AI">
-    <meta property="og:description" content="专注AI实战共学的个人自媒体品牌。一人+AI，不卖课只做共学。">
+    <meta property="og:description" content="专注AI实战共学的个人自媒体品牌。一人+AI，200+节体系化课程，从通识到智能体到AI编程。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/">
 
@@ -22,14 +22,14 @@
         "@type": "Person",
         "name": "大象AI共学",
         "alternateName": "大象",
-        "description": "专注AI实战共学的个人自媒体品牌，采用一人+AI模式，帮助普通人掌握AI、用好AI。",
+        "description": "专注AI实战共学的个人自媒体品牌。字节跳动巨量认证讲师，通往AGI之路共建作者。200+节体系化AI课程，覆盖AI通识、工具实操、智能体构建、AI编程、AIGC内容生产。",
         "url": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/",
         "sameAs": [
             "https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87",
             "https://blog.csdn.net/weixin_66295112",
             "https://github.com/daxiangnaoyang"
         ],
-        "knowsAbout": ["AI Agent", "Hermes Agent", "OpenClaw", "Obsidian", "知识管理", "本地AI部署", "AutoCLI"]
+        "knowsAbout": ["AI Agent", "Hermes Agent", "OpenClaw", "Coze", "Claude Code", "Obsidian", "知识管理", "本地AI部署", "AutoCLI", "AIGC内容生产"]
     }
     </script>
     <script type="application/ld+json">
@@ -55,8 +55,11 @@
             --text: #e4e4e8;
             --text-secondary: #8e8ea0;
             --accent: #6c63ff;
+            --accent-light: #a78bfa;
             --accent-glow: rgba(108, 99, 255, 0.15);
             --border: #1e1e2e;
+            --green: #34d399;
+            --orange: #f59e0b;
             --radius: 12px;
             --max-width: 800px;
         }
@@ -159,6 +162,46 @@
             border-radius: 2px;
         }
 
+        /* About */
+        .about-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.9;
+        }
+
+        .about-text strong {
+            color: var(--text);
+        }
+
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .credential-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px 18px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .credential-item .icon {
+            flex-shrink: 0;
+            font-size: 1.1rem;
+            margin-top: 1px;
+        }
+
+        .credential-item strong {
+            color: var(--text);
+        }
+
         /* Platform grid */
         .platform-grid {
             display: grid;
@@ -183,55 +226,78 @@
             transform: translateY(-2px);
         }
 
-        .platform-card .icon {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            display: block;
-        }
+        .platform-card .icon { font-size: 1.5rem; margin-bottom: 10px; display: block; }
+        .platform-card .name { font-weight: 600; font-size: 1rem; margin-bottom: 4px; }
+        .platform-card .desc { font-size: 0.85rem; color: var(--text-secondary); }
 
-        .platform-card .name {
-            font-weight: 600;
-            font-size: 1rem;
-            margin-bottom: 4px;
-        }
-
-        .platform-card .desc {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        /* Content directions */
-        .direction-list {
+        /* Course */
+        .course-stages {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-        }
-
-        .direction-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 16px 20px;
-            display: flex;
-            align-items: flex-start;
             gap: 14px;
         }
 
-        .direction-item .emoji {
-            font-size: 1.3rem;
+        .stage-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .stage-num {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--accent-glow);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
             flex-shrink: 0;
             margin-top: 2px;
         }
 
-        .direction-item .content h3 {
+        .stage-content h3 {
             font-size: 0.95rem;
             font-weight: 600;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
 
-        .direction-item .content p {
+        .stage-content p {
             font-size: 0.85rem;
             color: var(--text-secondary);
+        }
+
+        .course-highlight {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .highlight-box {
+            text-align: center;
+            padding: 16px 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+
+        .highlight-box .num {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .highlight-box .label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
         }
 
         /* Tools */
@@ -255,9 +321,51 @@
             color: var(--accent);
         }
 
-        .tool-card p {
+        .tool-card p { font-size: 0.85rem; color: var(--text-secondary); }
+
+        /* QR Codes */
+        .qr-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .qr-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            text-align: center;
+        }
+
+        .qr-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .qr-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .qr-card p {
             font-size: 0.85rem;
             color: var(--text-secondary);
+        }
+
+        .qr-card .wechat-id {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 4px 14px;
+            background: var(--accent-glow);
+            color: var(--accent-light);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-family: "SF Mono", "Fira Code", monospace;
         }
 
         /* Disambiguation */
@@ -271,25 +379,11 @@
             line-height: 1.8;
         }
 
-        .disambiguation strong {
-            color: var(--text);
-        }
+        .disambiguation strong { color: var(--text); }
 
-        .disambiguation ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 10px;
-        }
-
-        .disambiguation li {
-            padding: 2px 0;
-        }
-
-        .disambiguation li::before {
-            content: '× ';
-            color: #ef4444;
-            font-weight: 700;
-        }
+        .disambiguation ul { list-style: none; padding: 0; margin-top: 10px; }
+        .disambiguation li { padding: 2px 0; }
+        .disambiguation li::before { content: '× '; color: #ef4444; font-weight: 700; }
 
         /* Footer */
         footer {
@@ -299,26 +393,17 @@
             margin-top: 20px;
         }
 
-        footer p {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-        }
-
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
+        footer p { font-size: 0.8rem; color: var(--text-secondary); }
+        footer a { color: var(--accent); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
 
         /* Responsive */
         @media (max-width: 600px) {
             .hero h1 { font-size: 1.8rem; }
             .hero .tagline { font-size: 1rem; }
-            .platform-grid { grid-template-columns: 1fr; }
-            .tools-grid { grid-template-columns: 1fr; }
+            .platform-grid, .tools-grid, .course-highlight { grid-template-columns: 1fr 1fr; }
+            .credentials-grid { grid-template-columns: 1fr; }
+            .qr-section { grid-template-columns: 1fr; }
             .hero { padding: 60px 0 40px; }
         }
     </style>
@@ -338,12 +423,168 @@
 
     <!-- About -->
     <section>
-        <h2>关于</h2>
-        <p style="color: var(--text-secondary); font-size: 0.95rem;">
-            大象AI共学是一个专注 AI 实战共学的<strong style="color: var(--text);">个人自媒体品牌</strong>，由博主"大象"运营。
-            采用「一人 + AI」模式，通过内容创作和社群共学，帮助普通人掌握 AI、用好 AI。
-            不卖课，只做共学 — 不是培训班，是实战社区。
+        <h2>关于大象</h2>
+        <div class="about-text">
+            <p>
+                资深AI爱好者，热爱AI，热爱写作与分享，不搞信息差。
+                擅长将复杂的内容讲解得通俗易懂，在知乎、CSDN、公众号等平台贡献优质AI教学内容。
+            </p>
+            <p style="margin-top: 12px;">
+                创业3年，融资数千万。<strong>字节跳动巨量认证讲师</strong>，参与智能体工程师评价标准制定。
+                通往AGI之路共建作者，组织并推动了社区的AI Agent共学。
+                飞书飞行社核心AI共建作者，推动社区教学共建。
+            </p>
+        </div>
+        <div class="credentials-grid">
+            <div class="credential-item">
+                <span class="icon">🏅</span>
+                <span>字节跳动<strong>巨量认证讲师</strong>，参与智能体工程师评价标准制定</span>
+            </div>
+            <div class="credential-item">
+                <span class="icon">📜</span>
+                <span><strong>阿里云人工智能高级训练师</strong>认证</span>
+            </div>
+            <div class="credential-item">
+                <span class="icon">🌐</span>
+                <span>Google AI 教育认证 · <strong>Gemini Certified Educator</strong></span>
+            </div>
+            <div class="credential-item">
+                <span class="icon">🇺🇳</span>
+                <span>联合国教科文组织 <strong>AI 与法学教育认证</strong></span>
+            </div>
+            <div class="credential-item">
+                <span class="icon">📚</span>
+                <span><strong>通往AGI之路</strong>共建作者，组织AI Agent共学</span>
+            </div>
+            <div class="credential-item">
+                <span class="icon">🏢</span>
+                <span>多家<strong>国央企AI培训</strong>讲师</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course -->
+    <section>
+        <h2>课程体系</h2>
+        <p class="about-text" style="margin-bottom: 24px;">
+            五个阶段的AI体系化学习课程，从小白到智能体，学完后对AI的认知超越市面上99%的人。
         </p>
+        <div class="course-stages">
+            <div class="stage-item">
+                <div class="stage-num">1</div>
+                <div class="stage-content">
+                    <h3>AI通识课</h3>
+                    <p>大模型底层逻辑、能力边界、提示词学习、核心概念全解析</p>
+                </div>
+            </div>
+            <div class="stage-item">
+                <div class="stage-num">2</div>
+                <div class="stage-content">
+                    <h3>主流AI工具实操</h3>
+                    <p>DeepSeek、AI搜索、AI对话工具，同步掌握所有核心工具，消除信息差</p>
+                </div>
+            </div>
+            <div class="stage-item">
+                <div class="stage-num">3</div>
+                <div class="stage-content">
+                    <h3>Coze 智能体构建（初/中/高）</h3>
+                    <p>从认知到产品级智能体，依托Coze平台从0到1，掌握智能体构建范式</p>
+                </div>
+            </div>
+            <div class="stage-item">
+                <div class="stage-num">4</div>
+                <div class="stage-content">
+                    <h3>AI编程基础 · Claude Code + OpenClaw + Hermes Agent</h3>
+                    <p>代码思维方式、龙虾部署教程、自养Agent、建立数字分身</p>
+                </div>
+            </div>
+            <div class="stage-item">
+                <div class="stage-num">5</div>
+                <div class="stage-content">
+                    <h3>AIGC 内容生产</h3>
+                    <p>AI写作、AI漫剧从0到1、番茄小说投稿、红果短剧编剧</p>
+                </div>
+            </div>
+        </div>
+        <div class="course-highlight">
+            <div class="highlight-box">
+                <div class="num">200+</div>
+                <div class="label">体系化课程</div>
+            </div>
+            <div class="highlight-box">
+                <div class="num">80+</div>
+                <div class="label">实战案例</div>
+            </div>
+            <div class="highlight-box">
+                <div class="num">本人</div>
+                <div class="label">亲自答疑</div>
+            </div>
+            <div class="highlight-box">
+                <div class="num">7天</div>
+                <div class="label">无理由退款</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content directions -->
+    <section>
+        <h2>内容方向</h2>
+        <div class="course-stages">
+            <div class="stage-item">
+                <span class="stage-num" style="background: rgba(52,211,153,0.15); color: #34d399;">🤖</span>
+                <div class="stage-content">
+                    <h3>AI Agent 开发与实战</h3>
+                    <p>Hermes Agent、OpenClaw、Codex、Claude Code — 从搭建到落地</p>
+                </div>
+            </div>
+            <div class="stage-item">
+                <span class="stage-num" style="background: rgba(52,211,153,0.15); color: #34d399;">🖥️</span>
+                <div class="stage-content">
+                    <h3>本地 AI 部署与工具链</h3>
+                    <p>Ollama 零成本接入、CCSwitch 多模型管理、GPU 本地推理</p>
+                </div>
+            </div>
+            <div class="stage-item">
+                <span class="stage-num" style="background: rgba(52,211,153,0.15); color: #34d399;">⚡</span>
+                <div class="stage-content">
+                    <h3>效率工具自动化</h3>
+                    <p>飞书 CLI、命令行工具、AutoCLI 多平台数据抓取</p>
+                </div>
+            </div>
+            <div class="stage-item">
+                <span class="stage-num" style="background: rgba(52,211,153,0.15); color: #34d399;">🧠</span>
+                <div class="stage-content">
+                    <h3>知识管理与经验蒸馏</h3>
+                    <p>Obsidian + AI 搭建私人知识库、三级记忆系统、经验结构化</p>
+                </div>
+            </div>
+            <div class="stage-item">
+                <span class="stage-num" style="background: rgba(52,211,153,0.15); color: #34d399;">📚</span>
+                <div class="stage-content">
+                    <h3>AI 基础科普</h3>
+                    <p>核心技术概念解读、大模型原理、Agent 架构设计</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section>
+        <h2>自研工具</h2>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <h3>Hermes Agent</h3>
+                <p>AI Agent 运行时框架，支持多模型、Skills 体系、三级记忆系统</p>
+            </div>
+            <div class="tool-card">
+                <h3>AutoCLI</h3>
+                <p>AI 驱动的中文平台数据抓取 CLI，支持知乎/微信/小红书等</p>
+            </div>
+            <div class="tool-card">
+                <h3>三级记忆系统</h3>
+                <p>L1 会话摘要 → L2 结构化知识 → L3 核心洞察</p>
+            </div>
+        </div>
     </section>
 
     <!-- Platforms -->
@@ -383,63 +624,20 @@
         </div>
     </section>
 
-    <!-- Content directions -->
+    <!-- QR Codes -->
     <section>
-        <h2>内容方向</h2>
-        <div class="direction-list">
-            <div class="direction-item">
-                <span class="emoji">🤖</span>
-                <div class="content">
-                    <h3>AI Agent 开发与实战</h3>
-                    <p>Hermes Agent、OpenClaw、Codex、Claude Code — 从搭建到落地</p>
-                </div>
+        <h2>联系我</h2>
+        <div class="qr-section">
+            <div class="qr-card">
+                <img src="qrcode-mp.jpg" alt="公众号二维码" loading="lazy">
+                <h3>公众号</h3>
+                <p>搜索"大象AI共学"</p>
             </div>
-            <div class="direction-item">
-                <span class="emoji">🖥️</span>
-                <div class="content">
-                    <h3>本地 AI 部署与工具链</h3>
-                    <p>Ollama 零成本接入、CCSwitch 多模型管理、GPU 本地推理</p>
-                </div>
-            </div>
-            <div class="direction-item">
-                <span class="emoji">⚡</span>
-                <div class="content">
-                    <h3>效率工具自动化</h3>
-                    <p>飞书 CLI、命令行工具、AutoCLI 多平台数据抓取</p>
-                </div>
-            </div>
-            <div class="direction-item">
-                <span class="emoji">🧠</span>
-                <div class="content">
-                    <h3>知识管理与经验蒸馏</h3>
-                    <p>Obsidian + AI 搭建私人知识库、三级记忆系统、经验结构化</p>
-                </div>
-            </div>
-            <div class="direction-item">
-                <span class="emoji">📚</span>
-                <div class="content">
-                    <h3>AI 基础科普</h3>
-                    <p>核心技术概念解读、大模型原理、Agent 架构设计</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tools -->
-    <section>
-        <h2>自研工具</h2>
-        <div class="tools-grid">
-            <div class="tool-card">
-                <h3>Hermes Agent</h3>
-                <p>AI Agent 运行时框架，支持多模型、Skills 体系、三级记忆系统</p>
-            </div>
-            <div class="tool-card">
-                <h3>AutoCLI</h3>
-                <p>AI 驱动的中文平台数据抓取 CLI，支持知乎/微信/小红书等</p>
-            </div>
-            <div class="tool-card">
-                <h3>三级记忆系统</h3>
-                <p>L1 会话摘要 → L2 结构化知识 → L3 核心洞察</p>
+            <div class="qr-card">
+                <img src="qrcode-personal.jpg" alt="个人微信二维码" loading="lazy">
+                <h3>个人微信</h3>
+                <p>添加请备注：AI课程</p>
+                <span class="wechat-id">Yishouhundanqu</span>
             </div>
         </div>
     </section>
@@ -464,7 +662,8 @@
         <p>© 2025-2026 大象AI共学 · 一人+AI，推动让普通人轻松上手AI</p>
         <p style="margin-top: 6px;">
             <a href="/llms.txt">llms.txt</a> · 
-            <a href="https://github.com/daxiangnaoyang/daxiang-ai-gongxue" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/daxiangnaoyang/daxiang-ai-gongxue" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://wcnoxi4wqsvx.feishu.cn/wiki/QGEVwme87ieejek7LMwc59Ygnjc" target="_blank" rel="noopener">课程详情</a>
         </p>
     </footer>
 
