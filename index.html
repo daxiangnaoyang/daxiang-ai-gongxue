@@ -208,6 +208,55 @@
             font-weight: 600;
         }
 
+        /* ── 大象寄语 ── */
+        .manifesto { font-size: 0.92rem; color: var(--text-sec); line-height: 1.8; }
+
+        .manifesto-core {
+            font-size: 1rem; color: var(--text); line-height: 1.9;
+            padding: 18px 22px;
+            background: rgba(108,99,255,0.06);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin-bottom: 16px;
+        }
+
+        .manifesto-pain { font-weight: 600; color: var(--text); margin-bottom: 4px; }
+
+        .manifesto-list { margin-bottom: 12px; }
+
+        .manifesto-problems { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+
+        .problem-item {
+            display: flex; align-items: flex-start; gap: 10px;
+            font-size: 0.88rem; color: var(--text-sec);
+        }
+
+        .problem-num {
+            width: 22px; height: 22px; border-radius: 50%;
+            background: rgba(239,68,68,0.12); color: #ef4444;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.75rem; font-weight: 700; flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .manifesto-goals {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+        }
+
+        .goal-item {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 16px;
+            text-align: center;
+        }
+
+        .goal-item:first-child { border-color: rgba(108,99,255,0.3); }
+        .goal-item:first-child .goal-title { color: var(--accent); }
+        .goal-item:nth-child(2) .goal-title { color: var(--accent-lt); }
+        .goal-item:nth-child(3) .goal-title { color: var(--green); }
+
+        .goal-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+        .goal-desc { font-size: 0.78rem; color: var(--text-sec); line-height: 1.6; }
+
         /* ── Footer ── */
         footer {
             padding: 32px 0;
@@ -232,6 +281,7 @@
             .certs { grid-template-columns: repeat(2, 1fr); }
             .qr-grid { grid-template-columns: 1fr; }
             .hero { padding: 40px 0 28px; }
+            .manifesto-goals { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -274,17 +324,55 @@
         </div>
     </section>
 
-    <!-- ③ 免费学AI -->
+    <!-- ③ 大象寄语 -->
     <section>
-        <h2>免费学AI</h2>
-        <div class="platforms">
-            <a href="https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87" class="plat-link" target="_blank" rel="noopener">
-                <div class="plat-left">
-                    <span class="icon">💡</span>
-                    <div><div class="name">知乎</div><div class="desc">AI实战内容，每周更新</div></div>
+        <h2>大象寄语</h2>
+        <div class="manifesto">
+            <p class="manifesto-core">
+                它最核心的目标，不是让你追着新工具跑，也不是让你收藏一堆提示词和工具清单，而是帮你建立一套普通人在AI时代<strong>持续自学、判断和实战的操作系统</strong>。
+            </p>
+            <p class="manifesto-pain">
+                很多人学AI，卡住的不是热情，而是路径。
+            </p>
+            <p class="manifesto-list">
+                AI工具越来越多，概念越来越多：DeepSeek、豆包、ChatGPT、Codex、Claude Code、OpenClaw、Agent、RAG、Skill……
+                你知道AI很重要，也试过不少工具，但真正要用到自己的工作、业务和行业里，还是会发现三个问题：
+            </p>
+            <div class="manifesto-problems">
+                <div class="problem-item">
+                    <span class="problem-num">1</span>
+                    <span>不知道先学什么，后学什么，总被新工具、新名词带着跑</span>
                 </div>
-                <span class="plat-arrow">→</span>
-            </a>
+                <div class="problem-item">
+                    <span class="problem-num">2</span>
+                    <span>试过很多AI工具，但效果好像总是不如别人宣传的好</span>
+                </div>
+                <div class="problem-item">
+                    <span class="problem-num">3</span>
+                    <span>看过很多教程，却不知道怎么把AI应用到自己的工作中</span>
+                </div>
+            </div>
+            <div class="manifesto-goals">
+                <div class="goal-item">
+                    <div class="goal-title">学习路径</div>
+                    <div class="goal-desc">知道AI应该按什么顺序学<br>什么必须学、什么按需学、什么暂时可以不学</div>
+                </div>
+                <div class="goal-item">
+                    <div class="goal-title">判断能力</div>
+                    <div class="goal-desc">看懂新模型、新工具、新概念到底在解决什么问题<br>适合什么场景，值不值得投入时间</div>
+                </div>
+                <div class="goal-item">
+                    <div class="goal-title">实战迁移</div>
+                    <div class="goal-desc">把AI应用到你的真实工作和业务场景里<br>沉淀属于自己的AI工作流</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ④ 部分内容 -->
+    <section>
+        <h2>部分内容</h2>
+        <div class="platforms">
             <a href="javascript:void(0)" class="plat-link" onclick="copyText('大象AI共学')">
                 <div class="plat-left">
                     <span class="icon">📝</span>
@@ -292,17 +380,17 @@
                 </div>
                 <span class="plat-arrow" id="mp-arrow">→</span>
             </a>
+            <a href="https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87" class="plat-link" target="_blank" rel="noopener">
+                <div class="plat-left">
+                    <span class="icon">💡</span>
+                    <div><div class="name">知乎</div><div class="desc">AI实战内容，每周更新</div></div>
+                </div>
+                <span class="plat-arrow">→</span>
+            </a>
             <a href="https://blog.csdn.net/weixin_66295112" class="plat-link" target="_blank" rel="noopener">
                 <div class="plat-left">
                     <span class="icon">📖</span>
                     <div><div class="name">CSDN</div><div class="desc">技术教程同步分发</div></div>
-                </div>
-                <span class="plat-arrow">→</span>
-            </a>
-            <a href="https://github.com/daxiangnaoyang" class="plat-link" target="_blank" rel="noopener">
-                <div class="plat-left">
-                    <span class="icon">🔧</span>
-                    <div><div class="name">GitHub</div><div class="desc">开源项目与工具</div></div>
                 </div>
                 <span class="plat-arrow">→</span>
             </a>
