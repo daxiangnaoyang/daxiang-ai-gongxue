@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大象AI共学 - 让普通人用AI做出真实工作成果</title>
-    <meta name="description" content="大象AI共学是AI实战共学社区，通过飞书知识库、社群答疑和场景化学习路径，帮普通人把AI用到工作、内容创作、学习和个人项目中。">
-    <meta name="keywords" content="大象AI共学, AI共学, AI实战, AI课程, AI学习路径, AI Agent, Coze, Claude Code, 飞书知识库">
+    <meta name="description" content="大象AI共学是面向普通人的AI实战共学社区，通过5个课程模块、飞书知识库、社群答疑和场景化学习路径，帮你把AI用到工作、内容创作和个人Agent系统中。">
+    <meta name="keywords" content="大象AI共学, AI共学, AI实战, AI课程, AI学习路径, AI Agent, Coze, Claude Code, Codex, OpenClaw, AIGC, 飞书知识库">
     <meta name="author" content="大象">
     <link rel="canonical" href="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/">
+    <link rel="icon" href="author-photo-sm.jpg" type="image/jpeg">
     <link rel="llms-txt" href="llms.txt" type="text/plain">
 
     <meta property="og:title" content="大象AI共学 - 让普通人用AI做出真实工作成果">
-    <meta property="og:description" content="不是再收藏一堆教程，而是按你的场景建立AI学习路线、工作流和个人Agent系统。">
+    <meta property="og:description" content="从AI地基、大模型工具、AI编程、Coze智能体到AIGC创作，按你的场景建立学习路线和真实工作流。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/">
     <meta property="og:image" content="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/hero-image.jpg">
@@ -28,6 +29,28 @@
             "https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87",
             "https://blog.csdn.net/weixin_66295112",
             "https://github.com/daxiangnaoyang"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "大象AI实战共学",
+        "description": "面向普通人的AI实战共学体系，覆盖AI地基与底层逻辑、AI大模型与工具、AI编程与个人Agent系统、Coze智能体应用实战和AIGC研习系统。",
+        "provider": {
+            "@type": "Organization",
+            "name": "大象AI共学",
+            "url": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/"
+        },
+        "educationalLevel": "Beginner to Intermediate",
+        "teaches": [
+            "AI通识与提示词",
+            "AI工具判断框架",
+            "个人Agent系统",
+            "Coze智能体",
+            "Claude Code与Codex入门",
+            "AIGC内容创作"
         ]
     }
     </script>
@@ -526,6 +549,90 @@
             font-weight: 700;
         }
 
+        .curriculum-showcase {
+            display: grid;
+            grid-template-columns: 1fr 0.92fr;
+            gap: 22px;
+            align-items: start;
+        }
+
+        .course-map {
+            overflow: hidden;
+            border: 1px solid rgba(242,245,247,0.18);
+            border-radius: var(--radius);
+            background: #101414;
+            box-shadow: 0 22px 48px rgba(0,0,0,0.24);
+        }
+
+        .course-map img {
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            object-fit: contain;
+            object-position: center;
+            background: #f7f0df;
+        }
+
+        .course-map figcaption {
+            padding: 12px 14px;
+            color: var(--muted);
+            font-size: 0.82rem;
+            border-top: 1px solid var(--line);
+        }
+
+        .curriculum-grid {
+            display: grid;
+            gap: 10px;
+        }
+
+        .part-card {
+            display: grid;
+            grid-template-columns: 76px 1fr;
+            gap: 14px;
+            padding: 16px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background:
+                linear-gradient(135deg, rgba(45,212,191,0.07), transparent 42%),
+                var(--surface);
+        }
+
+        .part-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 54px;
+            color: #061d1a;
+            background: var(--teal);
+            border-radius: 6px;
+            font-weight: 900;
+            font-size: 0.82rem;
+        }
+
+        .part-card:nth-child(2) .part-label { background: var(--blue); color: #061525; }
+        .part-card:nth-child(3) .part-label { background: var(--amber); color: #201407; }
+        .part-card:nth-child(4) .part-label { background: var(--green); color: #071d10; }
+        .part-card:nth-child(5) .part-label { background: var(--rose); color: #28070d; }
+
+        .part-card h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .part-card p {
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
+        .route-note {
+            margin-top: 18px;
+            padding: 18px;
+            border: 1px solid rgba(245,184,75,0.36);
+            border-radius: var(--radius);
+            background: linear-gradient(120deg, rgba(245,184,75,0.1), rgba(45,212,191,0.06));
+            color: var(--soft);
+            font-size: 0.95rem;
+        }
+
         .steps {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -740,6 +847,7 @@
             .hero-inner { padding: 72px 0 44px; }
             .section-head,
             .proof,
+            .curriculum-showcase,
             .cta-box {
                 grid-template-columns: 1fr;
             }
@@ -816,6 +924,11 @@
             .outcome-flow { grid-template-columns: 1fr; }
             .outcome-flow i { display: none; }
             .step { min-height: auto; }
+            .part-card { grid-template-columns: 1fr; }
+            .part-label {
+                width: 78px;
+                min-height: 38px;
+            }
             .bio { grid-template-columns: 64px 1fr; }
             .bio img { width: 64px; height: 64px; }
             .qr-card img {
@@ -840,12 +953,12 @@
                 大象AI共学不是让你再收藏一堆教程，而是按你的场景，帮你建立AI学习路线、工作流和个人Agent系统。
             </p>
             <div class="hero-actions">
-                <a class="button primary" href="#wechat">加微信判断学习路线</a>
-                <a class="button secondary" href="#paths">先看7条路径</a>
+                <a class="button primary" href="#curriculum">先看课程体系</a>
+                <a class="button secondary" href="#paths">找到你的学习路径</a>
             </div>
-            <p class="hero-note">添加请备注：AI课程。先聊你现在卡在哪里，合适再加入。</p>
+            <p class="hero-note">从AI地基、大模型工具、AI编程、Coze智能体到AIGC创作，先看清体系，再按自己的场景开始。</p>
             <div class="hero-signal" aria-hidden="true">
-                <span>卡点诊断</span>
+                <span>5个模块</span>
                 <i></i>
                 <span>场景路线</span>
                 <i></i>
@@ -924,15 +1037,75 @@
             </div>
         </section>
 
+        <section class="section" id="curriculum">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="section-kicker">课程体系全景</div>
+                        <h2>不是单一工具课，而是一套从地基到实战的AI共学系统。</h2>
+                    </div>
+                    <p class="lead">
+                        当前飞书知识库已经整理为5个一级模块，先帮你补齐共同语言，再进入工具判断、个人Agent、Coze智能体和AIGC创作。你不用一口气刷完，先看清地图，再按场景选路线。
+                    </p>
+                </div>
+                <div class="curriculum-showcase">
+                    <figure class="course-map">
+                        <img src="course-map-20260702.png" alt="大象AI-Agent课程全景图：5个课程模块和学习路径" loading="lazy">
+                        <figcaption>2026-07-02 课程结构：5个一级Part，递归展开到第三层已看到301+个子节点。</figcaption>
+                    </figure>
+                    <div class="curriculum-grid">
+                        <article class="part-card">
+                            <div class="part-label">Part 1</div>
+                            <div>
+                                <h3>AI地基与底层逻辑</h3>
+                                <p>DeepSeek入门、大模型通识、提示词工程、AI绘画与视频科普、知识库、Agent概念和飞书多维表格。</p>
+                            </div>
+                        </article>
+                        <article class="part-card">
+                            <div class="part-label">Part 2</div>
+                            <div>
+                                <h3>AI大模型与工具</h3>
+                                <p>建立工具判断框架，看懂模型平台、API、中转、信息源、Obsidian、Ollama、PPT和NotebookLM等工具边界。</p>
+                            </div>
+                        </article>
+                        <article class="part-card">
+                            <div class="part-label">Part 3</div>
+                            <div>
+                                <h3>AI编程与个人Agent系统</h3>
+                                <p>从编程基础、工程师思维到Claude Code、Codex、AGENTS.md、Skills、Hooks、MCP、OpenClaw和OpenCLI。</p>
+                            </div>
+                        </article>
+                        <article class="part-card">
+                            <div class="part-label">Part 4</div>
+                            <div>
+                                <h3>Coze智能体应用实战</h3>
+                                <p>系统学习Coze初级、中级、高级，覆盖插件、工作流、知识库、数据库、对话流、卡片、代码节点和发布渠道。</p>
+                            </div>
+                        </article>
+                        <article class="part-card">
+                            <div class="part-label">Part 5</div>
+                            <div>
+                                <h3>AIGC研习系统</h3>
+                                <p>面向写作、故事、剧本、漫剧、AI绘图、AI视频、企业培训和内容生产的项目型学习资料库。</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="route-note">
+                    Part 3里的Coze更偏个人Agent系统视角，Part 4是Coze平台专项实操。两者不是重复，而是从“理解个人AI系统”走向“搭出可运行智能体应用”的递进关系。
+                </div>
+            </div>
+        </section>
+
         <section class="section" id="paths">
             <div class="wrap">
                 <div class="section-head">
                     <div>
                         <div class="section-kicker">7条场景化路径</div>
-                        <h2>你不用从头硬学，先按问题场景选路线。</h2>
+                        <h2>5个模块是课程地图，7条路径是你的开始方式。</h2>
                     </div>
                     <p class="lead">
-                        课程内容覆盖AI通识、提示词、Coze智能体、AI编程、内容生产、职场提效和AIGC创作。每条路径都对应一个清晰的最小成果。
+                        不同学员的问题不一样，所以不要求每个人从头硬刷。先判断你现在卡在哪里，再进入对应模块，做出一个看得见的最小成果。
                     </p>
                 </div>
                 <div class="paths">
@@ -1087,7 +1260,15 @@
                     </details>
                     <details>
                         <summary>加入后我具体能得到什么？</summary>
-                        <p>持续更新的AI学习知识库、场景化学习路径、社群答疑，以及一套逐步形成自己AI工作流的方法。</p>
+                        <p>持续更新的飞书知识库、5个课程模块、7条场景化学习路径、社群答疑、实战案例、模板资料，以及一套逐步形成自己AI工作流的方法。</p>
+                    </details>
+                    <details>
+                        <summary>5个模块需要全部学完吗？</summary>
+                        <p>不需要。新手先过AI地基与底层逻辑，再按自己的场景进入工具、Agent、Coze、AI编程或AIGC创作。AI是用会的，不是刷完才会的。</p>
+                    </details>
+                    <details>
+                        <summary>Coze和AI编程路线怎么选？</summary>
+                        <p>想低门槛搭智能体应用，优先看Coze专项；想理解文件、工具、MCP、Skills和个人Agent系统，进入AI编程与个人Agent路线。</p>
                     </details>
                     <details>
                         <summary>哪些人不适合？</summary>
@@ -1100,13 +1281,13 @@
         <section class="cta-section" id="wechat">
             <div class="wrap cta-box">
                 <div>
-                    <div class="section-kicker" style="color:#0f766e;">报名方式</div>
-                    <h2>加微信，先聊你现在用AI卡在哪里。</h2>
+                    <div class="section-kicker" style="color:#0f766e;">适合判断</div>
+                    <h2>先判断你该从哪条路线开始。</h2>
                     <p>
-                        添加个人微信请备注「AI课程」。我会先判断你适合哪条学习路线：小白入门、职场提效、内容创作、Agent、AI编程还是AIGC创作。合适再加入，不合适也没关系。
+                        添加个人微信请备注「AI课程」。我会先看你现在是小白入门、职场提效、内容创作、Agent、AI编程还是AIGC创作，再判断适合从哪个模块开始。
                     </p>
                     <p>
-                        你也可以先关注公众号「大象AI共学」，看公开文章和实操教程。
+                        如果暂时不确定，也可以先关注公众号「大象AI共学」，看公开文章和实操教程。
                     </p>
                 </div>
                 <div class="qr-pair">
