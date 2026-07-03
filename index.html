@@ -551,8 +551,7 @@
 
         .curriculum-showcase {
             display: grid;
-            grid-template-columns: 1fr 0.92fr;
-            gap: 22px;
+            gap: 18px;
             align-items: start;
         }
 
@@ -566,29 +565,25 @@
 
         .course-map img {
             width: 100%;
-            aspect-ratio: 3 / 2;
+            aspect-ratio: 1915 / 821;
             object-fit: contain;
             object-position: center;
             background: #f7f0df;
         }
 
-        .course-map figcaption {
-            padding: 12px 14px;
-            color: var(--muted);
-            font-size: 0.82rem;
-            border-top: 1px solid var(--line);
-        }
-
         .curriculum-grid {
             display: grid;
-            gap: 10px;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 12px;
         }
 
         .part-card {
-            display: grid;
-            grid-template-columns: 76px 1fr;
-            gap: 14px;
-            padding: 16px;
+            grid-column: span 4;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            min-height: 178px;
+            padding: 18px;
             border: 1px solid var(--line);
             border-radius: var(--radius);
             background:
@@ -596,11 +591,17 @@
                 var(--surface);
         }
 
+        .part-card:nth-child(4),
+        .part-card:nth-child(5) {
+            grid-column: span 6;
+        }
+
         .part-label {
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 54px;
+            width: 74px;
+            min-height: 38px;
             color: #061d1a;
             background: var(--teal);
             border-radius: 6px;
@@ -615,22 +616,13 @@
 
         .part-card h3 {
             font-size: 1rem;
-            margin-bottom: 4px;
+            line-height: 1.35;
+            margin-bottom: 8px;
         }
 
         .part-card p {
             color: var(--muted);
             font-size: 0.88rem;
-        }
-
-        .route-note {
-            margin-top: 18px;
-            padding: 18px;
-            border: 1px solid rgba(245,184,75,0.36);
-            border-radius: var(--radius);
-            background: linear-gradient(120deg, rgba(245,184,75,0.1), rgba(45,212,191,0.06));
-            color: var(--soft);
-            font-size: 0.95rem;
         }
 
         .steps {
@@ -859,6 +851,13 @@
             .steps { grid-template-columns: 1fr 1fr; }
             .paths { grid-template-columns: repeat(2, 1fr); }
             .paths::before { display: none; }
+            .curriculum-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .part-card,
+            .part-card:nth-child(4),
+            .part-card:nth-child(5) {
+                grid-column: span 1;
+                min-height: 190px;
+            }
             .path-card,
             .path-card:nth-child(1),
             .path-card:nth-child(2),
@@ -924,7 +923,13 @@
             .outcome-flow { grid-template-columns: 1fr; }
             .outcome-flow i { display: none; }
             .step { min-height: auto; }
-            .part-card { grid-template-columns: 1fr; }
+            .curriculum-grid { grid-template-columns: 1fr; }
+            .part-card,
+            .part-card:nth-child(4),
+            .part-card:nth-child(5) {
+                grid-column: span 1;
+                min-height: auto;
+            }
             .part-label {
                 width: 78px;
                 min-height: 38px;
@@ -1051,7 +1056,6 @@
                 <div class="curriculum-showcase">
                     <figure class="course-map">
                         <img src="course-map-20260702.png" alt="大象AI-Agent课程全景图：5个课程模块和学习路径" loading="lazy">
-                        <figcaption>2026-07-02 课程结构：5个一级Part，递归展开到第三层已看到301+个子节点。</figcaption>
                     </figure>
                     <div class="curriculum-grid">
                         <article class="part-card">
@@ -1090,9 +1094,6 @@
                             </div>
                         </article>
                     </div>
-                </div>
-                <div class="route-note">
-                    Part 3里的Coze更偏个人Agent系统视角，Part 4是Coze平台专项实操。两者不是重复，而是从“理解个人AI系统”走向“搭出可运行智能体应用”的递进关系。
                 </div>
             </div>
         </section>
