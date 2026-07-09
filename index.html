@@ -8,7 +8,7 @@
     <meta name="keywords" content="大象AI共学, AI共学, AI实战, AI课程, AI学习路径, AI Agent, Coze, Claude Code, Codex, OpenClaw, AIGC, 飞书知识库">
     <meta name="author" content="大象">
     <link rel="canonical" href="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/">
-    <link rel="icon" href="author-photo-sm.jpg" type="image/jpeg">
+    <link rel="icon" href="logo-blue.png" type="image/png">
     <link rel="llms-txt" href="llms.txt" type="text/plain">
 
     <meta property="og:title" content="大象AI共学 - 让普通人用AI做出真实工作成果">
@@ -144,20 +144,21 @@
             overflow: hidden;
             border-bottom: 1px solid var(--line);
             background:
-                radial-gradient(circle at 78% 36%, rgba(45,212,191,0.16), transparent 28%),
-                linear-gradient(90deg, #080a0a 0%, #080a0a 56%, rgba(8,10,10,0.95) 70%, rgba(8,10,10,0.84) 100%);
+                radial-gradient(circle at 12% 18%, rgba(96,165,250,0.14), transparent 28%),
+                radial-gradient(circle at 82% 24%, rgba(245,184,75,0.12), transparent 30%),
+                linear-gradient(135deg, #080b0f 0%, #111821 54%, #16130f 100%);
         }
 
         .hero::before {
             content: "";
             position: absolute;
-            inset: 0 0 auto 0;
-            width: 100%;
-            aspect-ratio: 960 / 407;
+            inset: 0;
             background:
-                linear-gradient(180deg, rgba(8,10,10,0) 0%, rgba(8,10,10,0.12) 76%, #080a0a 100%),
-                url("hero-image.jpg") center top / 100% auto no-repeat;
-            opacity: 1;
+                linear-gradient(90deg, rgba(8,11,15,0.84) 0%, rgba(8,11,15,0.22) 100%),
+                linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px);
+            background-size: auto, 72px 72px, 72px 72px;
+            opacity: 0.62;
             pointer-events: none;
         }
 
@@ -176,7 +177,86 @@
         .hero-inner {
             position: relative;
             z-index: 1;
-            padding: clamp(580px, calc(42.4vw + 54px), 720px) 0 76px;
+            padding: 30px 0 72px;
+        }
+
+        .top-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            min-height: 54px;
+            margin-bottom: clamp(44px, 7vw, 86px);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 900;
+            letter-spacing: 0;
+            text-decoration: none;
+        }
+
+        .brand-mark {
+            width: 46px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            border-radius: 8px;
+            background: #1f1f1f;
+            border: 1px solid rgba(215,221,229,0.16);
+            overflow: hidden;
+            padding: 3px;
+        }
+
+        .brand-mark img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            color: var(--soft);
+            font-size: 0.9rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+        }
+
+        .hero-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.98fr);
+            gap: clamp(28px, 5vw, 64px);
+            align-items: center;
+        }
+
+        .hero-panel {
+            max-width: 760px;
+        }
+
+        .hero-visual-stack {
+            display: grid;
+            gap: 16px;
+        }
+
+        .hero-media {
+            border: 1px solid rgba(215,221,229,0.16);
+            border-radius: 8px;
+            overflow: hidden;
+            background: #071019;
+            box-shadow: 0 30px 90px rgba(0,0,0,0.32);
+        }
+
+        .hero-media img {
+            width: 100%;
+            aspect-ratio: 960 / 407;
+            object-fit: cover;
+            object-position: center;
         }
 
         .eyebrow {
@@ -257,6 +337,130 @@
             color: var(--muted);
             font-size: 0.92rem;
             max-width: 620px;
+        }
+
+        .hero-console {
+            border: 1px solid rgba(215,221,229,0.16);
+            border-radius: 8px;
+            background:
+                linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
+                rgba(12,17,23,0.78);
+            box-shadow: 0 26px 80px rgba(0,0,0,0.34);
+            backdrop-filter: blur(18px);
+            overflow: hidden;
+        }
+
+        .console-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 16px 18px;
+            border-bottom: 1px solid rgba(215,221,229,0.14);
+            color: var(--soft);
+            font-size: 0.86rem;
+            font-weight: 800;
+        }
+
+        .console-dots {
+            display: inline-flex;
+            gap: 6px;
+        }
+
+        .console-dots i {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--rose);
+        }
+
+        .console-dots i:nth-child(2) { background: var(--amber); }
+        .console-dots i:nth-child(3) { background: var(--teal); }
+
+        .console-body {
+            padding: 18px;
+        }
+
+        .route-stack {
+            display: grid;
+            gap: 10px;
+        }
+
+        .route-row {
+            display: grid;
+            grid-template-columns: 78px 1fr auto;
+            gap: 12px;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid rgba(215,221,229,0.14);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.04);
+        }
+
+        .route-row b {
+            color: var(--amber);
+            font-size: 0.82rem;
+        }
+
+        .route-row span {
+            color: var(--soft);
+            font-size: 0.9rem;
+        }
+
+        .route-row em {
+            color: var(--teal);
+            font-style: normal;
+            font-weight: 800;
+            font-size: 0.78rem;
+        }
+
+        .console-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .console-stat {
+            min-height: 92px;
+            border: 1px solid rgba(215,221,229,0.14);
+            border-radius: 8px;
+            padding: 12px;
+            background:
+                linear-gradient(135deg, rgba(45,212,191,0.12), transparent 58%),
+                rgba(255,255,255,0.035);
+        }
+
+        .console-stat strong {
+            display: block;
+            font-size: 1.55rem;
+            line-height: 1;
+        }
+
+        .console-stat span {
+            display: block;
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
+        .workspace-strip {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .workspace-strip span {
+            min-height: 44px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(215,221,229,0.14);
+            border-radius: 8px;
+            color: var(--soft);
+            font-size: 0.75rem;
+            font-weight: 800;
+            background: rgba(255,255,255,0.03);
         }
 
         .hero-signal {
@@ -412,9 +616,9 @@
             transition: transform .18s ease, border-color .18s ease;
         }
 
-        .problem:nth-child(2) { transform: translateY(10px); border-top-color: var(--amber); }
-        .problem:nth-child(3) { transform: translateY(-6px); border-top-color: var(--blue); }
-        .problem:nth-child(4) { transform: translateY(8px); border-top-color: var(--green); }
+        .problem:nth-child(2) { border-top-color: var(--amber); }
+        .problem:nth-child(3) { border-top-color: var(--blue); }
+        .problem:nth-child(4) { border-top-color: var(--green); }
 
         .problem:hover {
             transform: translateY(-2px);
@@ -468,14 +672,15 @@
         }
 
         .paths::before {
-            content: "";
+            content: "route selector";
             position: absolute;
-            left: 16px;
-            right: 16px;
-            top: calc(50% - 1px);
-            height: 2px;
-            background: linear-gradient(90deg, rgba(45,212,191,0.12), rgba(245,184,75,0.72), rgba(96,165,250,0.22));
-            pointer-events: none;
+            right: 0;
+            top: -34px;
+            color: rgba(215,221,229,0.34);
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: .08em;
+            text-transform: uppercase;
         }
 
         .path-card {
@@ -487,7 +692,7 @@
             border: 1px solid var(--line);
             border-radius: var(--radius);
             padding: 18px;
-            min-height: 212px;
+            min-height: 232px;
             position: relative;
             overflow: hidden;
             transition: transform .18s ease, border-color .18s ease, background .18s ease;
@@ -501,10 +706,6 @@
         .path-card:nth-child(5),
         .path-card:nth-child(6),
         .path-card:nth-child(7) { grid-column: span 3; }
-
-        .path-card:nth-child(2) { transform: translateY(14px); }
-        .path-card:nth-child(4),
-        .path-card:nth-child(6) { transform: translateY(14px); }
 
         .path-card:hover {
             transform: translateY(-4px);
@@ -549,6 +750,17 @@
             font-weight: 700;
         }
 
+        .route-fit {
+            display: inline-flex;
+            margin-bottom: 10px;
+            color: #081916;
+            background: var(--teal);
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-size: 0.72rem;
+            font-weight: 900;
+        }
+
         .curriculum-showcase {
             display: grid;
             gap: 18px;
@@ -561,6 +773,23 @@
             border-radius: var(--radius);
             background: #101414;
             box-shadow: 0 22px 48px rgba(0,0,0,0.24);
+            position: relative;
+        }
+
+        .course-map::before {
+            content: "system map";
+            position: absolute;
+            left: 16px;
+            top: 14px;
+            z-index: 1;
+            border-radius: 6px;
+            padding: 4px 8px;
+            background: rgba(8,11,15,0.78);
+            color: var(--soft);
+            font-size: 0.72rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: .08em;
         }
 
         .course-map img {
@@ -665,11 +894,65 @@
             font-size: 0.92rem;
         }
 
+        .delivery-rail {
+            display: grid;
+            gap: 12px;
+        }
+
+        .delivery-item {
+            display: grid;
+            grid-template-columns: 84px 1fr;
+            gap: 18px;
+            padding: 18px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background:
+                linear-gradient(90deg, rgba(96,165,250,0.1), transparent 44%),
+                var(--surface);
+        }
+
+        .delivery-item b {
+            color: var(--teal);
+            font-size: 0.88rem;
+        }
+
+        .delivery-item p {
+            color: var(--muted);
+            font-size: 0.94rem;
+        }
+
         .proof {
             display: grid;
             grid-template-columns: 1.1fr 0.9fr;
             gap: 24px;
             align-items: start;
+        }
+
+        .operator-board {
+            display: grid;
+            gap: 14px;
+            margin-top: 22px;
+        }
+
+        .tool-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .tool-list span {
+            min-height: 54px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface-2);
+            color: var(--soft);
+            font-size: 0.78rem;
+            font-weight: 800;
+            padding: 8px;
         }
 
         .bio {
@@ -836,7 +1119,29 @@
 
         @media (max-width: 920px) {
             .hero { min-height: auto; }
-            .hero-inner { padding: 72px 0 44px; }
+            .hero::before {
+                background:
+                    linear-gradient(180deg, rgba(8,11,15,0.72), rgba(8,11,15,0.96)),
+                    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+                background-size: auto, 64px 64px, 64px 64px;
+            }
+            .hero-inner { padding: 24px 0 48px; }
+            .top-nav {
+                margin-bottom: 44px;
+            }
+            .hero-layout {
+                grid-template-columns: 1fr;
+            }
+            .hero-visual-stack {
+                display: contents;
+            }
+            .hero-media {
+                order: -2;
+            }
+            .hero-panel {
+                order: -1;
+            }
             .section-head,
             .proof,
             .curriculum-showcase,
@@ -847,6 +1152,10 @@
             .grid-2,
             .problem-list {
                 grid-template-columns: 1fr 1fr;
+            }
+            .console-grid,
+            .tool-list {
+                grid-template-columns: repeat(2, 1fr);
             }
             .steps { grid-template-columns: 1fr 1fr; }
             .paths { grid-template-columns: repeat(2, 1fr); }
@@ -875,24 +1184,42 @@
         @media (max-width: 640px) {
             .wrap { width: min(100% - 28px, var(--max)); }
             .hero {
-                min-height: 820px;
-                align-items: end;
+                min-height: auto;
+                align-items: initial;
                 background:
                     linear-gradient(180deg, rgba(8,10,10,0.34) 0%, rgba(8,10,10,0.88) 36%, rgba(8,10,10,0.99) 68%, #080a0a 100%);
             }
             .hero::before {
-                inset: 0 0 auto 0;
-                width: 100%;
-                height: clamp(166px, 42.4vw, 196px);
+                inset: 0;
+                width: auto;
+                height: auto;
                 transform: none;
                 background:
-                    linear-gradient(180deg, rgba(8,10,10,0.02) 0%, rgba(8,10,10,0.08) 58%, #080a0a 100%),
-                    url("hero-image.jpg") center top / 100% auto no-repeat;
-                opacity: 1;
+                    linear-gradient(180deg, rgba(8,11,15,0.78), rgba(8,11,15,0.97)),
+                    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+                background-size: auto, 52px 52px, 52px 52px;
+                opacity: .76;
             }
             .hero-inner {
-                padding: 296px 0 34px;
+                padding: 18px 0 38px;
                 transform: none;
+            }
+            .top-nav {
+                align-items: flex-start;
+                margin-bottom: 40px;
+            }
+            .nav-links {
+                display: none;
+            }
+            .brand-mark {
+                width: 38px;
+                height: 38px;
+            }
+            .hero-media img {
+                aspect-ratio: 960 / 407;
+                object-fit: contain;
+                background: #061017;
             }
             .hero-signal {
                 grid-template-columns: 1fr;
@@ -909,8 +1236,19 @@
             .problem-list,
             .steps,
             .paths,
-            .qr-pair {
+            .qr-pair,
+            .console-grid,
+            .workspace-strip,
+            .tool-list {
                 grid-template-columns: 1fr;
+            }
+            .route-row {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            .delivery-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
             }
             .certs { grid-template-columns: 1fr 1fr; }
             .problem,
@@ -952,22 +1290,77 @@
 <body>
     <header class="hero">
         <div class="wrap hero-inner">
-            <div class="eyebrow">AI实战共学社区</div>
-            <h1>让普通人用AI做出真实工作成果</h1>
-            <p class="hero-copy">
-                大象AI共学不是让你再收藏一堆教程，而是按你的场景，帮你建立AI学习路线、工作流和个人Agent系统。
-            </p>
-            <div class="hero-actions">
-                <a class="button primary" href="#curriculum">先看课程体系</a>
-                <a class="button secondary" href="#paths">找到你的学习路径</a>
-            </div>
-            <p class="hero-note">从AI地基、大模型工具、AI编程、Coze智能体到AIGC创作，先看清体系，再按自己的场景开始。</p>
-            <div class="hero-signal" aria-hidden="true">
-                <span>5个模块</span>
-                <i></i>
-                <span>场景路线</span>
-                <i></i>
-                <span>最小成果</span>
+            <nav class="top-nav" aria-label="主导航">
+                <a class="brand" href="#">
+                    <span class="brand-mark"><img src="logo-white.png" alt="" aria-hidden="true"></span>
+                    <span>大象AI共学</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#curriculum">课程地图</a>
+                    <a href="#paths">路径诊断</a>
+                    <a href="#wechat">判断入口</a>
+                </div>
+            </nav>
+            <div class="hero-layout">
+                <div class="hero-panel">
+                    <h1>把AI学习变成一套可执行的工作台。</h1>
+                    <p class="hero-copy">
+                        大象AI共学不是让你再收藏一堆教程，而是按你的场景，建立学习路线、真实任务、复盘机制和个人Agent系统。
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#paths">先判断我的路径</a>
+                        <a class="button secondary" href="#curriculum">查看课程系统地图</a>
+                    </div>
+                    <p class="hero-note">从AI地基、大模型工具、AI编程、Coze智能体到AIGC创作，先看清体系，再按自己的场景开始。</p>
+                    <div class="hero-signal" aria-hidden="true">
+                        <span>5个模块</span>
+                        <i></i>
+                        <span>7条路径</span>
+                        <i></i>
+                        <span>最小成果</span>
+                    </div>
+                </div>
+                <div class="hero-visual-stack">
+                    <figure class="hero-media" aria-label="大象AI共学品牌首图">
+                        <img src="hero-image.jpg" alt="大象AI共学 Elephant AI Co-learning">
+                    </figure>
+                    <aside class="hero-console" aria-label="AI共学路径诊断面板">
+                        <div class="console-head">
+                            <span>learning-os / route-diagnosis</span>
+                            <span class="console-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        </div>
+                        <div class="console-body">
+                            <div class="route-stack">
+                                <div class="route-row">
+                                    <b>输入</b>
+                                    <span>我现在卡在真实工作场景</span>
+                                    <em>诊断</em>
+                                </div>
+                                <div class="route-row">
+                                    <b>匹配</b>
+                                    <span>小白 / 提效 / 内容 / Agent / 编程 / AIGC</span>
+                                    <em>分流</em>
+                                </div>
+                                <div class="route-row">
+                                    <b>输出</b>
+                                    <span>一条路线 + 一个最小成果 + 一次复盘</span>
+                                    <em>执行</em>
+                                </div>
+                            </div>
+                            <div class="console-grid" aria-hidden="true">
+                                <div class="console-stat"><strong>5</strong><span>一级课程模块</span></div>
+                                <div class="console-stat"><strong>7</strong><span>场景化开始路径</span></div>
+                                <div class="console-stat"><strong>1</strong><span>先做一个最小成果</span></div>
+                            </div>
+                            <div class="workspace-strip" aria-hidden="true">
+                                <span>飞书知识库</span>
+                                <span>社群答疑</span>
+                                <span>真实任务</span>
+                                <span>复盘迭代</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </div>
     </header>
@@ -986,20 +1379,20 @@
                 </div>
                 <div class="problem-list">
                     <div class="problem">
-                        <strong>只会问DeepSeek</strong>
-                        <p>能聊天，但输出经常空、泛、浅，不知道怎么追问和改进。</p>
+                        <strong>不会判断</strong>
+                        <p>工具、模型、插件、工作流都在更新，不知道什么该学、什么只是热闹。</p>
                     </div>
                     <div class="problem">
-                        <strong>收藏很多教程</strong>
-                        <p>工具、提示词、模型新闻看了一堆，还是不知道先学什么。</p>
+                        <strong>不会开始</strong>
+                        <p>收藏很多教程，但没有一条能对应自己当下问题的第一步路线。</p>
                     </div>
                     <div class="problem">
-                        <strong>想做自己的Agent</strong>
-                        <p>听过Coze、Claude Code、OpenClaw，但不知道从哪里动手。</p>
+                        <strong>不会复盘</strong>
+                        <p>做过几次尝试，但没有把提示词、素材、案例和错误沉淀成下次可复用资产。</p>
                     </div>
                     <div class="problem">
-                        <strong>想用到真实工作</strong>
-                        <p>希望AI帮你做内容、总结、方案、表格、调研和自动化。</p>
+                        <strong>不会迁移</strong>
+                        <p>能演示工具，却还没把AI迁移到内容、总结、方案、表格、调研和自动化。</p>
                     </div>
                 </div>
             </div>
@@ -1112,42 +1505,49 @@
                 <div class="paths">
                     <article class="path-card">
                         <div class="path-num">路径 01</div>
+                        <div class="route-fit">适合：刚入门</div>
                         <h3>刚入门，不知道AI怎么学</h3>
                         <p>先理解大模型、Token、上下文、提示词、Agent的基础关系。</p>
                         <div class="result">成果：形成第一版AI学习路线。</div>
                     </article>
                     <article class="path-card">
                         <div class="path-num">路径 02</div>
+                        <div class="route-fit">适合：会聊天但不会产出</div>
                         <h3>只会问AI，想真正会用AI</h3>
                         <p>从问一个问题，升级为和AI一起完成资料整理、总结、方案或大纲。</p>
                         <div class="result">成果：写出可复用的任务提示词。</div>
                     </article>
                     <article class="path-card">
                         <div class="path-num">路径 03</div>
+                        <div class="route-fit">适合：想做助手</div>
                         <h3>想搭建自己的AI Agent</h3>
                         <p>从Agent认知到Coze、工作流、知识库、数据库和更工程化的Agent系统。</p>
                         <div class="result">成果：做出一个稳定完成单一任务的助手。</div>
                     </article>
                     <article class="path-card">
                         <div class="path-num">路径 04</div>
+                        <div class="route-fit">适合：内容创作</div>
                         <h3>想用AI做内容和个人IP</h3>
                         <p>建立选题、素材包、大纲、初稿、改稿、分发的内容生产流程。</p>
                         <div class="result">成果：完成一篇长文或三条短内容。</div>
                     </article>
                     <article class="path-card">
                         <div class="path-num">路径 05</div>
+                        <div class="route-fit">适合：职场提效</div>
                         <h3>想用AI提升工作效率</h3>
                         <p>从高频重复任务开始，用AI做总结、表格、会议纪要、调研和归档。</p>
                         <div class="result">成果：做出一个能服务自己工作的AI助手。</div>
                     </article>
                     <article class="path-card">
                         <div class="path-num">路径 06</div>
+                        <div class="route-fit">适合：AI编程</div>
                         <h3>想学AI编程和Claude Code</h3>
                         <p>理解API、目录、配置、MCP、Skills，让AI带你完成小项目。</p>
                         <div class="result">成果：能和AI协作改一个项目或工具。</div>
                     </article>
                     <article class="path-card">
                         <div class="path-num">路径 07</div>
+                        <div class="route-fit">适合：AIGC项目</div>
                         <h3>想做AIGC短片、绘图和故事</h3>
                         <p>从故事、角色、分镜、画面、视频片段到项目资产管理。</p>
                         <div class="result">成果：完成一个30-60秒短片或图文故事。</div>
@@ -1167,22 +1567,22 @@
                         公开内容只能帮你建立兴趣，真正系统学习需要路径、知识库、答疑和实践反馈。
                     </p>
                 </div>
-                <div class="steps">
-                    <div class="step">
-                        <b>01 先判断卡点</b>
-                        <p>你现在是小白入门、只会提问、想做Agent、内容创作，还是职场提效。</p>
+                <div class="delivery-rail">
+                    <div class="delivery-item">
+                        <b>01 / 诊断</b>
+                        <p>先判断你现在是小白入门、只会提问、想做Agent、内容创作、职场提效、AI编程还是AIGC项目。</p>
                     </div>
-                    <div class="step">
-                        <b>02 给学习路线</b>
-                        <p>不用从头硬学，按你的场景先进入一条路线，明确先看什么、先做什么。</p>
+                    <div class="delivery-item">
+                        <b>02 / 路线</b>
+                        <p>不用从头硬刷，按你的场景进入一条路线，明确先看什么、先做什么、先产出什么。</p>
                     </div>
-                    <div class="step">
-                        <b>03 用飞书知识库</b>
-                        <p>系统教程、工具说明、模板、案例和更新内容沉淀在飞书知识库里。</p>
+                    <div class="delivery-item">
+                        <b>03 / 资产</b>
+                        <p>系统教程、工具说明、模板、案例和更新内容沉淀在飞书知识库里，变成可持续更新的学习工作台。</p>
                     </div>
-                    <div class="step">
-                        <b>04 社群里边学边问</b>
-                        <p>遇到问题可以提问，重点是自己动手做出可复用的AI工作流。</p>
+                    <div class="delivery-item">
+                        <b>04 / 复盘</b>
+                        <p>在社群里边学边问，把一次任务的提示词、流程、错误和成果沉淀为下次可复用的AI工作流。</p>
                     </div>
                 </div>
             </div>
@@ -1201,12 +1601,12 @@
                                 <p>字节跳动巨量认证讲师，通往AGI之路共建作者，飞书飞行社邀约AI共建作者。长期实践一人+AI工作方式，把AI用于内容、知识库、Agent、自动化和课程交付。</p>
                             </div>
                         </div>
-                        <div class="badges">
-                            <span class="badge">AI实战共学</span>
-                            <span class="badge">飞书知识库</span>
-                            <span class="badge">Hermes Agent</span>
-                            <span class="badge">AutoCLI</span>
-                            <span class="badge">一人+AI</span>
+                        <div class="tool-list">
+                            <span>AI实战共学</span>
+                            <span>飞书知识库</span>
+                            <span>Hermes Agent</span>
+                            <span>AutoCLI</span>
+                            <span>一人+AI</span>
                         </div>
                     </div>
                 </div>
