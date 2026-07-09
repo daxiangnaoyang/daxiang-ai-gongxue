@@ -186,7 +186,7 @@
             justify-content: space-between;
             gap: 18px;
             min-height: 54px;
-            margin-bottom: clamp(44px, 7vw, 86px);
+            margin-bottom: clamp(24px, 4vw, 42px);
         }
 
         .brand {
@@ -230,18 +230,13 @@
 
         .hero-layout {
             display: grid;
-            grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.98fr);
-            gap: clamp(28px, 5vw, 64px);
-            align-items: center;
+            grid-template-columns: minmax(0, 0.98fr) minmax(360px, 0.72fr);
+            gap: clamp(24px, 4vw, 46px);
+            align-items: start;
         }
 
         .hero-panel {
-            max-width: 760px;
-        }
-
-        .hero-visual-stack {
-            display: grid;
-            gap: 16px;
+            max-width: 860px;
         }
 
         .hero-media {
@@ -250,6 +245,7 @@
             overflow: hidden;
             background: #071019;
             box-shadow: 0 30px 90px rgba(0,0,0,0.32);
+            margin-bottom: clamp(28px, 5vw, 48px);
         }
 
         .hero-media img {
@@ -1133,15 +1129,6 @@
             .hero-layout {
                 grid-template-columns: 1fr;
             }
-            .hero-visual-stack {
-                display: contents;
-            }
-            .hero-media {
-                order: -2;
-            }
-            .hero-panel {
-                order: -1;
-            }
             .section-head,
             .proof,
             .curriculum-showcase,
@@ -1207,7 +1194,7 @@
             }
             .top-nav {
                 align-items: flex-start;
-                margin-bottom: 40px;
+                margin-bottom: 26px;
             }
             .nav-links {
                 display: none;
@@ -1220,6 +1207,9 @@
                 aspect-ratio: 960 / 407;
                 object-fit: contain;
                 background: #061017;
+            }
+            .hero-media {
+                margin-bottom: 28px;
             }
             .hero-signal {
                 grid-template-columns: 1fr;
@@ -1301,6 +1291,9 @@
                     <a href="#wechat">判断入口</a>
                 </div>
             </nav>
+            <figure class="hero-media" aria-label="大象AI共学品牌首图">
+                <img src="hero-image.jpg" alt="大象AI共学 Elephant AI Co-learning">
+            </figure>
             <div class="hero-layout">
                 <div class="hero-panel">
                     <h1>把AI学习变成一套可执行的工作台。</h1>
@@ -1320,47 +1313,42 @@
                         <span>最小成果</span>
                     </div>
                 </div>
-                <div class="hero-visual-stack">
-                    <figure class="hero-media" aria-label="大象AI共学品牌首图">
-                        <img src="hero-image.jpg" alt="大象AI共学 Elephant AI Co-learning">
-                    </figure>
-                    <aside class="hero-console" aria-label="AI共学路径诊断面板">
-                        <div class="console-head">
-                            <span>learning-os / route-diagnosis</span>
-                            <span class="console-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                        </div>
-                        <div class="console-body">
-                            <div class="route-stack">
-                                <div class="route-row">
-                                    <b>输入</b>
-                                    <span>我现在卡在真实工作场景</span>
-                                    <em>诊断</em>
-                                </div>
-                                <div class="route-row">
-                                    <b>匹配</b>
-                                    <span>小白 / 提效 / 内容 / Agent / 编程 / AIGC</span>
-                                    <em>分流</em>
-                                </div>
-                                <div class="route-row">
-                                    <b>输出</b>
-                                    <span>一条路线 + 一个最小成果 + 一次复盘</span>
-                                    <em>执行</em>
-                                </div>
+                <aside class="hero-console" aria-label="AI共学路径诊断面板">
+                    <div class="console-head">
+                        <span>learning-os / route-diagnosis</span>
+                        <span class="console-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    </div>
+                    <div class="console-body">
+                        <div class="route-stack">
+                            <div class="route-row">
+                                <b>输入</b>
+                                <span>我现在卡在真实工作场景</span>
+                                <em>诊断</em>
                             </div>
-                            <div class="console-grid" aria-hidden="true">
-                                <div class="console-stat"><strong>5</strong><span>一级课程模块</span></div>
-                                <div class="console-stat"><strong>7</strong><span>场景化开始路径</span></div>
-                                <div class="console-stat"><strong>1</strong><span>先做一个最小成果</span></div>
+                            <div class="route-row">
+                                <b>匹配</b>
+                                <span>小白 / 提效 / 内容 / Agent / 编程 / AIGC</span>
+                                <em>分流</em>
                             </div>
-                            <div class="workspace-strip" aria-hidden="true">
-                                <span>飞书知识库</span>
-                                <span>社群答疑</span>
-                                <span>真实任务</span>
-                                <span>复盘迭代</span>
+                            <div class="route-row">
+                                <b>输出</b>
+                                <span>一条路线 + 一个最小成果 + 一次复盘</span>
+                                <em>执行</em>
                             </div>
                         </div>
-                    </aside>
-                </div>
+                        <div class="console-grid" aria-hidden="true">
+                            <div class="console-stat"><strong>5</strong><span>一级课程模块</span></div>
+                            <div class="console-stat"><strong>7</strong><span>场景化开始路径</span></div>
+                            <div class="console-stat"><strong>1</strong><span>先做一个最小成果</span></div>
+                        </div>
+                        <div class="workspace-strip" aria-hidden="true">
+                            <span>飞书知识库</span>
+                            <span>社群答疑</span>
+                            <span>真实任务</span>
+                            <span>复盘迭代</span>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </header>
