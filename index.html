@@ -8,9 +8,11 @@
   <meta name="description" content="大象AI共学帮助普通人带着具体任务选择学习路线，做出第一份工作成果，并把有效步骤保存为自己的 AI 工作方法。">
   <meta name="keywords" content="大象AI共学,AI共学,AI实战,企业AI服务,AI内训,企业知识库,AI Agent,自动化工作流,AI学习路径">
   <meta name="author" content="大象AI共学">
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://daxiangnaoyang.github.io/daxiang-ai-gongxue/">
   <link rel="icon" href="logo-blue.png" type="image/png">
   <link rel="llms-txt" href="llms.txt" type="text/plain">
+  <link rel="sitemap" href="sitemap.xml" type="application/xml">
   <meta property="og:title" content="大象AI共学 - 让 AI 不止会聊天，还会替你干活">
   <meta property="og:description" content="从一个具体任务开始，选择路线，做出成果，再把有效步骤保存下来。">
   <meta property="og:type" content="website">
@@ -23,10 +25,77 @@
     }
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"大象","alternateName":"大象AI共学大学长","description":"大象AI共学大学长，字节跳动巨量认证讲师，通往AGI之路共建作者，飞书飞行社邀约AI共建作者。","url":"https://daxiangnaoyang.github.io/daxiang-ai-gongxue/","knowsAbout":["AI Agent","提示词工程","AI 编程","知识库搭建","Coze 智能体","AIGC 创作","Claude Code","Hermes Agent","MCP 协议","RAG 知识库","三级记忆系统","Obsidian"],"sameAs":["https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87","https://blog.csdn.net/weixin_66295112","https://github.com/daxiangnaoyang"]}
-  </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Service","name":"大象AI实战共学","serviceType":"AI实战共学社区","description":"面向普通人的AI实战共学服务，通过飞书知识库、学习路线与社群答疑帮助用户把AI用进具体工作。","provider":{"@type":"Organization","name":"大象AI共学","url":"https://daxiangnaoyang.github.io/daxiang-ai-gongxue/"},"audience":{"@type":"Audience","audienceType":"AI初学者与希望提升工作效率的普通人"}}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#person",
+        "name": "大象",
+        "alternateName": "大象AI共学大学长",
+        "description": "大象AI共学大学长，字节跳动巨量认证讲师，通往AGI之路共建作者，飞书飞行社邀约AI共建作者。",
+        "url": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/",
+        "jobTitle": ["大象AI共学大学长", "AI实战共学推动者", "字节跳动巨量认证讲师"],
+        "award": ["通往AGI之路共建作者", "飞书飞行社邀约AI共建作者"],
+        "knowsAbout": ["AI Agent", "提示词工程", "AI 编程", "知识库搭建", "Coze 智能体", "AIGC 创作", "Claude Code", "Hermes Agent", "MCP 协议", "RAG 知识库", "三级记忆系统", "Obsidian"],
+        "worksFor": {"@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#brand"},
+        "sameAs": [
+          "https://www.zhihu.com/people/42a8dd9658b703e283bcd1c98b8eef87",
+          "https://blog.csdn.net/weixin_66295112",
+          "https://github.com/daxiangnaoyang"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#brand",
+        "name": "大象AI共学",
+        "alternateName": "大象AI共学社区",
+        "description": "由大学长大象以一人加AI方式运营的AI实战共学品牌项目，通过共学、实操、飞书知识库和社群答疑帮助普通人轻松上手AI。",
+        "url": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/",
+        "logo": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/logo-blue-transparent-v2.png",
+        "founder": {"@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#person"},
+        "sameAs": ["https://github.com/daxiangnaoyang/daxiang-ai-gongxue"]
+      },
+      {
+        "@type": "Course",
+        "@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#knowledge-system",
+        "name": "大象AI共学五模块知识体系",
+        "description": "围绕AI地基、模型与工具、AI编程与Agent、Coze智能体、AIGC创作组织的五模块学习体系。",
+        "url": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#curriculum",
+        "provider": {"@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#brand"},
+        "author": {"@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#person"},
+        "inLanguage": "zh-CN",
+        "educationalLevel": "面向AI初学者与希望提升工作效率的普通人",
+        "coursePrerequisites": "无需编程基础，适合愿意动手的初学者。",
+        "syllabusSections": [
+          {"@type": "Syllabus", "name": "AI 地基", "description": "通识、提示词、知识库与Agent概念。"},
+          {"@type": "Syllabus", "name": "模型与工具", "description": "建立工具判断框架与信息工作台。"},
+          {"@type": "Syllabus", "name": "AI 编程与 Agent", "description": "文件、Skills、MCP与自动化协作。"},
+          {"@type": "Syllabus", "name": "Coze 智能体", "description": "从工作流到可运行的智能体应用。"},
+          {"@type": "Syllabus", "name": "AIGC 研习", "description": "写作、图像、视频与内容生产。"}
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#service",
+        "name": "大象AI实战共学",
+        "serviceType": "AI实战共学社区",
+        "description": "面向普通人的AI实战共学服务，通过飞书知识库、学习路线与社群答疑帮助用户把AI用进具体工作。",
+        "provider": {"@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#brand"},
+        "audience": {"@type": "Audience", "audienceType": "AI初学者与希望提升工作效率的普通人"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#website",
+        "name": "大象AI共学",
+        "url": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/",
+        "description": "AI实战共学社区，帮助普通人判断问题、选择路线并用AI完成具体工作。",
+        "publisher": {"@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#brand"},
+        "creator": {"@id": "https://daxiangnaoyang.github.io/daxiang-ai-gongxue/#person"},
+        "inLanguage": "zh-CN"
+      }
+    ]
+  }
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"大象AI共学适合小白吗？","acceptedAnswer":{"@type":"Answer","text":"适合愿意动手的小白。可以从AI通识、提示词和第一个AI助手开始。"}},{"@type":"Question","name":"加入后能得到什么？","acceptedAnswer":{"@type":"Answer","text":"飞书知识库、场景化学习路线、付费社群答疑和一人加AI的实操方法。"}},{"@type":"Question","name":"它和传统AI课程有什么区别？","acceptedAnswer":{"@type":"Answer","text":"它不是一次性录播课，而是知识库与社群共学服务。先按自己的问题选择路线，再完成第一份成果。"}}]}
