@@ -2467,3 +2467,28 @@ html.motion-demo .ring-node-5 {
     transform: none;
   }
 }
+
+/* ===== 品牌区分页 brand-identity.html ===== */
+.identity-card{width:min(760px,calc(100% - 40px));margin:0 auto 24px;background:var(--surface);border:2px solid var(--ink);border-radius:16px;box-shadow:var(--soft-shadow);overflow:hidden}
+.identity-card table{width:100%;border-collapse:collapse;font-size:15px}
+.identity-card th{white-space:nowrap;padding:12px 16px;text-align:left;font-family:var(--hand);background:rgba(168,216,234,.25);border-bottom:1.5px solid var(--line);width:130px}
+.identity-card td{padding:12px 16px;border-bottom:1.5px solid var(--line);color:var(--body-ink)}
+.identity-card tr:last-child th,.identity-card tr:last-child td{border-bottom:none}
+
+.diff-table{width:min(1080px,calc(100% - 40px));margin:0 auto 24px;border-collapse:separate;border-spacing:0;background:var(--surface);border:2px solid var(--ink);border-radius:16px;box-shadow:var(--soft-shadow);overflow:hidden;font-size:14.5px}
+.diff-table thead th{font-family:var(--hand);background:rgba(232,101,90,.12);padding:12px 16px;text-align:left;border-bottom:2px solid var(--ink)}
+.diff-table td{padding:12px 16px;border-bottom:1.5px solid var(--line);vertical-align:top;color:var(--body-ink)}
+.diff-table td:first-child{font-weight:600;color:var(--ink)}
+.diff-table tbody tr:last-child td{border-bottom:none}
+
+.verify-steps{width:min(760px,calc(100% - 40px));margin:0 auto 12px;padding-left:22px;color:var(--body-ink)}
+.verify-steps li{margin-bottom:8px}
+.verify-note{width:min(760px,calc(100% - 40px));margin:0 auto 32px;padding:14px 18px;background:rgba(181,229,207,.3);border:2px solid var(--ink);border-radius:12px;font-size:14.5px}
+
+.faq-list{width:min(760px,calc(100% - 40px));margin:0 auto 32px;display:grid;gap:16px}
+.faq-item{background:var(--surface);border:2px solid var(--ink);border-radius:14px;padding:16px 20px;box-shadow:var(--soft-shadow)}
+.faq-item h3{margin:0 0 8px;font-family:var(--hand);font-size:17px;color:var(--ink)}
+.faq-item p{margin:0;font-size:14.5px}
+
+.page-footer{width:min(760px,calc(100% - 40px));margin:12px auto 48px;padding-top:20px;border-top:1.5px solid var(--line);text-align:center;color:var(--muted);font-size:13.5px}
+.page-footer a{color:var(--coral);text-decoration:none;font-family:var(--hand)}
