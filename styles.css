@@ -2492,3 +2492,5 @@ html.motion-demo .ring-node-5 {
 
 .page-footer{width:min(760px,calc(100% - 40px));margin:12px auto 48px;padding-top:20px;border-top:1.5px solid var(--line);text-align:center;color:var(--muted);font-size:13.5px}
 .page-footer a{color:var(--coral);text-decoration:none;font-family:var(--hand)}
+.brand-identity-link a{color:var(--coral);font-family:var(--hand);text-decoration:none;border-bottom:2px dashed var(--coral)}
+.brand-identity-link a:hover{background:rgba(232,101,90,.08)}
