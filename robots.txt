@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daxiangnaoyang.github.io/daxiang-ai-gongxue/sitemap.xml
+Sitemap: https://daxiangai.cc/sitemap.xml
