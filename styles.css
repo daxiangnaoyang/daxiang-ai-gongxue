@@ -2674,3 +2674,31 @@ html.motion-demo .hero-dopamine--plus,html.motion-demo .hero-dopamine--burst,htm
 @media(max-width:980px){.hero-dopamine-3d{right:7%;bottom:5%;left:7%;height:24%;opacity:.88}}
 @media(max-width:640px){.hero-dopamine-3d{right:6%;bottom:5%;left:6%;height:22%;opacity:.8}}
 @media(prefers-reduced-motion:reduce){.hero-dopamine-3d{opacity:.72}}
+
+/* 首页浅色分带：AI 现场保留唯一深色锚点，其余区块用马卡龙渐变分层 */
+.quick-map{background:linear-gradient(118deg,rgba(168,216,234,.72),rgba(245,240,232,.92) 54%,rgba(244,199,171,.5));border-top:1px solid rgba(23,23,23,.28);border-bottom:1px solid rgba(23,23,23,.28)}
+#outcomes,#fit,#curriculum,#about,#enroll{position:relative;overflow:hidden;border-top:1px solid rgba(23,23,23,.24);border-bottom:1px solid rgba(23,23,23,.24)}
+#outcomes::before,#fit::before,#curriculum::before,#about::before,#enroll::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.55;background-image:radial-gradient(circle at 12% 22%,rgba(255,255,255,.72) 0 2px,transparent 2.8px),radial-gradient(circle at 86% 74%,rgba(232,101,90,.18) 0 2px,transparent 3px),radial-gradient(circle at 68% 12%,rgba(255,255,255,.5) 0 1.5px,transparent 2.3px);background-size:41px 41px,67px 67px,29px 29px}
+#outcomes::after,#fit::after,#curriculum::after,#about::after,#enroll::after{position:absolute;z-index:0;right:6%;top:12%;color:var(--coral);font:400 34px/1 var(--hand);opacity:.7;transform:rotate(12deg);pointer-events:none}
+#outcomes{background:linear-gradient(120deg,rgba(168,216,234,.62),rgba(245,240,232,.9) 62%,rgba(181,229,207,.42))}
+#outcomes::after{content:"✦"}
+#fit{width:100%;margin:0;padding-right:max(24px,calc((100% - 1240px)/2));padding-left:max(24px,calc((100% - 1240px)/2));background:linear-gradient(120deg,rgba(213,198,224,.58),rgba(245,240,232,.92) 60%,rgba(168,216,234,.28))}
+#fit::after{content:"✺";right:9%;top:18%}
+#curriculum{background:linear-gradient(128deg,rgba(244,199,171,.55),rgba(245,240,232,.9) 48%,rgba(168,216,234,.38))}
+#curriculum::after{content:"↝";right:8%;top:15%;transform:rotate(-12deg)}
+#about{background:linear-gradient(118deg,rgba(181,229,207,.58),rgba(245,240,232,.92) 57%,rgba(213,198,224,.36))}
+#about::after{content:"✦";right:10%;top:22%}
+#enroll{width:100%;margin:0;padding-right:max(24px,calc((100% - 1240px)/2));padding-left:max(24px,calc((100% - 1240px)/2));background:linear-gradient(120deg,rgba(235,207,135,.5),rgba(244,199,171,.48) 52%,rgba(245,240,232,.9))}
+#enroll::after{content:"＋";right:8%;top:17%;transform:rotate(-9deg)}
+#outcomes>*,#fit>*,#curriculum>*,#about>*,#enroll>*{position:relative;z-index:1}
+#ai-field{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+@media(max-width:640px){#fit,#enroll{padding-right:15px;padding-left:15px}.quick-map{background:linear-gradient(145deg,rgba(168,216,234,.68),rgba(245,240,232,.94) 62%,rgba(244,199,171,.44))}#outcomes::after,#fit::after,#curriculum::after,#about::after,#enroll::after{font-size:27px;right:5%;top:9%}}
+
+/* 首屏工作台也回到浅色马卡龙，只保留黑色线稿作为视觉骨架 */
+.hero-workbench{color:var(--ink);background:linear-gradient(135deg,rgba(168,216,234,.94),rgba(213,198,224,.96) 52%,rgba(244,199,171,.9));border-color:var(--ink)}
+.workbench-topline{color:rgba(23,23,23,.62)}.workbench-status{color:rgba(23,23,23,.72)}.workbench-status i{box-shadow:0 0 0 3px rgba(181,229,207,.45)}
+.workbench-stage{background:radial-gradient(circle at 51% 50%,rgba(232,101,90,.2),transparent 27%),linear-gradient(135deg,rgba(255,255,255,.28),transparent 42%)}.workbench-stage::before{background-image:linear-gradient(rgba(23,23,23,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(23,23,23,.11) 1px,transparent 1px)}.workbench-stage::after{border-color:rgba(23,23,23,.24)}
+.map-path{stroke:var(--ink);opacity:.38}.map-crosshair{stroke:rgba(23,23,23,.22)}.map-point{fill:var(--coral);stroke:var(--ink)}
+.workbench-node{color:var(--ink);background:rgba(255,250,242,.82);border-color:var(--ink);box-shadow:3px 4px 0 rgba(23,23,23,.28)}.workbench-node small{color:var(--muted)}.workbench-cursor{color:rgba(23,23,23,.62)}
+.hero-workbench>figcaption{color:var(--ink);background:rgba(255,250,242,.7);border-top-color:rgba(23,23,23,.3)}
+@media(max-width:640px){.workbench-topline{color:rgba(23,23,23,.66)}.workbench-node{background:rgba(255,250,242,.88)}}
