@@ -1,0 +1,30 @@
+{
+  "week": "2026-W38",
+  "updatedAt": "2026-09-19",
+  "items": [
+    {
+      "source": "OpenAI",
+      "date": "2026-09-17",
+      "title": "Astra for Law：把模型能力装进专业工作流",
+      "summary": "OpenAI 发布面向法律工作的专用 AI 基础，把模型、专业检索、工作流工具与隐私治理放到同一套配置里。",
+      "try": "看你的工作里，哪些任务需要专用资料、工具连接和审核规则，而不是一个通用聊天框。",
+      "url": "https://openai.com/index/astra-for-law/"
+    },
+    {
+      "source": "Google Research",
+      "date": "2026-09-17",
+      "title": "生成式 UI，让教师创建可互动的学习材料",
+      "summary": "Google Research 展示带学习设计护栏的生成式 UI，让教师生成可互动、可引导的练习，并公开 30+ 个教师审核样例。",
+      "try": "把一个课程知识点改成“先操作、再解释”的小练习。",
+      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/"
+    },
+    {
+      "source": "Anthropic",
+      "date": "2026-09-17",
+      "title": "用三类指标观察前沿 AI 研发速度",
+      "summary": "Anthropic 分享三类观察指标：AI 参与 AI 研发的程度、Agent 监督情况、计算资源如何分配。",
+      "try": "给一次 AI 实验记下提出、验证、复用三个时间点，观察流程速度，而不只记模型名字。",
+      "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+    }
+  ]
+}

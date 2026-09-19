@@ -103,8 +103,25 @@
   bookmark.addEventListener("click",function(){bookmarked=!bookmarked;try{localStorage.setItem(bookmarkKey,bookmarked?"1":"0")}catch(_){ }renderBookmark()});
   renderBookmark();
 
+  var hero=document.querySelector(".preview-hero");
+  var heroLayers=hero?Array.prototype.slice.call(hero.querySelectorAll("[data-depth]")):[];
+  var heroPointer={x:0,y:0,tx:0,ty:0,frame:0};
+  function renderHeroPointer(){
+    heroPointer.frame=0;
+    if(!hero||reduceMotion.matches){heroPointer.x=heroPointer.y=heroPointer.tx=heroPointer.ty=0;heroLayers.forEach(function(el){el.style.setProperty("--hero-x","0px");el.style.setProperty("--hero-y","0px")});return}
+    var dx=heroPointer.tx-heroPointer.x,dy=heroPointer.ty-heroPointer.y;
+    heroPointer.x+=dx*.14;heroPointer.y+=dy*.14;
+    heroLayers.forEach(function(el){var depth=Number(el.dataset.depth)||0;el.style.setProperty("--hero-x",(heroPointer.x*depth*34).toFixed(2)+"px");el.style.setProperty("--hero-y",(heroPointer.y*depth*26).toFixed(2)+"px")});
+    if(Math.abs(dx)>.001||Math.abs(dy)>.001)heroPointer.frame=requestAnimationFrame(renderHeroPointer);
+  }
+  function queueHeroPointer(){if(!heroPointer.frame&&!reduceMotion.matches)heroPointer.frame=requestAnimationFrame(renderHeroPointer)}
+  function resetHeroPointer(){heroPointer.tx=0;heroPointer.ty=0;queueHeroPointer()}
+  if(hero){hero.addEventListener("pointermove",function(event){if(reduceMotion.matches)return;var rect=hero.getBoundingClientRect();heroPointer.tx=Math.max(-1,Math.min(1,(event.clientX-rect.left)/rect.width*2-1));heroPointer.ty=Math.max(-1,Math.min(1,(event.clientY-rect.top)/rect.height*2-1));queueHeroPointer()},{passive:true});hero.addEventListener("pointerleave",resetHeroPointer,{passive:true});hero.addEventListener("pointercancel",resetHeroPointer,{passive:true})}
+  function updateHeroScroll(){if(!hero||reduceMotion.matches)return;var rect=hero.getBoundingClientRect(),vh=Math.max(innerHeight,1),progress=Math.max(-1,Math.min(1,(rect.top+rect.height/2-vh/2)/vh));hero.style.setProperty("--scroll-y",(-progress*12).toFixed(2)+"px")}
+
   var scrollFrame=0;
-  function updateProgress(){scrollFrame=0;var max=document.documentElement.scrollHeight-innerHeight;var progress=max>0?Math.min(Math.max(scrollY/max,0),1):0;root.style.setProperty("--page-progress",progress)}
+  function updateProgress(){scrollFrame=0;var max=document.documentElement.scrollHeight-innerHeight;var progress=max>0?Math.min(Math.max(scrollY/max,0),1):0;root.style.setProperty("--page-progress",progress);updateHeroScroll()}
   addEventListener("scroll",function(){if(!scrollFrame)scrollFrame=requestAnimationFrame(updateProgress)},{passive:true});
+  if(typeof reduceMotion.addEventListener==="function")reduceMotion.addEventListener("change",function(){resetHeroPointer();updateHeroScroll()});
   updateProgress();
 })();
