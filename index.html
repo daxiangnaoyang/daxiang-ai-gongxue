@@ -34,7 +34,10 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260919-15">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js"}}
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260919-26">
 </head>
 <body>
   <a class="skip-link" href="#main-content">跳到主要内容</a>
@@ -69,6 +72,7 @@
         <figure class="hero-visual hero-workbench" data-hero-depth="0.12" aria-labelledby="hero-workbench-caption">
           <div class="workbench-topline"><span>大象 / WORKBENCH 01</span><span class="workbench-status"><i></i> READY TO START</span></div>
           <div class="workbench-stage">
+            <div class="hero-dopamine-3d" aria-hidden="true"><canvas id="hero-dopamine-canvas"></canvas><span class="dopamine-fallback-shapes"><i class="fallback-idea">✦</i><i class="fallback-route">↝</i><i class="fallback-result">●</i></span></div>
             <svg class="workbench-map" viewBox="0 0 620 540" role="img" aria-label="任务经过问题、路线、成果和方法的工作路径示意图"><defs><linearGradient id="workbench-line" x1="0" x2="1"><stop offset="0" stop-color="#A8D8EA"/><stop offset=".52" stop-color="#F4C7AB"/><stop offset="1" stop-color="#B5E5CF"/></linearGradient><filter id="workbench-soft-glow"><feGaussianBlur stdDeviation="7"/></filter></defs><circle class="map-glow" cx="310" cy="270" r="130" fill="none" stroke="#E8655A" stroke-width="22" opacity=".12" filter="url(#workbench-soft-glow)"/><path class="map-path" d="M150 150 C225 70 370 85 455 170 C530 246 493 360 400 406 C302 454 170 405 135 300 C108 220 120 183 150 150Z"/><path class="map-crosshair" d="M310 74V466M114 270H506"/><circle class="map-point" cx="150" cy="150" r="5"/><circle class="map-point" cx="455" cy="170" r="5"/><circle class="map-point" cx="400" cy="406" r="5"/><circle class="map-point" cx="135" cy="300" r="5"/></svg>
             <span class="workbench-badge" aria-hidden="true">TRY / KEEP</span><span class="workbench-spark workbench-spark--a" aria-hidden="true">✦</span><span class="workbench-spark workbench-spark--b" aria-hidden="true">＋</span><span class="workbench-spark workbench-spark--c" aria-hidden="true">✧</span><span class="workbench-confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
             <span class="workbench-core" data-hero-depth="0.28"><img src="logo-mark-blue-v2.png" width="112" height="104" alt=""><b>此刻的任务</b><small>从这里开始</small></span><span class="workbench-node node-question" data-hero-depth="0.42"><b>说清问题</b><small>What matters?</small></span><span class="workbench-node node-route" data-hero-depth="0.34"><b>进入模块</b><small>Choose a route</small></span><span class="workbench-node node-result" data-hero-depth="0.46"><b>拿到成果</b><small>Make it useful</small></span><span class="workbench-node node-method" data-hero-depth="0.38"><b>保存方法</b><small>Use it again</small></span><span class="workbench-cursor" data-hero-depth="0.58" aria-hidden="true">MOVE TO EXPLORE <b>↗</b></span>
@@ -109,5 +113,6 @@
     let scrollFrame=0;function updateScrollScene(){scrollFrame=0;const distance=document.documentElement.scrollHeight-innerHeight;document.documentElement.style.setProperty("--page-progress",distance>0?Math.min(Math.max(scrollY/distance,0),1):0)}addEventListener("scroll",()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(updateScrollScene)},{passive:true});addEventListener("resize",()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(updateScrollScene)},{passive:true});updateScrollScene();
     if(motionEnabled()&&matchMedia("(hover: hover) and (pointer: fine)").matches){const dots=[...document.querySelectorAll(".global-trail i")],points=dots.map(()=>({x:-40,y:-40}));let target={x:-40,y:-40},frame=0,ticks=0;function paintTrail(){let x=target.x,y=target.y;dots.forEach((dot,index)=>{const point=points[index],ease=Math.max(.12,.25-index*.024);point.x+=(x-point.x)*ease;point.y+=(y-point.y)*ease;dot.style.transform=`translate3d(${point.x}px,${point.y}px,0)`;x=point.x;y=point.y});if(ticks++<38)frame=requestAnimationFrame(paintTrail);else frame=0}addEventListener("pointermove",event=>{target={x:event.clientX,y:event.clientY};ticks=0;document.documentElement.classList.add("trail-active");if(!frame)frame=requestAnimationFrame(paintTrail)},{passive:true});addEventListener("pointerout",event=>{if(!event.relatedTarget)document.documentElement.classList.remove("trail-active")},{passive:true})}
   </script>
+  <script type="module" src="dopamine-3d.js?v=20260919-26"></script>
 </body>
 </html>
