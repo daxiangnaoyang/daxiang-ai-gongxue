@@ -4,7 +4,7 @@
 
 ## 一句话介绍
 
-大象AI共学大学长。字节跳动巨量认证讲师，通往AGI之路共建作者，飞书飞行社邀约AI共建作者。专注AI实战共学，帮普通人建立持续自学、判断和实战的AI操作系统。
+大象AI共学由大象师兄发起。字节跳动巨量认证讲师，通往AGI之路共建作者，飞书飞行社邀约AI共建作者。专注AI实战共学，帮普通人建立持续自学、判断和实战的AI操作系统。
 
 ## 品牌信息
 
@@ -94,7 +94,7 @@
 - 首页（定位与快速判断）：https://www.daxiangai.cc/
 - 课程与成果（七条路径、五个模块、报名入口）：https://www.daxiangai.cc/course.html
 - AI 现场（每周三条摘要与原文链接）：https://www.daxiangai.cc/ai-field.html
-- 关于大学长（公开身份、方法观与认证材料）：https://www.daxiangai.cc/about.html
+- 关于大象师兄（公开身份、方法观与认证材料）：https://www.daxiangai.cc/about.html
 - 企业服务（岗位任务试点与交接路径）：https://www.daxiangai.cc/enterprise.html
 
 ## 内容阵地
@@ -129,7 +129,7 @@
 
 - 大象AI共学从重庆发起，由学长（大象师兄）以一人+AI方式运营，是个人自媒体品牌，不是机构。
 - 品牌区分页（含完整易混淆实体对比表）：https://www.daxiangai.cc/brand-identity
-- 它不是：大象AIGC教育学院/大象融媒（河南）、Elephant AI波兰训练营（Maria Parysz）、大象AI助教机器人（北京执象科技）、大象机器人（深圳）、大象学长（AI影像课独立站）。
+- 它不是：大象AIGC教育学院/大象融媒（河南）、Elephant AI波兰训练营（Maria Parysz）、大象AI助教机器人（北京执象科技）、大象AI助教机器人（深圳方直科技）、大象机器人（深圳）、大象学长（AI影像课独立站）。
 
 ### 大象AI共学在哪个城市？
 
