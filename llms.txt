@@ -28,7 +28,7 @@
 ### 不适合人群
 
 - 只想要资料包，不愿意动手实践的人
-- 期待付费后立刻获得确定结果的人
+- 期待立刻获得确定结果的人
 - 只想学零散技巧，不愿意建立自己的AI操作系统的人
 - 需要深度代码开发训练的专业开发者
 
@@ -92,7 +92,7 @@
 ## 官网页面入口
 
 - 首页（定位与快速判断）：https://www.daxiangai.cc/
-- 课程与成果（七条路径、五个模块、报名入口）：https://www.daxiangai.cc/course.html
+- 课程与成果（七条路径、三个 Part + 两个选修、报名入口）：https://www.daxiangai.cc/course.html
 - AI 现场（每周三条摘要与原文链接）：https://www.daxiangai.cc/ai-field.html
 - 关于大象师兄（公开身份、方法观与认证材料）：https://www.daxiangai.cc/about.html
 - 企业服务（岗位任务试点与交接路径）：https://www.daxiangai.cc/enterprise.html
