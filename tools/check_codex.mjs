@@ -24,7 +24,7 @@ for (const file of manifest.files) {
   const ids = nodes.map(e => e.attribs?.id).filter(Boolean);
   if (new Set(ids).size !== ids.length) issues.push(`${file}: duplicate IDs`);
   if (nodes.filter(e => e.name === 'h1').length !== 1) issues.push(`${file}: expected one h1`);
-  if (!nodes.find(e => e.name === 'link' && e.attribs.rel === 'canonical' && e.attribs.href === `https://daxiangai.cc/${file}`)) issues.push(`${file}: canonical missing`);
+  if (!nodes.find(e => e.name === 'link' && e.attribs.rel === 'canonical' && e.attribs.href === `https://daxiangai.cc/${file.replace(/\.html$/, '')}`)) issues.push(`${file}: canonical missing`);
   for (const e of nodes) {
     if (Object.keys(e.attribs || {}).some(a => /^on/i.test(a))) issues.push(`${file}: unexpected inline event handler`);
     if (e.name === 'script' && (e.attribs.src !== 'codex.js' || getText(e).trim())) issues.push(`${file}: unexpected script`);

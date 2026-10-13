@@ -51,6 +51,8 @@ npm run check
 
 ## 发布
 
-`main` 推送触发 GitHub Pages。CI 安装固定依赖、生成页面并完成内容校验后，由 `tools/package_site.mjs` 将公开页面与必要资源放入 `.pages/`。不上传 `node_modules`、工具脚本、原始 Markdown 快照或项目分析报告。打包保留 MIT 许可证。
+`main` 推送触发 GitHub Pages。Pages 发布模式已经由 `legacy` 改为 `workflow`，避免旧版分支发布绕过校验并覆盖新版本。CI 安装固定依赖、生成页面并完成内容校验后，由 `tools/package_site.mjs` 将公开页面与必要资源放入 `.pages/`。不上传 `node_modules`、工具脚本、原始 Markdown 快照或项目分析报告。打包保留 MIT 许可证。
+
+官网域名由 Cloudflare 响应，并将 `.html` 路径重定向到无扩展名地址。Codex 的 canonical 与站点地图使用实际的无扩展名地址；页面链接保留 `.html` 以兼容本地静态预览。
 
 构建与展示分析见 `CODEX-SITE-ANALYSIS.md`。
