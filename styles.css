@@ -12,6 +12,10 @@
 .codex-entry .article-cards>li:nth-child(3){border-top:5px solid #f4c7ab}
 .codex-entry-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px}
 .module-reading a{display:inline-block;color:#236580;text-decoration:underline;text-underline-offset:4px;font-size:14px;line-height:1.7}
+.article-library .codex-entry{margin-top:36px;padding:28px 0 36px;border-bottom:1px solid var(--line)}
+.codex-entry .section-head h3{font-family:var(--hand);font-size:clamp(25px,3vw,34px);font-weight:400;line-height:1.4;margin:12px 0}
+.codex-entry .section-head .lede{font-size:16px;max-width:660px}
+.tutorial-other-title{font-family:var(--hand);font-weight:400;font-size:28px;margin:34px 0 22px}
 
 :root {
   color-scheme: light;

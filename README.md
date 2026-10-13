@@ -7,6 +7,7 @@
 ## 文件与写入位置
 
 - `index.html`：官网首页；`CODEX-ENTRY` 标记间的内容由生成器维护。
+- 首页“开源教程”是公开内容的统一入口（`#articles`），Codex 位于其中；`codex.html` 是这一入口下的独立内容中心。
 - `course.html`：现有学习路线与课程地图。
 - `codex.html`：Codex 内容中心，按任务、分类和关键词进入正文。
 - `codex-start*.html`、`codex-advanced*.html`、`codex-recipes*.html`：自动生成的总览与正文，不直接编辑。
@@ -53,6 +54,8 @@ npm run check
 
 `main` 推送触发 GitHub Pages。Pages 发布模式已经由 `legacy` 改为 `workflow`，避免旧版分支发布绕过校验并覆盖新版本。CI 安装固定依赖、生成页面并完成内容校验后，由 `tools/package_site.mjs` 将公开页面与必要资源放入 `.pages/`。不上传 `node_modules`、工具脚本、原始 Markdown 快照或项目分析报告。打包保留 MIT 许可证。
 
-官网域名由 Cloudflare 响应，并将 `.html` 路径重定向到无扩展名地址。Codex 的 canonical 与站点地图使用实际的无扩展名地址；页面链接保留 `.html` 以兼容本地静态预览。
+上述工作流维护 GitHub Pages 镜像。官网主域名 `daxiangai.cc` 实际还有独立的 Cloudflare Pages 部署，已通过提交检查和浏览器回读确认；Cloudflare 控制台目前需要登录，其构建命令和输出目录尚未核对，不将 GitHub 镜像的发布设置当作主站配置。
+
+官网将 `.html` 路径重定向到无扩展名地址。Codex 的 canonical 与站点地图使用实际的无扩展名地址；页面链接保留 `.html` 以兼容本地静态预览。
 
 构建与展示分析见 `CODEX-SITE-ANALYSIS.md`。

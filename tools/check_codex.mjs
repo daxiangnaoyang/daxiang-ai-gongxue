@@ -95,5 +95,9 @@ if (search.length !== manifest.articles || new Set(search.map(d => d.file)).size
 if (!fs.readFileSync(path.join(root, 'CODEXGUIDE-LICENSE.txt'), 'utf8').includes(source.license.trim())) issues.push('License mismatch');
 if (!fs.readFileSync(path.join(root, 'LUCIAN-UI-LICENSE.txt'), 'utf8').includes('Copyright (c) 2026 Seokwoooo')) issues.push('Missing UI license');
 if (!fs.readFileSync(path.join(root, 'index.html'), 'utf8').includes('id="codex"')) issues.push('Missing homepage entry');
+const homepage = read('index.html');
+const tutorials = elements(homepage).find(e => e.attribs?.id === 'articles');
+if (!tutorials || !DomUtils.findOne(e => e.attribs?.id === 'codex', tutorials.children, true)) issues.push('Codex must be inside the open-tutorials section');
+if (getText(homepage).includes('开源文章/教程')) issues.push('Outdated open-tutorials label');
 if (issues.length) { console.error(issues.join('\n')); process.exit(1); }
 console.log(`PASS: ${manifest.files.length} pages, ${links} local links, ${images} image references, ${codeBlocks} intact code examples, ${Object.keys(assets).length} verified assets.`);
