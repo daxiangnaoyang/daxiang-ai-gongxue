@@ -99,5 +99,6 @@ const homepage = read('index.html');
 const tutorials = elements(homepage).find(e => e.attribs?.id === 'articles');
 if (!tutorials || !DomUtils.findOne(e => e.attribs?.id === 'codex', tutorials.children, true)) issues.push('Codex must be inside the open-tutorials section');
 if (getText(homepage).includes('开源文章/教程')) issues.push('Outdated open-tutorials label');
+if (!getText(homepage).includes('开源教程（含 Codex 从 0 到 1）')) issues.push('Missing requested open-tutorials label');
 if (issues.length) { console.error(issues.join('\n')); process.exit(1); }
 console.log(`PASS: ${manifest.files.length} pages, ${links} local links, ${images} image references, ${codeBlocks} intact code examples, ${Object.keys(assets).length} verified assets.`);

@@ -7,7 +7,7 @@
 ## 文件与写入位置
 
 - `index.html`：官网首页；`CODEX-ENTRY` 标记间的内容由生成器维护。
-- 首页“开源教程”是公开内容的统一入口（`#articles`），Codex 位于其中；`codex.html` 是这一入口下的独立内容中心。
+- 首页“开源教程（含 Codex 从 0 到 1）”是公开内容的统一入口（`#articles`），Codex 位于其中；`codex.html` 是这一入口下的独立内容中心。
 - `course.html`：现有学习路线与课程地图。
 - `codex.html`：Codex 内容中心，按任务、分类和关键词进入正文。
 - `codex-start*.html`、`codex-advanced*.html`、`codex-recipes*.html`：自动生成的总览与正文，不直接编辑。
