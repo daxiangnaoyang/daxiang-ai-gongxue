@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { parseDocument, DomUtils } from 'htmlparser2';
 import { marked } from 'marked';
+import { editorialBody } from './codex_editorial.mjs';
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'data/codex-manifest.json'), 'utf8'));
@@ -21,6 +22,9 @@ const getText = e => DomUtils.textContent(e);
 let links = 0, images = 0, codeBlocks = 0;
 for (const file of manifest.files) {
   const dom = read(file); const nodes = elements(dom);
+  if (nodes.some(e => /^h[1-6]$/.test(e.name) && /^(参考来源|参考资料|官方资料延伸|来源说明)#?$/.test(getText(e).trim()))) issues.push(`${file}: reference section remains`);
+  if (nodes.some(e => (e.attribs?.class || '').includes('docs-article-meta'))) issues.push(`${file}: title metadata remains`);
+  if (getText(dom).includes('最后核对') || getText(dom).includes('资料核对')) issues.push(`${file}: review/source notice remains`);
   const ids = nodes.map(e => e.attribs?.id).filter(Boolean);
   if (new Set(ids).size !== ids.length) issues.push(`${file}: duplicate IDs`);
   if (nodes.filter(e => e.name === 'h1').length !== 1) issues.push(`${file}: expected one h1`);
@@ -56,7 +60,7 @@ for (const article of source.articles) {
   const file = name === '00-index.md' ? `codex-${group}.html` : `codex-${group}-${name.replace('.md', '.html')}`;
   const codes = [];
   let fence; let lines = []; let indent = 0;
-  const body = article.markdown.replace(/^---\n[\s\S]*?\n---\n/, '');
+  const body = editorialBody(article.markdown.replace(/^---\n[\s\S]*?\n---\n/, ''), article.path);
   for (const line of body.split('\n')) {
     const marker = line.match(/^\s*(`{3,}|~{3,})/);
     if (marker && !fence) { fence = marker[1][0]; lines = []; indent = line.indexOf(marker[1]); }
@@ -85,7 +89,13 @@ for (const article of source.articles) {
   const text = getText(read(file));
   const headings = [...body.matchAll(/^#{1,6}\s+(.+)$/gm)].map(m => m[1].replace(/[*`]/g, ''));
   for (const heading of headings) if (!text.includes(heading)) issues.push(`${file}: missing source heading ${heading}`);
+  const header = elements(read(file)).find(e => e.attribs?.class === 'docs-article-head');
+  const headerChildren = (header?.children || []).filter(e => e.type === 'tag');
+  const titleIndex = headerChildren.findIndex(e => e.name === 'h1');
+  if (headerChildren.slice(titleIndex + 1).length) issues.push(`${file}: content remains below title in header`);
 }
+const petImages = elements(read('codex-recipes-17-desktop-pet.html')).filter(e => e.name === 'img' && e.attribs.loading === 'lazy');
+if (petImages.length !== 2 || petImages.some(e => /(?:task-bubble|completed-task-bubble)/.test(e.attribs.src))) issues.push('Desktop pet: usage images must be removed and installation images retained');
 for (const [url, asset] of Object.entries(assets)) {
   if (!asset.local) { issues.push(`Unmirrored asset: ${url}`); continue; }
   const data = fs.readFileSync(path.join(root, asset.local));

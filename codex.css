@@ -15,6 +15,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.docs-card{transition:none}}
 @media print{.docs-header,.docs-sidebar,.docs-toc,.docs-footer,.docs-pagination,.copy-code{display:none}.docs-layout{display:block;padding:0}.docs-prose img{max-height:600px}.docs-code{break-inside:avoid}.docs-article-head h1{font-family:system-ui,sans-serif}}
 
+.docs-article-head h1{margin-bottom:0}
 /* Adapted Lucian UX/UI Prompt elements 008/039/044/050/058/092.
    MIT (c) 2026 Seokwoooo — see LUCIAN-UI-LICENSE.txt. */
 :root{--ux-spring:cubic-bezier(.18,.86,.26,1.12);--ux-ease:cubic-bezier(.22,.68,0,1)}

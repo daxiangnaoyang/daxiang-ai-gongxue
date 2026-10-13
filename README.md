@@ -14,6 +14,7 @@
 - `codex.css`、`codex.js`：阅读层样式、搜索、代码复制与目录交互。
 - UI 适配：使用 `lucian-uxui-prompt` 的 008、039、044、050、058、092 六种交互，维护在 `codex.css`、`codex.js`，不加载整库脚本；许可在 `LUCIAN-UI-LICENSE.txt`。
 - `data/codex-source.json`：完整 Markdown 快照、提交版本和内容校验值；保持原始内容。
+- `tools/codex_editorial.mjs`：网站展示层的用户编辑规则；删除来源/核对说明与参考来源章节，并移除桌面宠物“2. 使用”的两张图片。文章标题下的摘要与信息栏不展示，原始快照继续保留。
 - `data/codex-assets.json`：图片映射、体积和校验值。
 - `data/codex-search.json`、`data/codex-manifest.json`：自动生成的搜索与页面索引。
 - `assets/images/codex-*`：本次复制的文档截图与配图，放在既有资产目录。
