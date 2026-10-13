@@ -1,0 +1,1745 @@
+{
+  "https://cdn.canghecode.com/blog/0c4dd861837c8686d3135b704ae4517d.jpg": {
+    "local": "assets/images/codex-e979ce526499-0c4dd861837c8686d3135b704ae4517d.jpg",
+    "sha256": "a999fe1fbe1105bd8a5fb0d6fbf763887afdd751c2b16f8c55c168427cc8f753",
+    "bytes": 163959,
+    "width": 1980,
+    "height": 1116
+  },
+  "https://cdn.canghecode.com/blog/151adfc6f7cd994b58815787999a5c37.jpg": {
+    "local": "assets/images/codex-f419acee2b4d-151adfc6f7cd994b58815787999a5c37.jpg",
+    "sha256": "ab0a808a01625bfd4471b68f6ca24431b96705ad2763087461c0c9ad5cbc6fb4",
+    "bytes": 111694,
+    "width": 1774,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/blog/20260529165811.png": {
+    "local": "assets/images/codex-cc918f848b23-20260529165811.png",
+    "sha256": "04e554bde4bd04916a3b5ce950d9c1e68c1612cff3079fa94c0721e2e2fd243c",
+    "bytes": 146256,
+    "width": 854,
+    "height": 575
+  },
+  "https://cdn.canghecode.com/blog/20260529170535.png": {
+    "local": "assets/images/codex-11d1721bf3ec-20260529170535.png",
+    "sha256": "d95bdafd8c5680c4069d576ce984849af09283c4b80d6b4e4e31ea3d8df93d6b",
+    "bytes": 241281,
+    "width": 1344,
+    "height": 757
+  },
+  "https://cdn.canghecode.com/blog/20260529170927.png": {
+    "local": "assets/images/codex-0fb06f42d994-20260529170927.png",
+    "sha256": "0e9df890853ca6478f40d5f06d5ce85a2a7752b0d1d584933f459acfc89f9526",
+    "bytes": 151608,
+    "width": 1202,
+    "height": 493
+  },
+  "https://cdn.canghecode.com/blog/20260529171249.png": {
+    "local": "assets/images/codex-0dfa373b9bf6-20260529171249.png",
+    "sha256": "6d9acd147740a14b39a9ee520390981db466373f4a75c9a26432c62c6e5aeddd",
+    "bytes": 606772,
+    "width": 802,
+    "height": 713
+  },
+  "https://cdn.canghecode.com/blog/20260529171601.png": {
+    "local": "assets/images/codex-6237a9771c67-20260529171601.png",
+    "sha256": "792787c9a07d64f0a07534a3b90cc25774d595a4ae14509d2e4b3b7f48c0edc7",
+    "bytes": 157285,
+    "width": 804,
+    "height": 606
+  },
+  "https://cdn.canghecode.com/blog/20260529172147.png": {
+    "local": "assets/images/codex-e7370b3993d0-20260529172147.png",
+    "sha256": "e8b648f1d8efa6e495a18a1e4e13d1987c1c6923e2d7554a0a786483f89325e6",
+    "bytes": 164085,
+    "width": 808,
+    "height": 607
+  },
+  "https://cdn.canghecode.com/blog/20260802164741.png": {
+    "local": "assets/images/codex-9396e4cfd67a-20260802164741.png",
+    "sha256": "812fd2cc7274bddc1cd095410c1f3f60d6306dc3a568321c23a1e1770213d30b",
+    "bytes": 866345,
+    "width": 1860,
+    "height": 1073
+  },
+  "https://cdn.canghecode.com/blog/20260802164918.png": {
+    "local": "assets/images/codex-87d4c79b1f1e-20260802164918.png",
+    "sha256": "2a7c375d805faf64b3fcc1dd1941a9a7b44e0e452ab660a04598dd2f4d47c913",
+    "bytes": 248153,
+    "width": 1786,
+    "height": 446
+  },
+  "https://cdn.canghecode.com/blog/20260802164954.png": {
+    "local": "assets/images/codex-9b5151f0a652-20260802164954.png",
+    "sha256": "f858cd35a5658491aebab08a29632a58da301c6415d7676c3fc8fdc0854b41f6",
+    "bytes": 265255,
+    "width": 1670,
+    "height": 933
+  },
+  "https://cdn.canghecode.com/blog/20260802165357.png": {
+    "local": "assets/images/codex-c67f485908c1-20260802165357.png",
+    "sha256": "d1e71e168d0665254af41b3afd092dfae66314d4a382e198a9f16fabca11c9c7",
+    "bytes": 242074,
+    "width": 1687,
+    "height": 918
+  },
+  "https://cdn.canghecode.com/blog/20260802165443.png": {
+    "local": "assets/images/codex-618dbff5f4f4-20260802165443.png",
+    "sha256": "bca9620c8c647b3c6689d3524dc3a375f6a45886e8efa1851b580d9233894471",
+    "bytes": 101025,
+    "width": 1059,
+    "height": 615
+  },
+  "https://cdn.canghecode.com/blog/20260802165556.png": {
+    "local": "assets/images/codex-abdb4b15c330-20260802165556.png",
+    "sha256": "35995f02021a4e19f6162c91c186cf29c9f9611adab826f90b12f69b5174016d",
+    "bytes": 124923,
+    "width": 1105,
+    "height": 630
+  },
+  "https://cdn.canghecode.com/blog/20260802165656.png": {
+    "local": "assets/images/codex-87871b5b8b49-20260802165656.png",
+    "sha256": "1ac926635ffbebb9151714d8e3b4ebee1c8d768287f72b7561c5e33072da1bba",
+    "bytes": 201815,
+    "width": 1705,
+    "height": 1033
+  },
+  "https://cdn.canghecode.com/blog/20260802165750.png": {
+    "local": "assets/images/codex-a15b03b67c45-20260802165750.png",
+    "sha256": "35a98e65f5af58d54569c8381fedaecbcb099a6109c4f80a1126912b17215e85",
+    "bytes": 195254,
+    "width": 1580,
+    "height": 1030
+  },
+  "https://cdn.canghecode.com/blog/20260802170049.png": {
+    "local": "assets/images/codex-59cfbb990a0e-20260802170049.png",
+    "sha256": "2e20a89a68b5fdd267f73c4476e459155e8a2d8fe5e01fda53f308644fc53c9f",
+    "bytes": 143471,
+    "width": 1105,
+    "height": 665
+  },
+  "https://cdn.canghecode.com/blog/3e514cfc66a2a76536dbfc5c37743315.png": {
+    "local": "assets/images/codex-91dc93821491-3e514cfc66a2a76536dbfc5c37743315.png",
+    "sha256": "ac2379c42289b86417b019667c4b00960d704b52bff638ced56d3a624428f848",
+    "bytes": 270711,
+    "width": 1498,
+    "height": 1150
+  },
+  "https://cdn.canghecode.com/blog/66afdc2191cadafa60171ef81940733d.jpg": {
+    "local": "assets/images/codex-e18dce03c887-66afdc2191cadafa60171ef81940733d.jpg",
+    "sha256": "1d09d8f30f387680dbf5a826606630cee2d2081aed972a9f410f193bafe84ab9",
+    "bytes": 101336,
+    "width": 1758,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/blog/728d1e4564ea5f78121cae63fd94790a.jpg": {
+    "local": "assets/images/codex-f7a57d252241-728d1e4564ea5f78121cae63fd94790a.jpg",
+    "sha256": "78d74664728f388026cce830ac15b95ff7081fe273ecbd3511c1ac5be1fb3ca0",
+    "bytes": 146154,
+    "width": 1926,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/blog/9132822e751d0eccd37b79bbe0d6b3b0.jpg": {
+    "local": "assets/images/codex-dd422a7749c3-9132822e751d0eccd37b79bbe0d6b3b0.jpg",
+    "sha256": "6236b0d9f0d3499f443145ed7f09efe62b00d5cda0b3645303278006f9863a7d",
+    "bytes": 133203,
+    "width": 1727,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/blog/b265fd82e492107e53dc7b0df6af553c.png": {
+    "local": "assets/images/codex-6450f077190e-b265fd82e492107e53dc7b0df6af553c.png",
+    "sha256": "082d6d75ddc97d501b674bd526850d3aa2ae507c74ca55f283b08534d0d3d1c7",
+    "bytes": 90167,
+    "width": 598,
+    "height": 520
+  },
+  "https://cdn.canghecode.com/blog/ca6415f0ad1e10755f656001d16d91d5.png": {
+    "local": "assets/images/codex-f20e62d6511f-ca6415f0ad1e10755f656001d16d91d5.png",
+    "sha256": "33c1fd1dc0de8bcb482a6e30b11965a8d6911ba59f3c33b7928e987d6e7c8867",
+    "bytes": 76202,
+    "width": 1888,
+    "height": 588
+  },
+  "https://cdn.canghecode.com/blog/cb577d3e36171a7204e291500a7db9dc.jpg": {
+    "local": "assets/images/codex-1afa123a0ede-cb577d3e36171a7204e291500a7db9dc.jpg",
+    "sha256": "9ba297f451d2d17de7a5c76ce4319dfa43699b4c54f2e87890f0a54dcc37f94a",
+    "bytes": 135337,
+    "width": 1708,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/blog/codexguide-gpt-plus-1.png": {
+    "local": "assets/images/codex-e3ffebc0aabb-codexguide-gpt-plus-1.png",
+    "sha256": "ee077e5cbc5f81cc274c7e44d9be469b0f341f09917169053cc1e8627ce9b9d4",
+    "bytes": 1496450,
+    "width": 2846,
+    "height": 1348
+  },
+  "https://cdn.canghecode.com/blog/codexguide-gpt-plus-2.png": {
+    "local": "assets/images/codex-425870c16d0d-codexguide-gpt-plus-2.png",
+    "sha256": "9f4909ad33e78ce0390e7812f393907365d5ffab186355b90d4d79f21373456c",
+    "bytes": 865253,
+    "width": 2880,
+    "height": 1350
+  },
+  "https://cdn.canghecode.com/blog/codexguide-gpt-plus-3.png": {
+    "local": "assets/images/codex-ac32f229f6ab-codexguide-gpt-plus-3.png",
+    "sha256": "cb1a22852e5134b59fedbc306d3f97d3304e88799bad4e666850f537f87b306c",
+    "bytes": 613380,
+    "width": 2880,
+    "height": 1350
+  },
+  "https://cdn.canghecode.com/blog/codexguide-gpt-plus-4.png": {
+    "local": "assets/images/codex-f42ddfaffdbc-codexguide-gpt-plus-4.png",
+    "sha256": "cf1d88bf81d399cdadaac1b95dcdf717dbcaadc65eeaffa5578edf9549a2236f",
+    "bytes": 1627667,
+    "width": 2880,
+    "height": 1350
+  },
+  "https://cdn.canghecode.com/blog/codexguide-gpt-plus-5.png": {
+    "local": "assets/images/codex-50c491b1d3bb-codexguide-gpt-plus-5.png",
+    "sha256": "c481b6cc5802808af278306851e9039b491971dff64e18439b5815dff6194988",
+    "bytes": 1216152,
+    "width": 2880,
+    "height": 1350
+  },
+  "https://cdn.canghecode.com/blog/codexguide-gpt-plus-6.png": {
+    "local": "assets/images/codex-e8005ea2e172-codexguide-gpt-plus-6.png",
+    "sha256": "7fdc61daf4b800975e0bfa76d8dc1d45857f0c7e0da12fa82d56a1f29c16da88",
+    "bytes": 389134,
+    "width": 2880,
+    "height": 1350
+  },
+  "https://cdn.canghecode.com/blog/codexguide-gpt-plus-7.png": {
+    "local": "assets/images/codex-9da04d3b3329-codexguide-gpt-plus-7.png",
+    "sha256": "f56d6fb0b94669412e1512666927a9771d516f37df0bec8a73ddc9d107004771",
+    "bytes": 980058,
+    "width": 2880,
+    "height": 1350
+  },
+  "https://cdn.canghecode.com/blog/d13c6d3d480af07b22cc8b7b470a45e5.jpg": {
+    "local": "assets/images/codex-fc1f63d14033-d13c6d3d480af07b22cc8b7b470a45e5.jpg",
+    "sha256": "f6ee769a56c06a30f2b7c0652f5506a0f779488a73a6bcc9e21a28d5c10f8c5b",
+    "bytes": 130227,
+    "width": 1725,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/blog/e0ca6498f640c984c438527f13faf435.jpg": {
+    "local": "assets/images/codex-19d54441f050-e0ca6498f640c984c438527f13faf435.jpg",
+    "sha256": "dff81ecfae1026ee605fdf5d9f6532641c61e801857f60f3db3fd69847f14679",
+    "bytes": 132513,
+    "width": 1742,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/blog/f33b0f1f6377c237f113000a0ec0637f.png": {
+    "local": "assets/images/codex-a0d5fc377650-f33b0f1f6377c237f113000a0ec0637f.png",
+    "sha256": "fae57eda92c473f27751a2ddb04bce14463849f8612534cd6e8bddc1e684f2f5",
+    "bytes": 246887,
+    "width": 1956,
+    "height": 1490
+  },
+  "https://cdn.canghecode.com/codexguide/docs/.vuepress/public/images/codex-safety-layers.svg": {
+    "local": "assets/images/codex-5af0e4ec87b4-codex-safety-layers.svg",
+    "sha256": "a380a190de6512b104a780d5c7846f4cb7b63d1c23f0c2a1b62caa1469bcb137",
+    "bytes": 3776,
+    "width": 1280,
+    "height": 720
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/agents-md-editor-rule-example.png": {
+    "local": "assets/images/codex-a23693014e95-agents-md-editor-rule-example.png",
+    "sha256": "5c004a364706bd475d31994b22a8b5a760ebd4fdc6a7fb99ab97639fe69f3f10",
+    "bytes": 115075,
+    "width": 1508,
+    "height": 616
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/chrome-codex-extension-page-summary-prompt.png": {
+    "local": "assets/images/codex-bd5b365e9fe9-chrome-codex-extension-page-summary-prompt.png",
+    "sha256": "0d3dd9a46ea121b9443df6da64b54b758a81be8f4b0879b8b84b9ae3a5eae678",
+    "bytes": 207957,
+    "width": 1606,
+    "height": 428
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/chrome-codex-extension-summary-result.png": {
+    "local": "assets/images/codex-a59a2ecc460e-chrome-codex-extension-summary-result.png",
+    "sha256": "48676a75cc58c3898ba067180479726770b3b634bb572f539c54e4c63df086cc",
+    "bytes": 615810,
+    "width": 1572,
+    "height": 1272
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/chrome-web-store-codex-extension.png": {
+    "local": "assets/images/codex-d74e73bf5fc1-chrome-web-store-codex-extension.png",
+    "sha256": "a99fe7452b1413eeefd8ea13bd78614fef8ad899e36e119cd2456e74826a8e79",
+    "bytes": 390178,
+    "width": 1654,
+    "height": 898
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-app-auto-review-rejection-watermarked-small.png": {
+    "local": "assets/images/codex-64e3c97df7a8-codex-app-auto-review-rejection-watermarked-small.png",
+    "sha256": "dae8c07b307f8073906bde517f2c144e2b8bbfa4c7891627a9163c4d1f7817d4",
+    "bytes": 29432,
+    "width": 980,
+    "height": 338
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-app-personalization-settings.png": {
+    "local": "assets/images/codex-1dcf7b3ab4f0-codex-app-personalization-settings.png",
+    "sha256": "629e6085022c4beb36b13128c2d89f29b1c803fd0672e544c02bdc698f7f15f1",
+    "bytes": 207104,
+    "width": 2278,
+    "height": 1174
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-app-profile-menu-settings-billing.png": {
+    "local": "assets/images/codex-8d1024e80a45-codex-app-profile-menu-settings-billing.png",
+    "sha256": "49d5904e0c6bf37f6a94ab3702f8b66f284d8137de6e69b1116868f185563d34",
+    "bytes": 276866,
+    "width": 1098,
+    "height": 642
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-app-project-workspace-selection.png": {
+    "local": "assets/images/codex-1968d87fb41a-codex-app-project-workspace-selection.png",
+    "sha256": "f6a4c472b87a9c342b2c631bafb2a2031cdb2bfe8589c7d919dec9986aa46aa1",
+    "bytes": 207516,
+    "width": 1626,
+    "height": 598
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-auto-thread-management-tools-watermarked-small.png": {
+    "local": "assets/images/codex-35b66335bbc6-codex-auto-thread-management-tools-watermarked-small.png",
+    "sha256": "b7251d123a5ca7586e3350252198e51976da3853fa54999bcbe92f6e88c484df",
+    "bytes": 69209,
+    "width": 970,
+    "height": 574
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cli-login-account-selection.png": {
+    "local": "assets/images/codex-40995f548a9d-codex-cli-login-account-selection.png",
+    "sha256": "9b90f712409fb53059e63207709a24d9776020f9e674b3f71ac95343c1cb33cb",
+    "bytes": 638795,
+    "width": 2190,
+    "height": 854
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cli-prerequisite-version-check.png": {
+    "local": "assets/images/codex-bfdf786661db-codex-cli-prerequisite-version-check.png",
+    "sha256": "777e03e799566c58b8188cdb6d918ab7b8181d523f6da26620b7500b16e0e645",
+    "bytes": 283152,
+    "width": 1288,
+    "height": 496
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cli-readonly-first-task.png": {
+    "local": "assets/images/codex-0370832aa505-codex-cli-readonly-first-task.png",
+    "sha256": "abcfe155e627b8735006bb14a2533d270be587462cf3c3a65c386610c825ef86",
+    "bytes": 1263328,
+    "width": 2522,
+    "height": 1610
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cli-repo-overview-response.png": {
+    "local": "assets/images/codex-be5da40e30d7-codex-cli-repo-overview-response.png",
+    "sha256": "ae6c87689cfa47dba4e0288cebb4cbd1b7a82b9981e0023fb45a8fbed53d00a4",
+    "bytes": 1070205,
+    "width": 2212,
+    "height": 1486
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cli-review-diff-result.png": {
+    "local": "assets/images/codex-fff8bbf80ae7-codex-cli-review-diff-result.png",
+    "sha256": "a11cac30fbec61ec8cf84f82dd76e143766b86953420210768b37d5cbc9a5c94",
+    "bytes": 299992,
+    "width": 1570,
+    "height": 486
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cli-small-task-response.png": {
+    "local": "assets/images/codex-9148fa07cbb8-codex-cli-small-task-response.png",
+    "sha256": "7d3d2d8ef9831a2e98818cb4cb608d79009c29d469589e4033255be914fdb13a",
+    "bytes": 541551,
+    "width": 1882,
+    "height": 730
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cli-version-check.png": {
+    "local": "assets/images/codex-c79e72b86890-codex-cli-version-check.png",
+    "sha256": "b870a8e94967258cbd119c7aa5d891d65c83e451bbd88235ad2d8008442447b4",
+    "bytes": 203207,
+    "width": 1172,
+    "height": 292
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cloud-connect-github-button.png": {
+    "local": "assets/images/codex-35ee448b403c-codex-cloud-connect-github-button.png",
+    "sha256": "1757f66c449a1278062da78cbb776f9c5efb2804109e70b0401fb8bd53ed2f5e",
+    "bytes": 435694,
+    "width": 2454,
+    "height": 1146
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cloud-github-repository-authorization.png": {
+    "local": "assets/images/codex-53c347c517e4-codex-cloud-github-repository-authorization.png",
+    "sha256": "5dbfcc30936dce4345e3c390d779bbbe052a10a05591ef6fca531c3a5e4eab15",
+    "bytes": 404023,
+    "width": 1098,
+    "height": 1028
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cloud-repository-context-prompt.png": {
+    "local": "assets/images/codex-836da4f8088c-codex-cloud-repository-context-prompt.png",
+    "sha256": "26f9e8f280f5d518a5d1ad7d68b13ebf215cb7583a3ed6791642c26cc701c685",
+    "bytes": 220333,
+    "width": 1622,
+    "height": 1072
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cloud-start-task-page.png": {
+    "local": "assets/images/codex-43a6e12c840a-codex-cloud-start-task-page.png",
+    "sha256": "9312eedcc67e4390a286562cb33edf03bb6b05a5a75fdbf4e221729277ffc914",
+    "bytes": 192151,
+    "width": 2350,
+    "height": 946
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-cloud-task-progress-result.png": {
+    "local": "assets/images/codex-7baf74cccfd3-codex-cloud-task-progress-result.png",
+    "sha256": "b5ae99d2bdfaf751978796ae820b20b04a2e60afe863fca65a6ae4ba6cd0873d",
+    "bytes": 603893,
+    "width": 1378,
+    "height": 1340
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-desktop-pet-completed-task-bubble.png": {
+    "local": "assets/images/codex-dc4ff0e9a577-codex-desktop-pet-completed-task-bubble.png",
+    "sha256": "5b4796416320b2c9c0cfc0a80779a23627b44380e5b360c84b1bfee42bdb3fee",
+    "bytes": 129487,
+    "width": 620,
+    "height": 414
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-desktop-pet-plugin-install.png": {
+    "local": "assets/images/codex-b493b43c69e7-codex-desktop-pet-plugin-install.png",
+    "sha256": "8d83c209bdbf53ea69ac1593fb2ff0ef7d73fc833eb434b3babaefab57d895b1",
+    "bytes": 439720,
+    "width": 2352,
+    "height": 1694
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-desktop-pet-slash-command.png": {
+    "local": "assets/images/codex-347966cf1ecc-codex-desktop-pet-slash-command.png",
+    "sha256": "3d1f085581369f9ff0f7ba34582249b37ec3f753cea435ee2d8e468f8a9e4625",
+    "bytes": 234879,
+    "width": 1542,
+    "height": 978
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-desktop-pet-task-bubble.png": {
+    "local": "assets/images/codex-5d6f2cc080e1-codex-desktop-pet-task-bubble.png",
+    "sha256": "3f88d8b90d666eac130eaab9e2764c1ad35922f662c330c39547c74e2c0983af",
+    "bytes": 132508,
+    "width": 620,
+    "height": 414
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-first-task-local-folder.png": {
+    "local": "assets/images/codex-2b2fae7f1be7-codex-first-task-local-folder.png",
+    "sha256": "5c8dde81e12eb0c3ebecac65048ce6360c40cfca64d527030b50fb10a38ea468",
+    "bytes": 120123,
+    "width": 1514,
+    "height": 852
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/codex-skills-slash-command-list.png": {
+    "local": "assets/images/codex-21a26543146c-codex-skills-slash-command-list.png",
+    "sha256": "36e309f9b83a481d7ba20d37212663bb7d3c797208e2bea8e7eb21acb960850b",
+    "bytes": 508120,
+    "width": 1484,
+    "height": 964
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/dkfile-codex-task-result.png": {
+    "local": "assets/images/codex-e2a88e0909c5-dkfile-codex-task-result.png",
+    "sha256": "f85fc1ca2ed363ff36687eb03ad4203861a99244808e966b4a24aa7067d4b729",
+    "bytes": 392127,
+    "width": 1530,
+    "height": 1162
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/dkfile-help-tools-section.png": {
+    "local": "assets/images/codex-c680f1861cf5-dkfile-help-tools-section.png",
+    "sha256": "d42f5f4c4821d706169d747e0cbaea135cefa69e3761bc04f932ee78e86fbf5c",
+    "bytes": 179727,
+    "width": 1306,
+    "height": 688
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/dkfile-upload-dropzone.png": {
+    "local": "assets/images/codex-f910a885f6c8-dkfile-upload-dropzone.png",
+    "sha256": "8f6ff88acd90982ee989b7f8a36dcc8b7c13aa7f759d32e166b1430cc9df64a0",
+    "bytes": 932338,
+    "width": 2480,
+    "height": 1172
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/dkfile-upload-home.png": {
+    "local": "assets/images/codex-7fac4832a535-dkfile-upload-home.png",
+    "sha256": "083477146548ae5f3f55d6b23b32e834910a754ce6e57da5bf708bb0b1ded106",
+    "bytes": 337699,
+    "width": 2534,
+    "height": 510
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/drawio-mcp-add-server-settings.png": {
+    "local": "assets/images/codex-03a25dbdb38b-drawio-mcp-add-server-settings.png",
+    "sha256": "638e38ec29389f241eee237de040b604af70395a4af0b3eeabe5bc114a449d9a",
+    "bytes": 240583,
+    "width": 2244,
+    "height": 1108
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/drawio-mcp-github-repository.png": {
+    "local": "assets/images/codex-912cfc948ddc-drawio-mcp-github-repository.png",
+    "sha256": "78390531d2177b403aa4c96310816fac824dfe1de7809035cd67ea95ed56725f",
+    "bytes": 384580,
+    "width": 2424,
+    "height": 1262
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/drawio-mcp-install-command-result.png": {
+    "local": "assets/images/codex-5de358f3af91-drawio-mcp-install-command-result.png",
+    "sha256": "b08eaa068f27788bec920f21659d29ebcfb80b977d6812960ca0c5eeb5eac393",
+    "bytes": 313132,
+    "width": 1552,
+    "height": 1128
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/drawio-mcp-install-prompt.png": {
+    "local": "assets/images/codex-e9880f0082c9-drawio-mcp-install-prompt.png",
+    "sha256": "8ef926b64d20b98aeca80e2ba5af0971cced18ae13239b6cf56bd88c2fe9ba3d",
+    "bytes": 211014,
+    "width": 1528,
+    "height": 526
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/drawio-mcp-permission-model-prompt.png": {
+    "local": "assets/images/codex-9305d6c159a5-drawio-mcp-permission-model-prompt.png",
+    "sha256": "22eb77365c68164a325de2d8d09b4a2ebe0a07bce58137131ccb5cb6f0809685",
+    "bytes": 356969,
+    "width": 1192,
+    "height": 1124
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/drawio-mcp-permission-model-source-links.png": {
+    "local": "assets/images/codex-a4c409583806-drawio-mcp-permission-model-source-links.png",
+    "sha256": "13b48d7c7bcccae09f24e6860098ab49837fba6b478daaff9e98e8d512d8a634",
+    "bytes": 340519,
+    "width": 1144,
+    "height": 1014
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/drawio-mcp-read-write-own-diagram.png": {
+    "local": "assets/images/codex-09a47820ac5e-drawio-mcp-read-write-own-diagram.png",
+    "sha256": "73cc311205cc7bd6fa5e6a1967a5b93ab81e3fa2d15aac6686c7395caac34ec7",
+    "bytes": 426410,
+    "width": 1462,
+    "height": 884
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/drawio-mcp-read-write-own-summary.png": {
+    "local": "assets/images/codex-4d7b7cdf1613-drawio-mcp-read-write-own-summary.png",
+    "sha256": "8d6b47003f37fa09b55a23e0d0ada986355faa87b44e7bf5fa42b68f346d78d3",
+    "bytes": 231887,
+    "width": 1530,
+    "height": 650
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-command-examples.png": {
+    "local": "assets/images/codex-3aebd6a6efd8-feishu-cli-command-examples.png",
+    "sha256": "4a0008e58d40c46e14cdd7d1b71eb66c8774611348b30ba94aecaae3e8ac408c",
+    "bytes": 285098,
+    "width": 1552,
+    "height": 1020
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-create-app-prompt.png": {
+    "local": "assets/images/codex-7f0d66b23528-feishu-cli-create-app-prompt.png",
+    "sha256": "a933e29ddccd5f88f3f9b5b2d949f264ae30c97630c21d8fdc7f96c81ed24419",
+    "bytes": 229588,
+    "width": 1526,
+    "height": 928
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-create-custom-app-modal.png": {
+    "local": "assets/images/codex-acd1b8d3384a-feishu-cli-create-custom-app-modal.png",
+    "sha256": "cc853965a9c49feec1a38d6da7c65187675143e35ec3c391b415910fdfb06550",
+    "bytes": 259833,
+    "width": 1672,
+    "height": 1310
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-doc-export-tools-result.png": {
+    "local": "assets/images/codex-12c44ef22789-feishu-cli-doc-export-tools-result.png",
+    "sha256": "6a4de750ed9e15e65d2cfb5363b10eb4b3cb81410845ebefa4f43e00e13cf7f8",
+    "bytes": 240940,
+    "width": 1528,
+    "height": 768
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-document-list-result.png": {
+    "local": "assets/images/codex-15a517d380e1-feishu-cli-document-list-result.png",
+    "sha256": "9ce97c06c4fc962bb99d74227771d34f8a64378bbb1e19ad795e8dbfbaddfee3",
+    "bytes": 522630,
+    "width": 1528,
+    "height": 1240
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-generated-image-preview.png": {
+    "local": "assets/images/codex-bd8fe6c59697-feishu-cli-generated-image-preview.png",
+    "sha256": "4d5cd31f1d91c5cf5ae01031ffbc1a60a1203b5b19f1122eb1176163bb8c5538",
+    "bytes": 523842,
+    "width": 1532,
+    "height": 1178
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-image-generation-prompt.png": {
+    "local": "assets/images/codex-772893d5465a-feishu-cli-image-generation-prompt.png",
+    "sha256": "250c04b8a6fddd937e1661228f120b4066c9f022663361cd39599db721125922",
+    "bytes": 254219,
+    "width": 1508,
+    "height": 652
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-install-result.png": {
+    "local": "assets/images/codex-7b2221315f17-feishu-cli-install-result.png",
+    "sha256": "cc6029714959ad4cc1410e45a02fc2a7df910e460a5a65a9775f4d2fdfa4b1c6",
+    "bytes": 287393,
+    "width": 1528,
+    "height": 844
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/feishu-cli-oauth-login-link.png": {
+    "local": "assets/images/codex-cee7ee0ebfec-feishu-cli-oauth-login-link.png",
+    "sha256": "48e09be7d78b6a11c7573e63598c547a9ae0f900660f4122f7757c4321fac9bc",
+    "bytes": 226903,
+    "width": 1548,
+    "height": 504
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/figma-mcp-ai-product-ui-design.png": {
+    "local": "assets/images/codex-1083b09d356f-figma-mcp-ai-product-ui-design.png",
+    "sha256": "a32beba5380de197f2d1eb6728250a40841045f08939306b5e4b16f5fc815ca3",
+    "bytes": 850357,
+    "width": 1552,
+    "height": 926
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/figma-mcp-generate-flowchart-prompt.png": {
+    "local": "assets/images/codex-792028a0d19a-figma-mcp-generate-flowchart-prompt.png",
+    "sha256": "26b8ece81e5b361fa24ac7afb6a34040622eac05f27328a1a263a69078a273cc",
+    "bytes": 159433,
+    "width": 1514,
+    "height": 604
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/figma-mcp-high-fidelity-ui-prompt.png": {
+    "local": "assets/images/codex-8ba282a5149f-figma-mcp-high-fidelity-ui-prompt.png",
+    "sha256": "afa7a03cdb956f4be527ecba04a254ac4f25244a77d2992a8b8fa6877ff4c26d",
+    "bytes": 336585,
+    "width": 1540,
+    "height": 1194
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/figma-mcp-plugin-permissions.png": {
+    "local": "assets/images/codex-edf04b0a66f9-figma-mcp-plugin-permissions.png",
+    "sha256": "9b76d22be0304339be10f648beaa07c621f133a375ac90ecf4eb859b0e01f8fd",
+    "bytes": 361302,
+    "width": 1844,
+    "height": 1548
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/figma-mcp-user-login-flowchart.png": {
+    "local": "assets/images/codex-db56b3908a04-figma-mcp-user-login-flowchart.png",
+    "sha256": "279b267c5460e8c92d77bede3a235c48b63e3b73d3b8da02e7cf426f2a52c3a0",
+    "bytes": 451501,
+    "width": 2670,
+    "height": 784
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/github-actions-auto-fix-pr-list.png": {
+    "local": "assets/images/codex-e6a5183ac747-github-actions-auto-fix-pr-list.png",
+    "sha256": "2facc9b1f48e7a7fda8354b6e2869ba071f9cac494be3de4904ca7db1351f8d3",
+    "bytes": 202133,
+    "width": 2078,
+    "height": 838
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/github-actions-discount-fix-diff.png": {
+    "local": "assets/images/codex-22cafbbadbb5-github-actions-discount-fix-diff.png",
+    "sha256": "62dcbff4fbf2fe923bf7f747cc6babc149bb0afb959ccd7dd9e2d0170387b319",
+    "bytes": 234585,
+    "width": 1888,
+    "height": 1084
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/github-actions-failing-test-log.png": {
+    "local": "assets/images/codex-bc5aeb92d1d7-github-actions-failing-test-log.png",
+    "sha256": "49b15fcb06ffcdb17186b083bae7fe3f5557d162a46c1fef482a26d350d819ee",
+    "bytes": 410790,
+    "width": 2244,
+    "height": 1254
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/github-actions-workflow-annotations.png": {
+    "local": "assets/images/codex-4564cff8beed-github-actions-workflow-annotations.png",
+    "sha256": "5f078addc762e439035ea0b72f6ba3a8fd3ff2b91c542b7dc348ab5157ea6de0",
+    "bytes": 354333,
+    "width": 1918,
+    "height": 1382
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/github-actions-workflow-failure-list.png": {
+    "local": "assets/images/codex-5a0f8758c6c8-github-actions-workflow-failure-list.png",
+    "sha256": "5495ed88cffaf1f1f68c7205457710f3ab4ca1cb396862c0559e89fd58c7bd96",
+    "bytes": 352604,
+    "width": 1980,
+    "height": 1032
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/github-actions-workflow-permissions-settings.png": {
+    "local": "assets/images/codex-122dde7fe5af-github-actions-workflow-permissions-settings.png",
+    "sha256": "d12d46364e3a9ae51af02b2a3e3da97f88df62a974a5607ee5416bd7fbf835cc",
+    "bytes": 341267,
+    "width": 1558,
+    "height": 774
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/hyperframes-book-content-prompt.png": {
+    "local": "assets/images/codex-3515129bdb33-hyperframes-book-content-prompt.png",
+    "sha256": "5b111a2ec1a948b418a4af155d523ccc2ae0774cf9204e58e2681057dc9bfc8e",
+    "bytes": 451904,
+    "width": 1554,
+    "height": 944
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/hyperframes-generated-frame-files.png": {
+    "local": "assets/images/codex-fccfab606099-hyperframes-generated-frame-files.png",
+    "sha256": "56f9615cdce3fcba8bb8498a6da3f6d567e52e43ab350a55e856ee45b1917dac",
+    "bytes": 297742,
+    "width": 1460,
+    "height": 542
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/hyperframes-local-output-summary.png": {
+    "local": "assets/images/codex-b2976c88cb75-hyperframes-local-output-summary.png",
+    "sha256": "453180fac46ba027ed31f5af1df63ab1269a7ca72eaaa1067164ce2039bbb776",
+    "bytes": 273130,
+    "width": 1512,
+    "height": 626
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/hyperframes-plugin-search.png": {
+    "local": "assets/images/codex-0218c580a99a-hyperframes-plugin-search.png",
+    "sha256": "42d7e22e7e7973ef635f205a7a38e3f077c5d23173eb44650f44525f5f82636c",
+    "bytes": 197932,
+    "width": 1842,
+    "height": 710
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/hyperframes-refinement-prompt.png": {
+    "local": "assets/images/codex-0354deccd115-hyperframes-refinement-prompt.png",
+    "sha256": "c159dc575eba74e7caae0eb6150b0b321a95ed7547a6168a83cee591a16bd303",
+    "bytes": 496432,
+    "width": 1762,
+    "height": 1368
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/llm-wiki-clip-article-to-raw.png": {
+    "local": "assets/images/codex-543143b1617e-llm-wiki-clip-article-to-raw.png",
+    "sha256": "f5edce3ba8ec2d1f0e9bf14279bea05193610114c0939f123294358e086abe5a",
+    "bytes": 792102,
+    "width": 2398,
+    "height": 1144
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/llm-wiki-codex-create-vault-command.png": {
+    "local": "assets/images/codex-1ca4e4fa04c7-llm-wiki-codex-create-vault-command.png",
+    "sha256": "0bc1671854d1e64a10d678db86dd95cc55e1679f0d33facc88d97d9a8d6f8cb9",
+    "bytes": 331671,
+    "width": 1792,
+    "height": 740
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/llm-wiki-codex-generated-pages.png": {
+    "local": "assets/images/codex-d30a3916daa1-llm-wiki-codex-generated-pages.png",
+    "sha256": "393dfda7cbdfec17fe1e6737bf38533cb5a6b521eeafdadc9e0e0a5c54fa7882",
+    "bytes": 609457,
+    "width": 1792,
+    "height": 1318
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/llm-wiki-codex-import-article-prompt.png": {
+    "local": "assets/images/codex-04afc06381cf-llm-wiki-codex-import-article-prompt.png",
+    "sha256": "37fe2f4df2099ff35b09efd6e48cdacd99f12512ebbbfff68a22abfd941ca842",
+    "bytes": 291504,
+    "width": 2240,
+    "height": 842
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/llm-wiki-concept-diagram.png": {
+    "local": "assets/images/codex-446f139fbed9-llm-wiki-concept-diagram.png",
+    "sha256": "d75d11f3efaf33e225965bd8906fe7af8320a90038c8d16ce7829b7c37dce415",
+    "bytes": 1233706,
+    "width": 1430,
+    "height": 872
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/llm-wiki-obsidian-web-clipper-search.png": {
+    "local": "assets/images/codex-f450f0f0a338-llm-wiki-obsidian-web-clipper-search.png",
+    "sha256": "3b3cc5f0aaab2868655044cf21d2818d0762d4b7425475cbaf3e65241498d63a",
+    "bytes": 289419,
+    "width": 2520,
+    "height": 1384
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/mobile-codex-chatgpt-entry-watermarked-small.jpg": {
+    "local": "assets/images/codex-1ab1ef2dcf6b-mobile-codex-chatgpt-entry-watermarked-small.jpg",
+    "sha256": "c9c766aca1b339b57b5c1b946586a9f3f9c180561ea675802ff173bcd4e209eb",
+    "bytes": 206179,
+    "width": 1280,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/mobile-codex-connect-desktop-watermarked-small.jpg": {
+    "local": "assets/images/codex-d6f26f0a9b73-mobile-codex-connect-desktop-watermarked-small.jpg",
+    "sha256": "49adb8a2cc394f7b8336efe3e8d5489b88c9b58db8bb07b12a4ae6a3460fa0b9",
+    "bytes": 22854,
+    "width": 360,
+    "height": 360
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/mobile-codex-ios-app-watermarked-small.jpg": {
+    "local": "assets/images/codex-1a3e6057e213-mobile-codex-ios-app-watermarked-small.jpg",
+    "sha256": "f05ce9b94a9339051c5f6bd03892da33b1c82fe2ec0a04b0481a2ad2bed7d560",
+    "bytes": 27375,
+    "width": 360,
+    "height": 360
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/notion-mcp-authorization.png": {
+    "local": "assets/images/codex-c88ea5f6babe-notion-mcp-authorization.png",
+    "sha256": "ea214205ca07199f98862f577ef597b1f9f72771e67bd5bfb98b7a7411d94253",
+    "bytes": 254524,
+    "width": 912,
+    "height": 1104
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/notion-mcp-created-summary-page.png": {
+    "local": "assets/images/codex-956f9337cbb7-notion-mcp-created-summary-page.png",
+    "sha256": "be0eb4699a3b48cd4545eeda6acf7dd423a9dfcb681464c31876df4fd5ad41b4",
+    "bytes": 398289,
+    "width": 1720,
+    "height": 1396
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/notion-mcp-plugin-search.png": {
+    "local": "assets/images/codex-049df4b49ffa-notion-mcp-plugin-search.png",
+    "sha256": "f3421633f60634badd8238c780dfd6c650e534caed79f4e7c8674aa01aaca205",
+    "bytes": 195610,
+    "width": 1898,
+    "height": 710
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/notion-mcp-updated-content-query-result.png": {
+    "local": "assets/images/codex-c34277ed200c-notion-mcp-updated-content-query-result.png",
+    "sha256": "34a56c2e7cbce54d749da7c9025eb54ee4353a7d86799a49a72d95dc122c0b0d",
+    "bytes": 280183,
+    "width": 1528,
+    "height": 750
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/notion-mcp-workspace-read-result.png": {
+    "local": "assets/images/codex-3a43997af94a-notion-mcp-workspace-read-result.png",
+    "sha256": "c34e62ee9112bed3f06989741e6576cf51531ee53f8ee32d9604723e1e16f075",
+    "bytes": 328784,
+    "width": 1542,
+    "height": 802
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/notion-mcp-write-summary-result.png": {
+    "local": "assets/images/codex-6045a4861d33-notion-mcp-write-summary-result.png",
+    "sha256": "020858e20d77d47f232b938dae4dfec5570cc6fcdb40b25e79351b114e84e7b7",
+    "bytes": 575381,
+    "width": 1526,
+    "height": 1202
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-codex-image-generation-prompt.png": {
+    "local": "assets/images/codex-90fd6a99dda6-obsidian-codex-image-generation-prompt.png",
+    "sha256": "c9e2bb3a7bf60438392f472c5c99d124c53deda15fceee7e97abbba7a946d432",
+    "bytes": 311690,
+    "width": 2276,
+    "height": 784
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-codex-image-generation-result-url.png": {
+    "local": "assets/images/codex-44bfe589d03f-obsidian-codex-image-generation-result-url.png",
+    "sha256": "70cdcf4cdcf7f2aff87860ff154ca137c5397817569758f039803c57a8e7ec6e",
+    "bytes": 277629,
+    "width": 2274,
+    "height": 632
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-codex-image-upload-link-result.png": {
+    "local": "assets/images/codex-81a5ac83d4ff-obsidian-codex-image-upload-link-result.png",
+    "sha256": "8f652f52410c33566aedad643e9f18ec8258d57b830a1750a984e26a4454f125",
+    "bytes": 447624,
+    "width": 2390,
+    "height": 1058
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-codex-image-upload-tools-search.png": {
+    "local": "assets/images/codex-db154b1486b4-obsidian-codex-image-upload-tools-search.png",
+    "sha256": "b1083a206127e54aaeb4b72cd7213c9fddad114ebfe787f0b8bdb6d8f7951e77",
+    "bytes": 291670,
+    "width": 2392,
+    "height": 522
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-codex-llm-wiki-concept-image.png": {
+    "local": "assets/images/codex-89be441d5e42-obsidian-codex-llm-wiki-concept-image.png",
+    "sha256": "d75d11f3efaf33e225965bd8906fe7af8320a90038c8d16ce7829b7c37dce415",
+    "bytes": 1233706,
+    "width": 1430,
+    "height": 872
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-codex-terminal-start.png": {
+    "local": "assets/images/codex-150208e8552d-obsidian-codex-terminal-start.png",
+    "sha256": "50f8bb9c1509ef9414d640d06d54536f5c53c352faf23c8d93aac23536889817",
+    "bytes": 209024,
+    "width": 1632,
+    "height": 632
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-command-palette-integrated-terminal.png": {
+    "local": "assets/images/codex-8e8bddfd872f-obsidian-command-palette-integrated-terminal.png",
+    "sha256": "d792ff11e801e074956793babebb454cd9d5bf6255eeb7b145512b0cd640a075",
+    "bytes": 302646,
+    "width": 1410,
+    "height": 1222
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-embedded-terminal-open.png": {
+    "local": "assets/images/codex-29634c0327ba-obsidian-embedded-terminal-open.png",
+    "sha256": "02ada997ab60fd66c60626f8d1b19a0db697d267c09c0d41f1fd4e3cf56ae3a8",
+    "bytes": 85258,
+    "width": 1344,
+    "height": 246
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-terminal-plugin-search.png": {
+    "local": "assets/images/codex-117f15baf953-obsidian-terminal-plugin-search.png",
+    "sha256": "8336aa49b4d0ddeccfa7fba8264445ee33f5f8bcc2329debc1408f84bf04884e",
+    "bytes": 531194,
+    "width": 1740,
+    "height": 1194
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-terminal-plugin-settings.png": {
+    "local": "assets/images/codex-6b93613ae533-obsidian-terminal-plugin-settings.png",
+    "sha256": "26755329760b7cbcfdf366b1a87923e953873a5f733c8aa16b380efb8bb510b9",
+    "bytes": 250240,
+    "width": 1494,
+    "height": 1400
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/obsidian-terminal-profiles-config.png": {
+    "local": "assets/images/codex-aea2fb43855f-obsidian-terminal-profiles-config.png",
+    "sha256": "98c8168c3395d25b59149be0faaca7de9b89b07d36080750083217d2c75c5619",
+    "bytes": 183345,
+    "width": 1136,
+    "height": 682
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/playwright-mcp-add-command.png": {
+    "local": "assets/images/codex-77c7d9c9d01e-playwright-mcp-add-command.png",
+    "sha256": "4ffb40a6fb88c2e7c5154c9a736c85e3f46045119ac1eaf9e999e99d5f84892d",
+    "bytes": 137657,
+    "width": 2054,
+    "height": 164
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/playwright-mcp-baidu-search-results.png": {
+    "local": "assets/images/codex-a7f201a84957-playwright-mcp-baidu-search-results.png",
+    "sha256": "72cbc3e5a6087c3429a55edf61ee697ffaad19c76dda7633cf751e870315ef92",
+    "bytes": 475171,
+    "width": 1958,
+    "height": 1386
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/playwright-mcp-browser-search-prompt.png": {
+    "local": "assets/images/codex-134e847b90f5-playwright-mcp-browser-search-prompt.png",
+    "sha256": "da6aa07e798b79df9d891eb62371f5e736f8c94a7a0bb7e4aeccb945789bc1b1",
+    "bytes": 1087221,
+    "width": 2274,
+    "height": 1086
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/playwright-mcp-collected-search-summary.png": {
+    "local": "assets/images/codex-22b303e8e19d-playwright-mcp-collected-search-summary.png",
+    "sha256": "2d21878e3caa79e9628d5580db578a020d7e95d6eb125878afd6ea8f401ee1a6",
+    "bytes": 1705142,
+    "width": 2354,
+    "height": 1466
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/playwright-mcp-list-command.png": {
+    "local": "assets/images/codex-d5c6644c1a07-playwright-mcp-list-command.png",
+    "sha256": "446ca461e9222686180b7ecde3d52d5d803b5904a964c9265e973b22c6979b4e",
+    "bytes": 276198,
+    "width": 1958,
+    "height": 552
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/playwright-mcp-markdown-file-created.png": {
+    "local": "assets/images/codex-73b91fd9274f-playwright-mcp-markdown-file-created.png",
+    "sha256": "096dc25458fcbe986d6f595b2d82742f38b516d908489d057c92b8f32b22616f",
+    "bytes": 1635965,
+    "width": 2344,
+    "height": 1498
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/playwright-mcp-permission-prompt.png": {
+    "local": "assets/images/codex-a98f3c504c5f-playwright-mcp-permission-prompt.png",
+    "sha256": "3da93c2d00105066df84b193643d80c4c66f1d02591508a197a9df2856bc45d1",
+    "bytes": 217214,
+    "width": 1336,
+    "height": 452
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/playwright-mcp-server-list.png": {
+    "local": "assets/images/codex-b365ed36a266-playwright-mcp-server-list.png",
+    "sha256": "48aceb4ba0c9e8bce59440b14943b71edffe5cfb2fc3847ed2bc1543099bd4e1",
+    "bytes": 1144779,
+    "width": 2264,
+    "height": 1164
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/ppt-skill-generated-file-result.png": {
+    "local": "assets/images/codex-a8afc1d95d41-ppt-skill-generated-file-result.png",
+    "sha256": "f4d50c7cadd2215010df3588386b5d1ff9eb11b237ea1783a4756f31de95c479",
+    "bytes": 341956,
+    "width": 1522,
+    "height": 716
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/ppt-skill-html-preview.png": {
+    "local": "assets/images/codex-6470c915b52f-ppt-skill-html-preview.png",
+    "sha256": "e553e28687ad9dc818aac91ea4933aa6bdaf78a3a6f88d21973d3e359ae64fc5",
+    "bytes": 645555,
+    "width": 1620,
+    "height": 1114
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/ppt-skill-install-prompt.png": {
+    "local": "assets/images/codex-9412a3111fa4-ppt-skill-install-prompt.png",
+    "sha256": "df332747af517c1f9715648bd2a5aa4dd2762622b9538303c8801f85ea17948d",
+    "bytes": 188530,
+    "width": 1486,
+    "height": 544
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/ppt-skill-installation-result.png": {
+    "local": "assets/images/codex-6b22f1318e07-ppt-skill-installation-result.png",
+    "sha256": "2fe966c6fc3d2867c4b99f18bc5735b2dbefc249e5d3b01856031d60278133b8",
+    "bytes": 573292,
+    "width": 1572,
+    "height": 1074
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/ppt-skill-user-input-menu.png": {
+    "local": "assets/images/codex-600dc5416d1b-ppt-skill-user-input-menu.png",
+    "sha256": "e0462814b9fb0a0acbf9750870e8466b3a822df79e76419858947bd8885003fc",
+    "bytes": 386084,
+    "width": 1596,
+    "height": 1060
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/remote-bug-fix-codex-login-check.png": {
+    "local": "assets/images/codex-6c930e14fe48-remote-bug-fix-codex-login-check.png",
+    "sha256": "b804d5f72956cab59082018cdd386e7bd6daf4c16843d9e37d63962787288b17",
+    "bytes": 445907,
+    "width": 2018,
+    "height": 654
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/remote-bug-fix-healthcheck-curl-success.png": {
+    "local": "assets/images/codex-477a70a821c2-remote-bug-fix-healthcheck-curl-success.png",
+    "sha256": "2a1bcaf968ebd4cef502196ffc216b9fe695fefcb3b0077997ef3bc82dc006fa",
+    "bytes": 135296,
+    "width": 1314,
+    "height": 242
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/remote-bug-fix-keyerror-traceback.png": {
+    "local": "assets/images/codex-613429a5233d-remote-bug-fix-keyerror-traceback.png",
+    "sha256": "ce6a6933fb7c555c09e464c7298603c08fc24c3e6eca497f432205951dfd2578",
+    "bytes": 168707,
+    "width": 1538,
+    "height": 432
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/remote-bug-fix-package-install-error.png": {
+    "local": "assets/images/codex-3959a4f50ef6-remote-bug-fix-package-install-error.png",
+    "sha256": "68fecd9fd7535aab4e4ed24e35a5fc72c458ccc33c4b56eadbe90624f76fda7b",
+    "bytes": 377369,
+    "width": 2344,
+    "height": 364
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/remote-bug-fix-remote-session-start.png": {
+    "local": "assets/images/codex-e2261eb733c3-remote-bug-fix-remote-session-start.png",
+    "sha256": "0e2f77ac4ab4247d8ad1eda22006a99d7331d14b82bc8d6075953983b43fdd0b",
+    "bytes": 583873,
+    "width": 1932,
+    "height": 698
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/remote-bug-fix-tests-pass.png": {
+    "local": "assets/images/codex-ef13ad66f5bd-remote-bug-fix-tests-pass.png",
+    "sha256": "93a18541c2424ad02a7073997e5af7cc6a24e9459b1b7852aafc68508cf7a605",
+    "bytes": 160201,
+    "width": 1298,
+    "height": 530
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-apple-gift-card-watermarked-small.jpg": {
+    "local": "assets/images/codex-146fa90fc593-subscribe-apple-gift-card-watermarked-small.jpg",
+    "sha256": "5d52d8e70bdfc6222d343910134afb6702055d8512d258e1d5077b30a863932b",
+    "bytes": 188904,
+    "width": 1280,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-apple-id-redeem-watermarked-small.jpg": {
+    "local": "assets/images/codex-8c99dea02cc9-subscribe-apple-id-redeem-watermarked-small.jpg",
+    "sha256": "b4cf1fb28294628d445f6e048299b37261cd634d6ae405e4e8863c79c0d88b96",
+    "bytes": 128114,
+    "width": 1280,
+    "height": 1280
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-apple-id-signup-watermarked-small.webp": {
+    "local": "assets/images/codex-64fda55c630c-subscribe-appstoreprice-apple-id-signup-watermarked-small.webp",
+    "sha256": "390113a0ca24cf2398fe1a6a67e3132f1ecf02156caade14cc8f61483b0fe8ed",
+    "bytes": 132038,
+    "width": 2000,
+    "height": 1344
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-card-payment-watermarked-small.webp": {
+    "local": "assets/images/codex-bb571eaa33b7-subscribe-appstoreprice-card-payment-watermarked-small.webp",
+    "sha256": "fa154c82a30a924ec1036507e54a1f7cccf3b526fe9c30be6904cabb96542f3d",
+    "bytes": 46188,
+    "width": 2000,
+    "height": 1389
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-card-verify-watermarked-small.webp": {
+    "local": "assets/images/codex-7cae24db6a72-subscribe-appstoreprice-card-verify-watermarked-small.webp",
+    "sha256": "b19da1ef48ba30d50629cf7d1ffbc9350c5e2850c2dd132c40a0ea3f6f050588",
+    "bytes": 54258,
+    "width": 2000,
+    "height": 1389
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-chatgpt-price-watermarked-small.webp": {
+    "local": "assets/images/codex-ba93bc696967-subscribe-appstoreprice-chatgpt-price-watermarked-small.webp",
+    "sha256": "f65b1e79028c050a52fd4b4d10b231887b584f8509b87ddc6f45ffb04d1667a4",
+    "bytes": 112036,
+    "width": 2000,
+    "height": 1609
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-gift-card-watermarked-small.webp": {
+    "local": "assets/images/codex-317624c86487-subscribe-appstoreprice-gift-card-watermarked-small.webp",
+    "sha256": "c57a33655f4bfc30f77114a57827115679b1a9b832b24ae5ffdc1e89640c8b5c",
+    "bytes": 133438,
+    "width": 2000,
+    "height": 1389
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-ip-check-watermarked-small.webp": {
+    "local": "assets/images/codex-7f5e7d4236ad-subscribe-appstoreprice-ip-check-watermarked-small.webp",
+    "sha256": "4551c65f40b460409a6d377de75e76caf55f5325331e71912518102cac6fe48a",
+    "bytes": 113978,
+    "width": 2000,
+    "height": 2079
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-payment-address-watermarked-small.webp": {
+    "local": "assets/images/codex-4b34d410ab46-subscribe-appstoreprice-payment-address-watermarked-small.webp",
+    "sha256": "8291196b1565793930cdb2af8b91d0b3ef829bd34bcf17f0c2801c9ffce57bf9",
+    "bytes": 43664,
+    "width": 2000,
+    "height": 673
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-payment-method-watermarked-small.webp": {
+    "local": "assets/images/codex-92060b5db247-subscribe-appstoreprice-payment-method-watermarked-small.webp",
+    "sha256": "27603683504e15b0e2e5e253029da29938953be51806b4f7f382a80d031e7a15",
+    "bytes": 151430,
+    "width": 2000,
+    "height": 1401
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-appstoreprice-redeem-watermarked-small.webp": {
+    "local": "assets/images/codex-e62172de9c55-subscribe-appstoreprice-redeem-watermarked-small.webp",
+    "sha256": "6412bfe58b9dd934334bf05160900bba27348093d74a2ae8ecba81fb74d82282",
+    "bytes": 56962,
+    "width": 2000,
+    "height": 810
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/subscribe-hero-sms-watermarked-small.png": {
+    "local": "assets/images/codex-008e294eb114-subscribe-hero-sms-watermarked-small.png",
+    "sha256": "cdaa24da3bac1186f977790239ad46e496548ae0431f3d1d42932872b9482a32",
+    "bytes": 535250,
+    "width": 1631,
+    "height": 894
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/vscode-codex-chat-panel.png": {
+    "local": "assets/images/codex-98112be770dd-vscode-codex-chat-panel.png",
+    "sha256": "6612b55437c111cfd55049efdb07432932db02e88fcd54030850fef8dac378f7",
+    "bytes": 403761,
+    "width": 1938,
+    "height": 1578
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/vscode-codex-extension-icon.png": {
+    "local": "assets/images/codex-0267836bfdf9-vscode-codex-extension-icon.png",
+    "sha256": "fce5ab9f2040ba8eabfc5d35687e4b7ebda0e1a73ed6f862ea168d4067315eb6",
+    "bytes": 420171,
+    "width": 2510,
+    "height": 1452
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/vscode-codex-extension-marketplace.png": {
+    "local": "assets/images/codex-1937a65112ad-vscode-codex-extension-marketplace.png",
+    "sha256": "778b968eeb4771f25078a1856cb6bdff4b39ae39b594c3078cef158e7f66691b",
+    "bytes": 444014,
+    "width": 2440,
+    "height": 946
+  },
+  "https://cdn.canghecode.com/codexguide/docs/images/vscode-codex-file-reference.png": {
+    "local": "assets/images/codex-9bd3a290eb67-vscode-codex-file-reference.png",
+    "sha256": "0dccb49f67124b52b058fa97798b3b5d233aeb20d1065608622728d5c6117c5c",
+    "bytes": 361914,
+    "width": 1950,
+    "height": 1538
+  },
+  "https://cdn.canghecode.com/yanyan/20260527143924648.png": {
+    "local": "assets/images/codex-d1fa1ae76e94-20260527143924648.png",
+    "sha256": "3a8701aa81ad2174821abf42f0d501ee019746d153039a6645d5b69746a49a63",
+    "bytes": 72633,
+    "width": 425,
+    "height": 532
+  },
+  "https://cdn.canghecode.com/yanyan/20260527145931186.png": {
+    "local": "assets/images/codex-72e13235b16e-20260527145931186.png",
+    "sha256": "240aae05f40fba7f8efb759cc04c2aa07dd1a0fc4aa137779d73cdd7a456c351",
+    "bytes": 482607,
+    "width": 885,
+    "height": 706
+  },
+  "https://cdn.canghecode.com/yanyan/20260527150702223.png": {
+    "local": "assets/images/codex-f94b530e79ec-20260527150702223.png",
+    "sha256": "447c898a56cbf1f5d748045821a1b5cbc43e997efba5a997e95dd7ca27b829fd",
+    "bytes": 77190,
+    "width": 436,
+    "height": 681
+  },
+  "https://cdn.canghecode.com/yanyan/20260527152034359.png": {
+    "local": "assets/images/codex-b24dd6e2a20c-20260527152034359.png",
+    "sha256": "b9042c329348e81322876aa3854b6b312ec5d2776d536f17edad23bdd01fbd70",
+    "bytes": 172743,
+    "width": 420,
+    "height": 888
+  },
+  "https://cdn.canghecode.com/yanyan/20260527152239430.png": {
+    "local": "assets/images/codex-79deb37191d9-20260527152239430.png",
+    "sha256": "15e019d75033547f7f901795896d4980bdfc79f58ca67f32a53f55165b7e378b",
+    "bytes": 47677,
+    "width": 430,
+    "height": 395
+  },
+  "https://cdn.canghecode.com/yanyan/20260527152442784.png": {
+    "local": "assets/images/codex-2d7e85a317b5-20260527152442784.png",
+    "sha256": "88b91188945e1a6497ca4c2068e833a368ecf2bcaabcb49cced901e61c94d31c",
+    "bytes": 65706,
+    "width": 422,
+    "height": 868
+  },
+  "https://cdn.canghecode.com/yanyan/20260527152745840.png": {
+    "local": "assets/images/codex-0f935c6ed6da-20260527152745840.png",
+    "sha256": "be4c402e4dc4f69088222e5295be83e37e13c71e3ea77c9cec88b92757e79412",
+    "bytes": 105290,
+    "width": 1290,
+    "height": 866
+  },
+  "https://cdn.canghecode.com/yanyan/20260527153008463.png": {
+    "local": "assets/images/codex-83eb58e46cb2-20260527153008463.png",
+    "sha256": "4900986a92983f8c79f7cc99c107c94f2212ef551d5d18b1cc3e76f6d9cf626f",
+    "bytes": 146990,
+    "width": 1298,
+    "height": 860
+  },
+  "https://cdn.canghecode.com/yanyan/20260527153330947.png": {
+    "local": "assets/images/codex-33a4b2078e3a-20260527153330947.png",
+    "sha256": "dae6df773239f132bc067519b81dd340119df3cb5d1f55dee69546eb98d96b87",
+    "bytes": 40338,
+    "width": 330,
+    "height": 251
+  },
+  "https://cdn.canghecode.com/yanyan/20260527154702248.png": {
+    "local": "assets/images/codex-72af8a951c2e-20260527154702248.png",
+    "sha256": "890700287a7d92b335fa80808f942ecf1367d17ad09325c673de521dca968a66",
+    "bytes": 285687,
+    "width": 1259,
+    "height": 887
+  },
+  "https://cdn.canghecode.com/yanyan/20260527154950497.png": {
+    "local": "assets/images/codex-54dab55390e0-20260527154950497.png",
+    "sha256": "6cff169ae3d78fd1c2905409878ec56d25be3ec4503481f5cfeb90d6ec0cbf7b",
+    "bytes": 475437,
+    "width": 1245,
+    "height": 888
+  },
+  "https://cdn.canghecode.com/yanyan/20260527155059740.png": {
+    "local": "assets/images/codex-3f1889b0607c-20260527155059740.png",
+    "sha256": "6acae3f4475f6dd1c0648797b2419556b5ee744d0bc44a121cfff81fe20f422b",
+    "bytes": 67447,
+    "width": 419,
+    "height": 611
+  },
+  "https://cdn.canghecode.com/yanyan/20260527155313105.png": {
+    "local": "assets/images/codex-af91e38b5ee7-20260527155313105.png",
+    "sha256": "64b886f56637781b11b8b74bf01c9b975412b5dbe0d7fd8f5ac2c4358122359e",
+    "bytes": 82801,
+    "width": 419,
+    "height": 482
+  },
+  "https://cdn.canghecode.com/yanyan/20260527160714918.png": {
+    "local": "assets/images/codex-5b8b59510c86-20260527160714918.png",
+    "sha256": "153e0f63a8ef16c7adb0b0bd8c71f7433d35a7caec70d0c88c0b4540feb9a7e6",
+    "bytes": 162325,
+    "width": 731,
+    "height": 703
+  },
+  "https://cdn.canghecode.com/yanyan/20260603164239865.png": {
+    "local": "assets/images/codex-7e87595a7062-20260603164239865.png",
+    "sha256": "e689b8854141319b4831073423564c763a9bec2a685c6da0fd280c3a86fd40de",
+    "bytes": 97802,
+    "width": 842,
+    "height": 529
+  },
+  "https://cdn.canghecode.com/yanyan/20260603165113247.png": {
+    "local": "assets/images/codex-397bc6f1a395-20260603165113247.png",
+    "sha256": "511c229f50719b53adfb39105ab0848a4fdef62970b9592b1e141296a99ede1c",
+    "bytes": 63777,
+    "width": 767,
+    "height": 341
+  },
+  "https://cdn.canghecode.com/yanyan/20260603165417268.png": {
+    "local": "assets/images/codex-8be79261e7c6-20260603165417268.png",
+    "sha256": "522b4b96ac2831447d8fb0c9bc37fe8a4f3f1d4166139248f13021afb518298a",
+    "bytes": 195780,
+    "width": 795,
+    "height": 807
+  },
+  "https://cdn.canghecode.com/yanyan/20260603170909630.png": {
+    "local": "assets/images/codex-6c91f716170c-20260603170909630.png",
+    "sha256": "0fea3dea25ba28e99bb041acc6b6782807fd291c76fb302047368eb89c1aec41",
+    "bytes": 323333,
+    "width": 522,
+    "height": 770
+  },
+  "https://cdn.canghecode.com/yanyan/20260603171016784.png": {
+    "local": "assets/images/codex-cbca55b40c8f-20260603171016784.png",
+    "sha256": "c3ff6200e675896822f248e69b06053ddcd5b282e2e2b587a4a3537bde818616",
+    "bytes": 38475,
+    "width": 709,
+    "height": 201
+  },
+  "https://cdn.canghecode.com/yanyan/20260603171438425.png": {
+    "local": "assets/images/codex-9ea716e0984d-20260603171438425.png",
+    "sha256": "5e7c8f7a533dba26bbfb72dc9aa30b9af1737d8729e251dd3497983a5ecfe44a",
+    "bytes": 170951,
+    "width": 378,
+    "height": 316
+  },
+  "https://cdn.canghecode.com/yanyan/20260603174027962.png": {
+    "local": "assets/images/codex-a39b3f5d6135-20260603174027962.png",
+    "sha256": "fcd6f250b2b4fe0443a7c88c1b5dbd2b4262aa4966fbaa2f4708aecec4f6b430",
+    "bytes": 33442,
+    "width": 290,
+    "height": 344
+  },
+  "https://cdn.canghecode.com/yanyan/20260603180110711.png": {
+    "local": "assets/images/codex-ee3c9cca6354-20260603180110711.png",
+    "sha256": "86dce3557a6574b49a501bd567cc9bbd223b789e39810c1236cfc116b92b5286",
+    "bytes": 21700,
+    "width": 273,
+    "height": 204
+  },
+  "https://cdn.canghecode.com/yanyan/20261010144237031.png": {
+    "local": "assets/images/codex-4a0f32f2fcf6-20261010144237031.png",
+    "sha256": "dd24e7c123bcfb1de823d3f1eb6ff7c90b5ce86577b87aa922b2675d1d4e6be4",
+    "bytes": 120487,
+    "width": 913,
+    "height": 672
+  },
+  "https://cdn.canghecode.com/yanyan/20261010154520657.png": {
+    "local": "assets/images/codex-df90991b6651-20261010154520657.png",
+    "sha256": "a1d2618f87f9968d1756a0a67b9cb65f03531c20b8a437395a5aa13126f24df7",
+    "bytes": 51086,
+    "width": 318,
+    "height": 464
+  },
+  "https://cdn.canghecode.com/yanyan/20261010155535148.png": {
+    "local": "assets/images/codex-24549a4b9973-20261010155535148.png",
+    "sha256": "572e1f3571dc8f99e064d7495005e03ac3dd66e6254c34e44106b2f5576ff5c7",
+    "bytes": 232704,
+    "width": 1548,
+    "height": 829
+  },
+  "https://cdn.canghecode.com/yanyan/20261010161103498.png": {
+    "local": "assets/images/codex-d8ebcd60d2ad-20261010161103498.png",
+    "sha256": "23a2251f64974aa3848408ca884e937e0dd8432fab1c7ba1fa409d986ce7045e",
+    "bytes": 98113,
+    "width": 779,
+    "height": 489
+  },
+  "https://cdn.canghecode.com/yanyan/20261010161341040.png": {
+    "local": "assets/images/codex-c4ff1644acad-20261010161341040.png",
+    "sha256": "9007e58fe4e0fdc633f77559b19bbc928e757a4cbe863caee647340441189d1a",
+    "bytes": 67872,
+    "width": 830,
+    "height": 209
+  },
+  "https://cdn.canghecode.com/yanyan/20261010165505728.png": {
+    "local": "assets/images/codex-e74cb37f3055-20261010165505728.png",
+    "sha256": "5fc7c9b9bc9978a7d58ed178aa8cfcd1d65c42d134780aa9d2f595e5db239539",
+    "bytes": 116384,
+    "width": 779,
+    "height": 690
+  },
+  "https://cdn.canghecode.com/yanyan/20261010172206267.png": {
+    "local": "assets/images/codex-f311cfd0f9fe-20261010172206267.png",
+    "sha256": "e3ec166905db962142726dc3d72e1b506ea07d61edfe3263a7694d8ad2eb96df",
+    "bytes": 120103,
+    "width": 769,
+    "height": 567
+  },
+  "https://cdn.canghecode.com/yanyan/20261010172803005.png": {
+    "local": "assets/images/codex-165c2df51901-20261010172803005.png",
+    "sha256": "9380fba91b75e4d8d2485545f08c0c98a024b018c204e94e39425a59f63072ac",
+    "bytes": 120440,
+    "width": 769,
+    "height": 567
+  },
+  "https://cdn.canghecode.com/yanyan/20261010180643171.png": {
+    "local": "assets/images/codex-4a4b98203a89-20261010180643171.png",
+    "sha256": "0f6c5ea9921f5436db9206a8f95ba747daaf3c3d46e0781ab167b6b387c0899c",
+    "bytes": 219238,
+    "width": 1763,
+    "height": 918
+  },
+  "https://cdn.canghecode.com/yanyan/20261010181626543.png": {
+    "local": "assets/images/codex-1b1e45ee6d42-20261010181626543.png",
+    "sha256": "5491f20bcc3e27a522f1f9761ef7c4961830b6f6cfaebb61f1d70bf7ea61102f",
+    "bytes": 93235,
+    "width": 715,
+    "height": 780
+  },
+  "https://cdn.canghecode.com/yanyan/20261012092858923.png": {
+    "local": "assets/images/codex-31dc04e0fbc4-20261012092858923.png",
+    "sha256": "1b8a1cf1d8bce4b76514980929276f896b17093f1c38f39bcec39833345076ee",
+    "bytes": 195355,
+    "width": 1342,
+    "height": 982
+  },
+  "https://cdn.canghecode.com/yanyan/20261012100559050.png": {
+    "local": "assets/images/codex-ba5a2a8d9305-20261012100559050.png",
+    "sha256": "eed9870e7977b75cc2dd7e7712b8207f05a8c750f80d3da2ba40c61c35342bc1",
+    "bytes": 136822,
+    "width": 769,
+    "height": 567
+  },
+  "https://cdn.canghecode.com/yanyan/20261012101335734.png": {
+    "local": "assets/images/codex-fab5db926b27-20261012101335734.png",
+    "sha256": "7769a22bb3bc3ae322731c685bb19b3c2207db382064fb6a75293da45afc0f5d",
+    "bytes": 132543,
+    "width": 769,
+    "height": 567
+  },
+  "https://cdn.canghecode.com/yanyan/20261012114511688.png": {
+    "local": "assets/images/codex-344bc4fad3b4-20261012114511688.png",
+    "sha256": "a5d4add7fa243e996d03cce61d834c1cec3115acb3dbfa8cf9451459a955ceb4",
+    "bytes": 231843,
+    "width": 1188,
+    "height": 884
+  },
+  "https://cdn.canghecode.com/yanyan/20261012114815858.png": {
+    "local": "assets/images/codex-2be449262aa3-20261012114815858.png",
+    "sha256": "6b85890f0fe56eb6ec44098d4394ecb3cfa27816e7e9cf299c655548e302ee30",
+    "bytes": 372172,
+    "width": 1363,
+    "height": 1064
+  },
+  "https://cdn.canghecode.com/yanyan/20261012114918170.png": {
+    "local": "assets/images/codex-04170f03dbbb-20261012114918170.png",
+    "sha256": "3ae7c69b32d3dbb1429b258899dad70af1d31463f76f69bf44ff3046e09f7d3e",
+    "bytes": 100512,
+    "width": 918,
+    "height": 533
+  },
+  "https://cdn.canghecode.com/yanyan/20261012115215787.png": {
+    "local": "assets/images/codex-4df5488dd51d-20261012115215787.png",
+    "sha256": "dd60f44c6ac2fa37aa6889b0bd117eb62f957e3be60541950b9a1784f507caa6",
+    "bytes": 161274,
+    "width": 600,
+    "height": 670
+  },
+  "https://cdn.canghecode.com/yanyan/20261012142438748.png": {
+    "local": "assets/images/codex-5b55d1264618-20261012142438748.png",
+    "sha256": "84aa0d57c9f6489edcbe0604ce6db4f03d934aba3de124d672decdd314376ac5",
+    "bytes": 59092,
+    "width": 405,
+    "height": 404
+  },
+  "https://cdn.canghecode.com/yanyan/20261012142818105.png": {
+    "local": "assets/images/codex-e818c4b79be6-20261012142818105.png",
+    "sha256": "493c440e38adc6d56a89c07aff423a4490110aef8c9648d58483420f38169915",
+    "bytes": 130496,
+    "width": 1483,
+    "height": 750
+  },
+  "https://cdn.canghecode.com/yanyan/20261012143149412.png": {
+    "local": "assets/images/codex-417b6a5cb119-20261012143149412.png",
+    "sha256": "999966282c2108699f8c99352ef2923a928a963d910e35977a8afe0b048459cb",
+    "bytes": 148940,
+    "width": 1463,
+    "height": 1023
+  },
+  "https://cdn.canghecode.com/yanyan/20261012143511556.png": {
+    "local": "assets/images/codex-a8334b70afb8-20261012143511556.png",
+    "sha256": "c395780010ffe35528a7b4a8fa78afb7ea6955c43fd2bae8071742ec47820d8d",
+    "bytes": 87411,
+    "width": 779,
+    "height": 648
+  },
+  "https://cdn.canghecode.com/yanyan/20261012144040593.png": {
+    "local": "assets/images/codex-5690db042ad9-20261012144040593.png",
+    "sha256": "8493b91b137b60babba02b90f160ef66413e6765d7a761a33455ba3dcd7f4dab",
+    "bytes": 145237,
+    "width": 1441,
+    "height": 730
+  },
+  "https://cdn.canghecode.com/yanyan/20261012144115644.png": {
+    "local": "assets/images/codex-eee705ced035-20261012144115644.png",
+    "sha256": "b97e58114f8b249faecb06e7fce7853cf76defbcd00fee0f07474243e7025c1d",
+    "bytes": 77607,
+    "width": 523,
+    "height": 447
+  },
+  "https://cdn.canghecode.com/yanyan/20261012144312370.png": {
+    "local": "assets/images/codex-e7c295f59d9b-20261012144312370.png",
+    "sha256": "f6dde6980afe1a502bf48c77282a484ec8cecf486d369a6882172718501113a8",
+    "bytes": 62571,
+    "width": 532,
+    "height": 361
+  },
+  "https://cdn.canghecode.com/yanyan/20261012144712080.png": {
+    "local": "assets/images/codex-dd9b46a2a1b0-20261012144712080.png",
+    "sha256": "137ba357efacc22702105969bb100be479d7253c61128f60b5343664b532bbc1",
+    "bytes": 111288,
+    "width": 779,
+    "height": 648
+  },
+  "https://cdn.canghecode.com/yanyan/20261012145002826.png": {
+    "local": "assets/images/codex-19e98a2f74f3-20261012145002826.png",
+    "sha256": "b3a1b70edb5660d486e8b513f8f156ca0547826a3a0410beca0a9c7eb045b4c6",
+    "bytes": 97041,
+    "width": 779,
+    "height": 310
+  },
+  "https://cdn.canghecode.com/yanyan/20261012145056388.png": {
+    "local": "assets/images/codex-7f7ac82e0d55-20261012145056388.png",
+    "sha256": "40f05e7507df4429d0f950f606c2be183e4f8c9d11ac2051aa9b3694a48b64b0",
+    "bytes": 168338,
+    "width": 779,
+    "height": 690
+  },
+  "https://cdn.canghecode.com/yanyan/20261012145149497.png": {
+    "local": "assets/images/codex-0f08e5f77ddf-20261012145149497.png",
+    "sha256": "cef4a1ed270e733198c05b19c4ca404ad60f942967cd671fb19d0cce5d04b781",
+    "bytes": 262247,
+    "width": 1621,
+    "height": 1073
+  },
+  "https://cdn.canghecode.com/yanyan/20261012145240227.png": {
+    "local": "assets/images/codex-da63ecb0bc55-20261012145240227.png",
+    "sha256": "882dc7df5e2777c0a0fd9be0ded98109f886eddeda48c58656741698ee3c132c",
+    "bytes": 289687,
+    "width": 1256,
+    "height": 881
+  },
+  "https://cdn.canghecode.com/yanyan/20261012145504068.png": {
+    "local": "assets/images/codex-ffb825682c22-20261012145504068.png",
+    "sha256": "ba57d7f2d3a79a3dfe662419b1eaa61019d3e9c2b2041db246dedc406a2621f2",
+    "bytes": 223356,
+    "width": 1582,
+    "height": 875
+  },
+  "https://cdn.canghecode.com/yanyan/20261012145533815.png": {
+    "local": "assets/images/codex-81dd8f1c18bc-20261012145533815.png",
+    "sha256": "e27da75a6ec038edf535304caaa58a5335459ff92d262559785c5bf74ac68e43",
+    "bytes": 65502,
+    "width": 686,
+    "height": 451
+  },
+  "https://cdn.canghecode.com/yanyan/20261012145709175.png": {
+    "local": "assets/images/codex-80e65faeca41-20261012145709175.png",
+    "sha256": "d8a39c97820d23e085163bcd5e743d5f7f07e31ca8db8e5615b647ae22381783",
+    "bytes": 294230,
+    "width": 1633,
+    "height": 1072
+  },
+  "https://cdn.canghecode.com/yanyan/20261012150105307.png": {
+    "local": "assets/images/codex-d8d727ca5848-20261012150105307.png",
+    "sha256": "a8d42e053b2284d75e71ea21b893635bb49ead6164fbe12b14572b96debc9941",
+    "bytes": 208175,
+    "width": 975,
+    "height": 1036
+  },
+  "https://cdn.canghecode.com/yanyan/20261012150209626.png": {
+    "local": "assets/images/codex-0ea7bce5b7ab-20261012150209626.png",
+    "sha256": "5ff47513b236e5e7a2fe491b6c5fd04a9af503bc4df4029a874b2cce3e74a1e4",
+    "bytes": 131949,
+    "width": 769,
+    "height": 664
+  },
+  "https://cdn.canghecode.com/yanyan/20261012150446285.png": {
+    "local": "assets/images/codex-0f821107da60-20261012150446285.png",
+    "sha256": "98dc4417a46bbb07856c4ef9c5e652e4da93ca6351587b5f7d90cb3289d6a841",
+    "bytes": 128531,
+    "width": 769,
+    "height": 686
+  },
+  "https://cdn.canghecode.com/yanyan/20261012150802927.png": {
+    "local": "assets/images/codex-5e2db094d221-20261012150802927.png",
+    "sha256": "4a538f336d7fc41c0535b39dc6570b6262ffc270d9085315cd538265457c7c8a",
+    "bytes": 160456,
+    "width": 968,
+    "height": 1045
+  },
+  "https://cdn.canghecode.com/yanyan/20261012150824737.png": {
+    "local": "assets/images/codex-5f76254342c5-20261012150824737.png",
+    "sha256": "cdb741570aaf93c386c58edb1bb60b97b6f08dc13ac68b17d1253cc69183af45",
+    "bytes": 115525,
+    "width": 769,
+    "height": 458
+  },
+  "https://cdn.canghecode.com/yanyan/20261012150909085.png": {
+    "local": "assets/images/codex-7c3e6f2d6908-20261012150909085.png",
+    "sha256": "445fa5f07942d32b370902c329ca403e89dd7e28d7a25259bb85956b5d766889",
+    "bytes": 84108,
+    "width": 769,
+    "height": 588
+  },
+  "https://cdn.canghecode.com/yanyan/20261012151119717.png": {
+    "local": "assets/images/codex-e71c87d6083a-20261012151119717.png",
+    "sha256": "6106c356499297fde3c27648377962ff8677f856d7a771188c2b3cee0b970b44",
+    "bytes": 99412,
+    "width": 769,
+    "height": 483
+  },
+  "https://cdn.canghecode.com/yanyan/20261012151724897.png": {
+    "local": "assets/images/codex-e2a71ed00896-20261012151724897.png",
+    "sha256": "1e0b541e9bf70d060c762e3e6f5a35427b7b4fdc82232b8556fdf1f23089d3ce",
+    "bytes": 56185,
+    "width": 426,
+    "height": 368
+  },
+  "https://cdn.canghecode.com/yanyan/20261012151834078.png": {
+    "local": "assets/images/codex-9cbb99686d18-20261012151834078.png",
+    "sha256": "63f17a238e4a988eced9c8867008c5d93a2b885e26e9970a9b6ca6de72ccdce7",
+    "bytes": 58897,
+    "width": 521,
+    "height": 350
+  },
+  "https://cdn.canghecode.com/yanyan/20261012151941760.png": {
+    "local": "assets/images/codex-9bdaf9507e76-20261012151941760.png",
+    "sha256": "a08a64e6dec406cb4294ddbc5ec94cf9c68f2800b85f1abfd7b0e1fb21d5ebf3",
+    "bytes": 60123,
+    "width": 536,
+    "height": 360
+  },
+  "https://cdn.canghecode.com/yanyan/20261012152122277.png": {
+    "local": "assets/images/codex-b1e8cb8fbd17-20261012152122277.png",
+    "sha256": "d0256ffd99a150573fd6219cf39698991995fc3e2bc8c419b59fcbf35515794e",
+    "bytes": 166318,
+    "width": 1516,
+    "height": 1071
+  },
+  "https://cdn.canghecode.com/yanyan/20261012152320084.png": {
+    "local": "assets/images/codex-9eafaf68f8bc-20261012152320084.png",
+    "sha256": "76496e51db2f848086a06286412787473085a7a39e6da42abc9a91456dc6a4b1",
+    "bytes": 147769,
+    "width": 779,
+    "height": 690
+  },
+  "https://cdn.canghecode.com/yanyan/20261012152456394.png": {
+    "local": "assets/images/codex-60b7a101bce6-20261012152456394.png",
+    "sha256": "9d350cf142a41668249f6baff344633e70746a4b468d4083307484c9729b2173",
+    "bytes": 69165,
+    "width": 779,
+    "height": 170
+  },
+  "https://cdn.canghecode.com/yanyan/20261012152547086.png": {
+    "local": "assets/images/codex-293f632398a3-20261012152547086.png",
+    "sha256": "c0421f8992ba061d9a5897acaf4fc06670e2c437d3158c0b7e81fcdf434b6cb5",
+    "bytes": 67887,
+    "width": 602,
+    "height": 229
+  },
+  "https://cdn.canghecode.com/yanyan/20261012152840402.png": {
+    "local": "assets/images/codex-9b9066def386-20261012152840402.png",
+    "sha256": "58678409be148b92050ad08d664d989d99b4efcd8f3f3765a7059511822a52f2",
+    "bytes": 802482,
+    "width": 1641,
+    "height": 1117
+  },
+  "https://cdn.canghecode.com/yanyan/20261012152929132.png": {
+    "local": "assets/images/codex-5bbf99ae9ad2-20261012152929132.png",
+    "sha256": "eff36e3fdeee355e135dd8cb162bbd328d9e0a5afef92071ca637ec8ebf89a6a",
+    "bytes": 234779,
+    "width": 777,
+    "height": 896
+  },
+  "https://cdn.canghecode.com/yanyan/20261012174427401.png": {
+    "local": "assets/images/codex-6d74c4f1581b-20261012174427401.png",
+    "sha256": "61176f57562ebdc9bc86767dbd5f72426f0bd6ad247c64652f03992adc164624",
+    "bytes": 99492,
+    "width": 769,
+    "height": 432
+  },
+  "https://cdn.canghecode.com/yanyan/20261012174725854.png": {
+    "local": "assets/images/codex-7f752e58d88f-20261012174725854.png",
+    "sha256": "0f82ef74e2080f312960a614f577c6d3cc83f9d0827149678920909391085e9d",
+    "bytes": 71881,
+    "width": 779,
+    "height": 293
+  },
+  "https://cdn.canghecode.com/yanyan/20261012174850978.png": {
+    "local": "assets/images/codex-3c0bcdfed1d5-20261012174850978.png",
+    "sha256": "767f9797dfa39224cecb50ac0d00d5fde4699dfbedc15ebb678e70ad56613cea",
+    "bytes": 42106,
+    "width": 258,
+    "height": 306
+  },
+  "https://cdn.canghecode.com/yanyan/20261012174921105.png": {
+    "local": "assets/images/codex-b22149ee9a3a-20261012174921105.png",
+    "sha256": "53438a35754c353559f362456e5010cb97b9bf4216e23c5a6cf60602780594dc",
+    "bytes": 73015,
+    "width": 769,
+    "height": 287
+  },
+  "https://cdn.canghecode.com/yanyan/20261012175108366.png": {
+    "local": "assets/images/codex-cda161f03f1e-20261012175108366.png",
+    "sha256": "2380d13c35786b4aaf3e47a42e068b1660aa7f4cc391fe3d17b766b499397cf9",
+    "bytes": 145585,
+    "width": 784,
+    "height": 844
+  },
+  "https://cdn.canghecode.com/yanyan/20261012175237871.png": {
+    "local": "assets/images/codex-bffb99c0f764-20261012175237871.png",
+    "sha256": "29c7e73bb73e388833bea3835cfbf3b2d3a9e58578779e7fb1e08089e50c037b",
+    "bytes": 101801,
+    "width": 775,
+    "height": 393
+  },
+  "https://cdn.canghecode.com/yanyan/20261012182050600.png": {
+    "local": "assets/images/codex-f3922c0e42ca-20261012182050600.png",
+    "sha256": "9fe61b3af9de80b91911e17059ec2fb069a9d3db8ae1d13656b4f9a3785c134c",
+    "bytes": 158493,
+    "width": 822,
+    "height": 928
+  },
+  "https://cdn.canghecode.com/yanyan/20261012182123646.png": {
+    "local": "assets/images/codex-ed412bcef9b5-20261012182123646.png",
+    "sha256": "8fa257f86c7e367674bd2126bfff53a0ed670a6e20377915f514b07b2b181094",
+    "bytes": 233215,
+    "width": 834,
+    "height": 524
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/codex-entry-map-illustrated.png": {
+    "local": "assets/images/codex-dad94448576e-codex-entry-map-illustrated.png",
+    "sha256": "445d4b6f0970dbe5a82e1387cdb554154db18242a74b29efaab2da11dddcbb87",
+    "bytes": 1668456,
+    "width": 1672,
+    "height": 941
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/codexplusplus-overview.png": {
+    "local": "assets/images/codex-f1b86e575bdb-codexplusplus-overview.png",
+    "sha256": "5ed3fe4003449d3f87a46a87bd877ccfc3b8a434100d943bc6fbcd5f84eaa07b",
+    "bytes": 243120,
+    "width": 1623,
+    "height": 1145
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/codexplusplus-release-assets.png": {
+    "local": "assets/images/codex-1980a06359c7-codexplusplus-release-assets.png",
+    "sha256": "d1210bc32caa391fd031952c2c467ce947d9c28d7c16c4141bc905f380649d1c",
+    "bytes": 328441,
+    "width": 2547,
+    "height": 1316
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/subscribe-google-play-account-preferences.png": {
+    "local": "assets/images/codex-6d14c84add22-subscribe-google-play-account-preferences.png",
+    "sha256": "846b2df1ac10e7a249fe5a1984e9def916fbe1bfe9d08d2a0095e813302995d7",
+    "bytes": 317917,
+    "width": 1741,
+    "height": 903
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/subscribe-google-play-add-payment-method.png": {
+    "local": "assets/images/codex-1b12eade3360-subscribe-google-play-add-payment-method.png",
+    "sha256": "177dd243b442d44d5d4d8be76b6ab28806f1b082fbe8d125d9b75bfdc669eb63",
+    "bytes": 127265,
+    "width": 2541,
+    "height": 1320
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/subscribe-google-play-chatgpt-plus-checkout.png": {
+    "local": "assets/images/codex-a15d7afdc5c5-subscribe-google-play-chatgpt-plus-checkout.png",
+    "sha256": "9cd58e58fbf4137b7d59e8b8b6c20d3e0a2eb61195131a5928fe044ee7a0314d",
+    "bytes": 247602,
+    "width": 2553,
+    "height": 1320
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/subscribe-google-play-country-profile.png": {
+    "local": "assets/images/codex-88d67995febc-subscribe-google-play-country-profile.png",
+    "sha256": "c501e4ee3826ac7fab1c69bfb68ba98e56ff35c7c505c349a45a205c1e17bf44",
+    "bytes": 305378,
+    "width": 1741,
+    "height": 903
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/subscribe-google-play-country-version.png": {
+    "local": "assets/images/codex-49fa433414cc-subscribe-google-play-country-version.png",
+    "sha256": "d977a0bb844b770972d116fa4cd2eee16f6208e8362745fce258a01d3fd991e1",
+    "bytes": 775280,
+    "width": 1745,
+    "height": 901
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/subscribe-google-play-mobile-settings.png": {
+    "local": "assets/images/codex-74797c89b8c1-subscribe-google-play-mobile-settings.png",
+    "sha256": "2204af975472b00fcb9da302c96f04131b0f89ad54b3c14e9333665cd3efd964",
+    "bytes": 346383,
+    "width": 1741,
+    "height": 903
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/subscribe-google-play-payments-subscriptions.png": {
+    "local": "assets/images/codex-659c2d3fce36-subscribe-google-play-payments-subscriptions.png",
+    "sha256": "4022f5eb1475e0bcb4c2b9dc136c4c0258111ca23372c58df51c5ea123716e9e",
+    "bytes": 1142345,
+    "width": 1735,
+    "height": 906
+  },
+  "https://raw.githubusercontent.com/freestylefly/CodexGuide/1b9baedfa96271a9ca6cc75239fa2210ab27e7c8/docs/images/subscribe-google-play-terms-of-service.png": {
+    "local": "assets/images/codex-10b06292c2b2-subscribe-google-play-terms-of-service.png",
+    "sha256": "eab1df9aed2f5ae98d15d5dd90f7edafd35746cce2f9110920d120f64e873be2",
+    "bytes": 1140483,
+    "width": 1741,
+    "height": 903
+  }
+}

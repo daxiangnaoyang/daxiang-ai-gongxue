@@ -1,0 +1,176 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AGENTS.md · 大象AI共学</title><meta name="description" content="AGENTS.md 项目规则指南，说明如何写入项目命令、代码风格、禁用事项、验证方式、团队约定和本地私有规则，让 Codex 更快理解项目。"><link rel="canonical" href="https://daxiangai.cc/codex-advanced-02-agents-md.html"><meta property="og:title" content="AGENTS.md · 大象AI共学"><meta property="og:description" content="AGENTS.md 项目规则指南，说明如何写入项目命令、代码风格、禁用事项、验证方式、团队约定和本地私有规则，让 Codex 更快理解项目。"><meta property="og:type" content="article"><meta property="og:url" content="https://daxiangai.cc/codex-advanced-02-agents-md.html"><link rel="icon" href="logo-blue.png"><link rel="stylesheet" href="codex.css"><script src="codex.js" defer></script></head><body><a class="docs-skip" href="#content">跳到正文</a><header class="docs-header"><a class="docs-brand" href="index.html"><img src="logo-blue-transparent-v2.png" alt="" width="44" height="44"><span>大象AI共学</span></a><nav aria-label="主导航"><a href="course.html">学习路线</a><a href="codex.html">Codex</a><a href="codex-start.html">快速上手</a><a href="codex-advanced.html" aria-current="page">进阶教程</a><a href="codex-recipes.html">实战案例</a></nav><a class="docs-home-link" href="index.html">官网 ↗</a></header><div class="docs-layout"><aside class="docs-sidebar" aria-label="内容目录"><details ><summary>快速上手<span>14</span></summary><nav aria-label="快速上手"><a href="codex-start.html">总览</a><a href="codex-start-01-what-is-codex.html">Codex 是什么</a><a href="codex-start-02-app-installation.html">Codex 桌面 App 下载与安装</a><a href="codex-start-03-account-plan.html">订阅 ChatGPT Plus / Pro</a><a href="codex-start-04-third-party-api.html">连接第三方 API</a><a href="codex-start-05-app-overview.html">了解 Codex 基本组成</a><a href="codex-start-06-first-task.html">用 Codex 完成第一个任务</a><a href="codex-start-07-task-design.html">任务设计</a><a href="codex-start-08-task-execution.html">任务执行与验证闭环</a><a href="codex-start-09-mobile-control.html">用手机远程操控 Codex</a><a href="codex-start-10-cli-installation.html">安装CLI</a><a href="codex-start-11-cli-first-run.html">运行 CLI</a><a href="codex-start-12-cli-options.html">CLI 选项与命令</a><a href="codex-start-13-ide-vscode.html">在 VS Code 中使用 Codex</a><a href="codex-start-14-cloud.html">使用 Codex Cloud</a></nav></details><details open><summary>进阶教程<span>11</span></summary><nav aria-label="进阶教程"><a href="codex-advanced.html">总览</a><a href="codex-advanced-01-cost-context.html">理解费用与上下文</a><a href="codex-advanced-02-agents-md.html" aria-current="page">AGENTS.md</a><a href="codex-advanced-03-skills-plugins-mcp.html">Skills 和 Plugins</a><a href="codex-advanced-04-permissions-security.html">权限管理</a><a href="codex-advanced-05-automation.html">Scheduled tasks（计划任务）</a><a href="codex-advanced-06-hooks.html">Hooks</a><a href="codex-advanced-07-sandbox-approvals.html">沙盒与审批</a><a href="codex-advanced-08-thread-management.html">线程管理</a><a href="codex-advanced-09-config-toml.html">配置文件 config.toml</a><a href="codex-advanced-10-team-playbook.html">团队实践</a><a href="codex-advanced-11-troubleshooting.html">排障手册</a></nav></details><details ><summary>实战案例<span>18</span></summary><nav aria-label="实战案例"><a href="codex-recipes.html">总览</a><a href="codex-recipes-01-ppt-skill-walkthrough.html">Codex × PPT Skill：一句话生成演示文稿</a><a href="codex-recipes-02-drawio-mcp.html">Codex × Draw.io MCP：AI 自动绘制架构图</a><a href="codex-recipes-03-playwright-mcp.html">Codex × Playwright MCP：让 AI 像人一样操控浏览器</a><a href="codex-recipes-04-hyperframes-animation.html">Codex × HyperFrames：用代码生成动画视频</a><a href="codex-recipes-05-obsidian-codex.html">Codex × Obsidian：在知识库中自动生成配图</a><a href="codex-recipes-06-feishu-cli-codex.html">Codex × 飞书 CLI：一句话处理飞书数据</a><a href="codex-recipes-07-llm-wiki-codex.html">Codex × LLM Wiki：在 Obsidian 中搭建 AI 知识库</a><a href="codex-recipes-08-figma-mcp-codex.html">Codex × Figma MCP：让 AI 读懂你的设计稿</a><a href="codex-recipes-09-notion-mcp-codex.html">Codex × Notion MCP：打通你的知识工作空间</a><a href="codex-recipes-10-dkfile-deploy-codex.html">Codex × DKFile：AI 网页一键发布到公网</a><a href="codex-recipes-11-remote-bug-fix.html">Codex × 云服务器：远程定位并修复 Bug</a><a href="codex-recipes-12-chrome-browser-plugin.html">Codex × Chrome：让 AI 直接控制浏览器</a><a href="codex-recipes-13-github-actions-ci-fix.html">Codex × GitHub Actions：CI 失败自动修复实测</a><a href="codex-recipes-14-clinical-literature-review.html">Codex × 临床文献综述：把医学问题整理成可复核证据表</a><a href="codex-recipes-15-hatch-pet-photo.html">Codex × Hatch Pet：用一张照片生成专属宠物</a><a href="codex-recipes-16-android-remote-control.html">Codex × 安卓手机：扫码连接，远程操控</a><a href="codex-recipes-17-desktop-pet.html">如何设置自己的 Codex 桌面宠物</a><a href="codex-recipes-18-codex-profiles.html">Codex × codex-profiles：分开个人与工作环境</a></nav></details></aside><main id="content" class="docs-article"><nav class="docs-breadcrumb" aria-label="面包屑"><a href="codex.html">Codex</a><span>/</span><a href="codex-advanced.html">进阶教程</a><span>/</span><span>正文</span></nav><header class="docs-article-head"><p class="docs-eyebrow">BUILD YOUR WORKFLOW</p><h1>AGENTS.md</h1><p>AGENTS.md 项目规则指南，说明如何写入项目命令、代码风格、禁用事项、验证方式、团队约定和本地私有规则，让 Codex 更快理解项目。</p><div class="docs-article-meta"><span>进阶教程</span><span>资料核对 2026-10-10</span><a href="codex.html#library">搜索更多内容 ↗</a></div></header><article class="docs-prose"><aside class="docs-callout tip">
+
+<p><strong>最后核对</strong></p>
+<p>官方资料最后核对日期：2026-10-10。<code>AGENTS.md</code> 机制请以 <a href="https://learn.chatgpt.com/docs/agent-configuration/agents-md" target="_blank" rel="noopener noreferrer">Codex AGENTS.md 官方文档</a>、<a href="https://agents.md/" target="_blank" rel="noopener noreferrer">AGENTS.md 标准网站</a> 和 <a href="https://github.com/openai/codex" target="_blank" rel="noopener noreferrer">openai/codex GitHub repository</a> 为准。</p>
+</aside>
+
+
+<p>对于 Codex，每次开始新的运行时（在 TUI 中通常是每次启动新会话时），它都会重新构建工作上下文。它不知道这个项目用什么命令、有哪些目录边界、哪些文件不能改，也不知道团队平时怎么验证结果。</p>
+<p><code>AGENTS.md</code> 正是为了解决这类问题而存在的项目级指令文件。它是一个简单、开放的 Markdown 约定，目标是给不同 coding agent 提供一个稳定、可预测的项目指令入口，把项目结构、开发命令、测试要求、代码风格和协作边界显式写下来，减少反复解释。</p>
+<p>更准确地说，<code>AGENTS.md</code> 是面向 coding agent 的 README。README 主要给人看，讲项目是什么、怎么上手；<code>AGENTS.md</code> 给 Codex 和其他 coding agent 看，告诉它们改代码前应该遵守哪些项目规则。</p>
+<p>可以把它理解为：</p>
+<ul>
+<li>对个人用户：减少重复解释“项目怎么跑、怎么测、哪些地方不能碰”。</li>
+<li>对团队项目：把团队共同认可的 agent 使用规则沉淀到仓库里。</li>
+<li>对多工具环境：让 Codex、IDE agent、CLI agent 等工具尽量读取同一份项目说明。</li>
+</ul>
+<p>本质上就是一份普通的 Markdown 文件。</p>
+<p>另外需要注意，不同 coding agent 支持的项目指令文件可能不同。例如 Claude Code 通常使用 <code>CLAUDE.md</code>，具体行为应以对应产品的最新官方文档为准。</p>
+<h2 id="存放位置与读取机制">存放位置与读取机制<a class="heading-link" href="#存放位置与读取机制" aria-label="链接到存放位置与读取机制">#</a></h2>
+<h3 id="文件位置">文件位置<a class="heading-link" href="#文件位置" aria-label="链接到文件位置">#</a></h3>
+<p>对于普通项目，最推荐的做法是在项目根目录创建 <code>AGENTS.md</code>。Codex 在开始处理任务前会自动读取它，并把内容作为工作上下文带入新的对话。</p>
+<p><img src="assets/images/codex-a23693014e95-agents-md-editor-rule-example.png" alt="agents-md-editor-rule-example" width="1508" height="616" loading="lazy" decoding="async" /></p>
+<p>若希望全局生效，可以撰写 Codex 的全局指令：</p>
+<ol>
+<li>在 Codex_Home 目录中创建 <code>AGENTS.md</code>。默认位置通常是 <code>~/.codex/AGENTS.md</code>；如果设置了 <code>CODEX_HOME</code>，则以对应目录为准。</li>
+<li>在 Codex 桌面 App 里配置个人偏好或自定义指令。本质上也是写入 Codex_Home 的 <code>AGENTS.md</code>，与上述方法等价。</li>
+</ol>
+<p>设置全局规则后，它会影响你打开的所有项目；项目级 <code>AGENTS.md</code> 只影响当前仓库。两者作用域不同，要分清。</p>
+<p><img src="assets/images/codex-1dcf7b3ab4f0-codex-app-personalization-settings.png" alt="codex-app-personalization-settings" width="2278" height="1174" loading="lazy" decoding="async" /></p>
+<p>请确保文件名始终为 <code>AGENTS.md</code>，并确认<strong>大小写</strong>是否正确。否则 Codex 不会自动识别。</p>
+<h3 id="读取顺序与合并规则">读取顺序与合并规则<a class="heading-link" href="#读取顺序与合并规则" aria-label="链接到读取顺序与合并规则">#</a></h3>
+<p>Codex 读取 <code>AGENTS.md</code> 遵循以下顺序：</p>
+<ol>
+<li><strong>先读取全局规则</strong>：默认读取 <code>~/.codex/AGENTS.md</code>。如果同一位置存在 <code>AGENTS.override.md</code>，则优先读取它，适合临时覆盖全局规则。</li>
+<li><strong>然后读取项目规则</strong>：进入项目后，Codex 通常会从 Git 根目录开始，一路走到当前工作目录。沿途每一层目录，它会尝试读取项目指令文件。如果无法确定项目根目录，则只检查当前工作目录。</li>
+</ol>
+<p>项目指令文件的默认优先级是：</p>
+<div class="docs-code"><div class="docs-code-bar"><span>text</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code>AGENTS.override.md
+AGENTS.md</code></pre></div>
+<p>也就是说，同一目录里最多只会读取一个指令文件。如果同时存在这两个文件，Codex 会选择 <code>AGENTS.override.md</code>，不再读取同目录的 <code>AGENTS.md</code>。空文件会被跳过。</p>
+<p>Codex 会把读取到的指令从上到下合并。根目录的规则先出现，子目录的规则后出现。越靠近当前目录的规则越具体，因此也更适合写局部要求。</p>
+<p>一个文件结构的示例：</p>
+<div class="docs-code"><div class="docs-code-bar"><span>text</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code>AGENTS.md
+apps/
+  web/
+    AGENTS.md
+packages/
+  database/
+    AGENTS.md</code></pre></div>
+<p>上述示例中，根目录 <code>AGENTS.md</code> 写全仓库通用规则，<code>apps/web/AGENTS.md</code> 写前端规则，<code>packages/database/AGENTS.md</code> 写数据库迁移和测试要求。</p>
+<p><strong>注意事项</strong>：</p>
+<ol>
+<li>如果你的项目已经有其他规则文件，可以通过 Codex 配置里的 <code>project_doc_fallback_filenames</code> 添加备用文件名。Codex 会在找不到 <code>AGENTS.override.md</code> 和 <code>AGENTS.md</code> 时，再尝试这些 fallback 文件。</li>
+<li>Codex 还会限制合并后的项目指令大小。官方默认值是 <code>project_doc_max_bytes = 32768</code>，也就是 32 KiB。规则文件太大时，后面的内容可能不会进入上下文，所以尽量保持 <code>AGENTS.md</code> 精简。</li>
+</ol>
+<h3 id="验证与排查">验证与排查<a class="heading-link" href="#验证与排查" aria-label="链接到验证与排查">#</a></h3>
+<p>修改指令文件后，可以运行以下命令，让 Codex 概括当前已加载的指令：</p>
+<div class="docs-code"><div class="docs-code-bar"><span>bash</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code>codex --ask-for-approval never "Summarize the current instructions."</code></pre></div>
+<p>需要检查子目录规则时，可以指定工作目录：</p>
+<div class="docs-code"><div class="docs-code-bar"><span>bash</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code>codex --cd subdir --ask-for-approval never "Show which instruction files are active."</code></pre></div>
+<p>如果指令没有按预期生效，可以优先检查：</p>
+<ul>
+<li><code>codex status</code> 显示的 workspace root 是否正确。</li>
+<li>Codex_Home 或上层目录中是否存在 <code>AGENTS.override.md</code>。</li>
+<li><code>CODEX_HOME</code> 是否指向了另一个配置目录。</li>
+<li>指令文件是否为空，或累计大小是否超过 <code>project_doc_max_bytes</code>。</li>
+</ul>
+<p>Codex 会在每次新运行或启动 TUI 会话时重新构建指令链，因此修改后重新启动即可，不需要手动清理缓存。</p>
+<h2 id="团队协作">团队协作<a class="heading-link" href="#团队协作" aria-label="链接到团队协作">#</a></h2>
+<p>多人协作时，<code>AGENTS.md</code> 适合保存团队共同认可的项目规则；个人路径、本机工具习惯、临时约束和私有工作流偏好，则更适合留在本地。这样团队规则保持稳定，个人习惯也不会被提交到仓库。</p>
+<h3 id="使用场景">使用场景<a class="heading-link" href="#使用场景" aria-label="链接到使用场景">#</a></h3>
+<p>下面这些内容适合放在本地私有规则里：</p>
+<ul>
+<li>本机缓存、SDK、脚本或临时目录路径。</li>
+<li>个人常用命令、别名、编辑器习惯。</li>
+<li>只对自己有效的语言风格、回复格式、验证偏好。</li>
+<li>不方便进入团队文档的临时限制，例如“今天先只做只读分析”。</li>
+</ul>
+<h3 id="文件分工">文件分工<a class="heading-link" href="#文件分工" aria-label="链接到文件分工">#</a></h3>
+<div class="docs-table"><table>
+<thead>
+<tr>
+<th>文件</th>
+<th>作用</th>
+<th>是否提交到 Git</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>AGENTS.md</code></td>
+<td>团队共享的项目规则、命令、边界和交付要求</td>
+<td>可以提交</td>
+</tr>
+<tr>
+<td><code>AGENTS.override.md</code></td>
+<td>Codex 官方识别的覆盖文件，适合临时覆盖同目录规则</td>
+<td>通常不提交，除非团队明确约定</td>
+</tr>
+<tr>
+<td><code>AGENTS.local.md</code></td>
+<td>个人本地偏好、私有路径和临时规则</td>
+<td>应加入 ignore</td>
+</tr>
+</tbody></table></div>
+<p>需要注意：<code>AGENTS.local.md</code> 不是 Codex 默认识别的标准文件名。如果你想让 Codex 读取它，需要借助 hooks、社区工具（见下方推荐），或在配置中把它加入 fallback 文件名。</p>
+<p>无论是否使用本地规则，都应遵守：</p>
+<ul>
+<li>不把 token、密钥、账号密码写进 <code>AGENTS.local.md</code>。</li>
+<li>把 <code>AGENTS.local.md</code> 和 <code>AGENTS.override.md</code> 加入全局 gitignore 或项目 <code>.gitignore</code>。</li>
+<li>不在本地规则里绕过团队的测试、审批和安全要求。</li>
+<li>每次引入 hooks 工具前，先确认它是否会替换命令、执行仓库文件、访问网络或写入敏感目录。</li>
+</ul>
+<h3 id="社区工具推荐">社区工具推荐<a class="heading-link" href="#社区工具推荐" aria-label="链接到社区工具推荐">#</a></h3>
+<p>社区工具 <a href="https://github.com/samzong/codex-agents-local" target="_blank" rel="noopener noreferrer">codex-agents-local</a> 提供了 <code>AGENTS.local.md</code> 的本地覆盖方案。它通过 Codex hooks 在会话开始或提交提示词时同步本地规则。</p>
+<p>安装前建议先让 Codex 审查安装提示词，再决定是否执行：</p>
+<div class="docs-code"><div class="docs-code-bar"><span>text</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code>Read https://github.com/samzong/codex-agents-local/blob/main/INSTALL_PROMPT.md
+
+Follow that prompt in Codex to install codex-agents-local.</code></pre></div>
+<aside class="docs-callout warning">
+
+<p><strong>社区工具提示</strong></p>
+<p><code>codex-agents-local</code> 不是 Codex 官方功能。安装前请检查脚本会改哪些文件、会启用哪些 hooks、是否符合你的团队安全要求。</p>
+</aside>
+
+
+<p>安装或修改本地规则后，可以用这些命令检查状态：</p>
+<div class="docs-code"><div class="docs-code-bar"><span>bash</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code>codex-agents-local doctor
+codex-agents-local sync --cwd . --check
+codex-agents-local sync --cwd . --json</code></pre></div>
+<p>如果还没有安装社区工具，可以先检查 ignore 状态：</p>
+<div class="docs-code"><div class="docs-code-bar"><span>bash</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code>git check-ignore -v AGENTS.local.md AGENTS.override.md</code></pre></div>
+<h2 id="参考模板">参考模板<a class="heading-link" href="#参考模板" aria-label="链接到参考模板">#</a></h2>
+<div class="docs-code"><div class="docs-code-bar"><span>markdown</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code># AGENTS.md
+
+## 项目概览
+
+- 项目类型：
+- 主要语言：
+- 关键目录：
+- 不要修改的目录：
+
+## 常用命令
+
+- 安装依赖：`...`
+- 本地开发：`...`
+- 运行测试：`...`
+- 类型检查：`...`
+- 格式化：`...`
+
+## 代码规范
+
+- 遵循现有代码风格。
+- 不做无关重构。
+- 新增功能必须补充或更新测试。
+
+## 安全边界
+
+- 不读取或提交 `.env`、密钥和私有凭据。
+- 不执行删除生产数据的命令。
+- 修改数据库迁移前先说明影响。
+
+## 交付要求
+
+- 说明改动文件。
+- 说明验证命令和结果。
+- 说明未验证项和剩余风险。</code></pre></div>
+<h2 id="最佳实践">最佳实践<a class="heading-link" href="#最佳实践" aria-label="链接到最佳实践">#</a></h2>
+<ul>
+<li>多利用市面上已有的、经过无数开发者验证的成熟辅助工具。比如写“运行测试：pnpm test”比写“记得自己检查一遍代码是否有问题”有用。</li>
+<li>确保没有跟其他规范文档的指令产生冲突。</li>
+<li>勤于更新。随着项目逐渐推进，里面的命令也需要与时俱进。</li>
+<li><code>AGENTS.md</code> 可以承担导航的作用。可以告诉 Codex 项目文档的阅读目录清单，而不是把文档写进 <code>AGENTS.md</code>里。</li>
+<li>如果使用 Codex 进行 GitHub Code Review，可以在距离目标代码最近的 <code>AGENTS.md</code> 中添加 <code>## Code Review Rules</code>。规则应说明需要标记的行为和安全替代方案，纯格式和 lint 检查尽量交给 CI。</li>
+</ul>
+<h2 id="下一步">下一步<a class="heading-link" href="#下一步" aria-label="链接到下一步">#</a></h2>
+<p>下一步：<a href="codex-advanced-03-skills-plugins-mcp.html">Skills 和 Plugins</a>。</p>
+</article><nav class="docs-pagination" aria-label="相邻文章"><a href="codex-advanced-01-cost-context.html"><small>← 上一篇</small><span>理解费用与上下文</span></a><a href="codex-advanced-03-skills-plugins-mcp.html"><small>下一篇 →</small><span>Skills 和 Plugins</span></a></nav></main><aside class="docs-toc"><details open><summary>本页目录</summary><nav aria-label="本页目录"><a href="#存放位置与读取机制" class="depth-2">存放位置与读取机制</a><a href="#文件位置" class="depth-3">文件位置</a><a href="#读取顺序与合并规则" class="depth-3">读取顺序与合并规则</a><a href="#验证与排查" class="depth-3">验证与排查</a><a href="#团队协作" class="depth-2">团队协作</a><a href="#使用场景" class="depth-3">使用场景</a><a href="#文件分工" class="depth-3">文件分工</a><a href="#社区工具推荐" class="depth-3">社区工具推荐</a><a href="#参考模板" class="depth-2">参考模板</a><a href="#最佳实践" class="depth-2">最佳实践</a><a href="#下一步" class="depth-2">下一步</a></nav></details></aside></div><div class="docs-reading-status" hidden><span class="docs-reading-ring" role="progressbar" aria-label="正文浏览进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="track" cx="24" cy="24" r="20"/><circle class="fill" cx="24" cy="24" r="20" pathLength="100"/></svg><span>0%</span></span><a href="#content">回到顶部 ↑</a></div><div class="docs-reading-bar" aria-hidden="true" hidden></div><footer class="docs-footer"><a href="index.html">大象AI共学</a><a href="codex.html">Codex 内容中心</a><a href="course.html">学习路线</a></footer></body></html>

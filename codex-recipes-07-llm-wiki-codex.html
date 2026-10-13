@@ -1,0 +1,70 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Codex × LLM Wiki：在 Obsidian 中搭建 AI 知识库 · 大象AI共学</title><meta name="description" content="Codex 与 LLM Wiki 案例，说明如何在 Obsidian 中搭建 AI 知识库、整理目录、引用和更新流程。"><link rel="canonical" href="https://daxiangai.cc/codex-recipes-07-llm-wiki-codex.html"><meta property="og:title" content="Codex × LLM Wiki：在 Obsidian 中搭建 AI 知识库 · 大象AI共学"><meta property="og:description" content="Codex 与 LLM Wiki 案例，说明如何在 Obsidian 中搭建 AI 知识库、整理目录、引用和更新流程。"><meta property="og:type" content="article"><meta property="og:url" content="https://daxiangai.cc/codex-recipes-07-llm-wiki-codex.html"><link rel="icon" href="logo-blue.png"><link rel="stylesheet" href="codex.css"><script src="codex.js" defer></script></head><body><a class="docs-skip" href="#content">跳到正文</a><header class="docs-header"><a class="docs-brand" href="index.html"><img src="logo-blue-transparent-v2.png" alt="" width="44" height="44"><span>大象AI共学</span></a><nav aria-label="主导航"><a href="course.html">学习路线</a><a href="codex.html">Codex</a><a href="codex-start.html">快速上手</a><a href="codex-advanced.html">进阶教程</a><a href="codex-recipes.html" aria-current="page">实战案例</a></nav><a class="docs-home-link" href="index.html">官网 ↗</a></header><div class="docs-layout"><aside class="docs-sidebar" aria-label="内容目录"><details ><summary>快速上手<span>14</span></summary><nav aria-label="快速上手"><a href="codex-start.html">总览</a><a href="codex-start-01-what-is-codex.html">Codex 是什么</a><a href="codex-start-02-app-installation.html">Codex 桌面 App 下载与安装</a><a href="codex-start-03-account-plan.html">订阅 ChatGPT Plus / Pro</a><a href="codex-start-04-third-party-api.html">连接第三方 API</a><a href="codex-start-05-app-overview.html">了解 Codex 基本组成</a><a href="codex-start-06-first-task.html">用 Codex 完成第一个任务</a><a href="codex-start-07-task-design.html">任务设计</a><a href="codex-start-08-task-execution.html">任务执行与验证闭环</a><a href="codex-start-09-mobile-control.html">用手机远程操控 Codex</a><a href="codex-start-10-cli-installation.html">安装CLI</a><a href="codex-start-11-cli-first-run.html">运行 CLI</a><a href="codex-start-12-cli-options.html">CLI 选项与命令</a><a href="codex-start-13-ide-vscode.html">在 VS Code 中使用 Codex</a><a href="codex-start-14-cloud.html">使用 Codex Cloud</a></nav></details><details ><summary>进阶教程<span>11</span></summary><nav aria-label="进阶教程"><a href="codex-advanced.html">总览</a><a href="codex-advanced-01-cost-context.html">理解费用与上下文</a><a href="codex-advanced-02-agents-md.html">AGENTS.md</a><a href="codex-advanced-03-skills-plugins-mcp.html">Skills 和 Plugins</a><a href="codex-advanced-04-permissions-security.html">权限管理</a><a href="codex-advanced-05-automation.html">Scheduled tasks（计划任务）</a><a href="codex-advanced-06-hooks.html">Hooks</a><a href="codex-advanced-07-sandbox-approvals.html">沙盒与审批</a><a href="codex-advanced-08-thread-management.html">线程管理</a><a href="codex-advanced-09-config-toml.html">配置文件 config.toml</a><a href="codex-advanced-10-team-playbook.html">团队实践</a><a href="codex-advanced-11-troubleshooting.html">排障手册</a></nav></details><details open><summary>实战案例<span>18</span></summary><nav aria-label="实战案例"><a href="codex-recipes.html">总览</a><a href="codex-recipes-01-ppt-skill-walkthrough.html">Codex × PPT Skill：一句话生成演示文稿</a><a href="codex-recipes-02-drawio-mcp.html">Codex × Draw.io MCP：AI 自动绘制架构图</a><a href="codex-recipes-03-playwright-mcp.html">Codex × Playwright MCP：让 AI 像人一样操控浏览器</a><a href="codex-recipes-04-hyperframes-animation.html">Codex × HyperFrames：用代码生成动画视频</a><a href="codex-recipes-05-obsidian-codex.html">Codex × Obsidian：在知识库中自动生成配图</a><a href="codex-recipes-06-feishu-cli-codex.html">Codex × 飞书 CLI：一句话处理飞书数据</a><a href="codex-recipes-07-llm-wiki-codex.html" aria-current="page">Codex × LLM Wiki：在 Obsidian 中搭建 AI 知识库</a><a href="codex-recipes-08-figma-mcp-codex.html">Codex × Figma MCP：让 AI 读懂你的设计稿</a><a href="codex-recipes-09-notion-mcp-codex.html">Codex × Notion MCP：打通你的知识工作空间</a><a href="codex-recipes-10-dkfile-deploy-codex.html">Codex × DKFile：AI 网页一键发布到公网</a><a href="codex-recipes-11-remote-bug-fix.html">Codex × 云服务器：远程定位并修复 Bug</a><a href="codex-recipes-12-chrome-browser-plugin.html">Codex × Chrome：让 AI 直接控制浏览器</a><a href="codex-recipes-13-github-actions-ci-fix.html">Codex × GitHub Actions：CI 失败自动修复实测</a><a href="codex-recipes-14-clinical-literature-review.html">Codex × 临床文献综述：把医学问题整理成可复核证据表</a><a href="codex-recipes-15-hatch-pet-photo.html">Codex × Hatch Pet：用一张照片生成专属宠物</a><a href="codex-recipes-16-android-remote-control.html">Codex × 安卓手机：扫码连接，远程操控</a><a href="codex-recipes-17-desktop-pet.html">如何设置自己的 Codex 桌面宠物</a><a href="codex-recipes-18-codex-profiles.html">Codex × codex-profiles：分开个人与工作环境</a></nav></details></aside><main id="content" class="docs-article"><nav class="docs-breadcrumb" aria-label="面包屑"><a href="codex.html">Codex</a><span>/</span><a href="codex-recipes.html">实战案例</a><span>/</span><span>正文</span></nav><header class="docs-article-head"><p class="docs-eyebrow">MAKE SOMETHING</p><h1>Codex × LLM Wiki：在 Obsidian 中搭建 AI 知识库</h1><p>Codex 与 LLM Wiki 案例，说明如何在 Obsidian 中搭建 AI 知识库、整理目录、引用和更新流程。</p><div class="docs-article-meta"><span>实战案例</span><span>资料核对 2026-09-04</span><a href="codex.html#library">搜索更多内容 ↗</a></div></header><article class="docs-prose"><aside class="docs-callout tip">
+
+<p><strong>最后核对</strong></p>
+<p>官方资料最后核对日期：2026-09-04。本文参考 Andrej Karpathy 的 <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank" rel="noopener noreferrer">LLM Wiki gist</a>、<a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian 官方网站</a> 与 <a href="https://learn.chatgpt.com/docs/codex/cli" target="_blank" rel="noopener noreferrer">Codex CLI 官方文档</a>。知识库结构、插件安装和外部资料抓取方式请以原项目与当前工具版本为准。</p>
+</aside>
+
+
+<p>大部分人使用大模型处理文档都停留在 <strong>RAG 模式</strong>（检索增强生成，Retrieval-Augmented Generation）。这是当前 AI 行业最主流的知识管理范式：上传文件，提问时系统检索相关片段，让大模型基于这些片段生成回答。NotebookLM、ChatGPT 的文件上传，以及几乎所有的企业级知识库走的都是这条路。</p>
+<p>前段时间，AI 领域的著名研究者 <strong>Andrej Karpathy</strong> 提出了一个新想法。他认为 RAG 的主要问题在于：<strong>每一次提问，模型都要从零开始重新发现知识</strong>。如果你问了一个需要综合五篇文档的问题，RAG 会检索、拼接、生成；如果你明天再问同样的问题，它会重复整个过程，没有任何积累，也没有任何记忆。本来可以建立关联的知识，却在一次又一次的反复查询中被浪费掉了。</p>
+<p>Karpathy 给出的解决方案是 <strong>LLM Wiki</strong>。他描述的系统分为三层：</p>
+<ol>
+<li><strong>原始资料层</strong> — 负责收集论文、文章、播客、网页等素材。大模型对这一层只读不改。</li>
+<li><strong>Wiki 层</strong> — 大模型拥有这一层的完整所有权。它负责编写 Markdown 文件、目录、摘要、实体概念、比较分析和综述，创建页面、更新页面，并维护交叉引用。我们只需要负责阅读。</li>
+<li><strong>Schema 层</strong> — 一个配置文件，例如对于 Codex 来说就是 <code>AGENTS.md</code>，对于 Cursor 来说就是 <code>.cursorrules</code>。告诉大模型这个 Wiki 的结构规范、命名约定和工作流程，并在使用过程中共同迭代这份文件。</li>
+</ol>
+<p><img src="assets/images/codex-446f139fbed9-llm-wiki-concept-diagram.png" alt="llm-wiki-concept-diagram" width="1430" height="872" loading="lazy" decoding="async" /></p>
+<p>本篇介绍如何参考 Karpathy 的理念，在 Obsidian 里借助 Codex 搭建一套 LLM Wiki 知识库。</p>
+<hr />
+<h2 id="1-参考-karpathy-的-github-仓库">1. 参考 Karpathy 的 GitHub 仓库<a class="heading-link" href="#1-参考-karpathy-的-github-仓库" aria-label="链接到1. 参考 Karpathy 的 GitHub 仓库">#</a></h2>
+<p>首先找到 Karpathy 分享的 LLM Wiki 原始设计文档，了解他的设计理念：</p>
+<p><a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank" rel="noopener noreferrer">https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f</a></p>
+<hr />
+<h2 id="2-在-obsidian-里创建-wiki-仓库">2. 在 Obsidian 里创建 Wiki 仓库<a class="heading-link" href="#2-在-obsidian-里创建-wiki-仓库" aria-label="链接到2. 在 Obsidian 里创建 Wiki 仓库">#</a></h2>
+<p>在本地新建一个 Obsidian 仓库，然后把以下提示词发给 Codex：</p>
+<div class="docs-code"><div class="docs-code-bar"><span>code</span><button type="button" class="copy-code" aria-label="复制代码">复制</button></div><pre><code>你现在是我的 LLM Wiki Agent。
+把下面这份 idea 文件原样落地，作为我完整的第二大脑，一步一步地执行，
+创建拥有完整规则的系统。落地过程严格参考以下 GitHub 仓库的内容：
+https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f</code></pre></div>
+<p>Codex 会根据内容帮你创建一套符合 LLM Wiki 理念的本地知识库结构：</p>
+<p><img src="assets/images/codex-1ca4e4fa04c7-llm-wiki-codex-create-vault-command.png" alt="llm-wiki-codex-create-vault-command" width="1792" height="740" loading="lazy" decoding="async" /></p>
+<p>创建完成后，仓库里会生成以下文件和文件夹：</p>
+<ul>
+<li><code>concept/</code></li>
+<li><code>raw/</code></li>
+<li><code>logs/</code></li>
+<li><code>wiki/</code></li>
+<li><code>AGENTS.md</code></li>
+<li><code>log</code></li>
+</ul>
+<p>这些都符合 Karpathy 描述的 LLM Wiki 架构。</p>
+<hr />
+<h2 id="3-如何使用">3. 如何使用<a class="heading-link" href="#3-如何使用" aria-label="链接到3. 如何使用">#</a></h2>
+<h3 id="安装-obsidian-web-clipper">安装 Obsidian Web Clipper<a class="heading-link" href="#安装-obsidian-web-clipper" aria-label="链接到安装 Obsidian Web Clipper">#</a></h3>
+<p>首先安装浏览器插件 <strong>Obsidian Web Clipper</strong>。它的作用是将浏览器中的文章、视频、网页内容自动提取并下载到本地仓库，方便让 Codex 进行处理和拆分。</p>
+<p><img src="assets/images/codex-f450f0f0a338-llm-wiki-obsidian-web-clipper-search.png" alt="llm-wiki-obsidian-web-clipper-search" width="2520" height="1384" loading="lazy" decoding="async" /></p>
+<h3 id="抓取文章到-raw-文件夹">抓取文章到 raw 文件夹<a class="heading-link" href="#抓取文章到-raw-文件夹" aria-label="链接到抓取文章到 raw 文件夹">#</a></h3>
+<p>找一篇想纳入知识库的文章，用插件将其保存到仓库里的 <code>raw/</code> 文件夹（在 Karpathy 的理念中，<code>raw/</code> 专门存放原始素材）。点击"添加到 Obsidian"即可。</p>
+<p><img src="assets/images/codex-543143b1617e-llm-wiki-clip-article-to-raw.png" alt="llm-wiki-clip-article-to-raw" width="2398" height="1144" loading="lazy" decoding="async" /></p>
+<h3 id="让-codex-完成入库">让 Codex 完成入库<a class="heading-link" href="#让-codex-完成入库" aria-label="链接到让 Codex 完成入库">#</a></h3>
+<p>打开 Obsidian，让 Codex 读取这篇文章：</p>
+<p><img src="assets/images/codex-04afc06381cf-llm-wiki-codex-import-article-prompt.png" alt="llm-wiki-codex-import-article-prompt" width="2240" height="842" loading="lazy" decoding="async" /></p>
+<p>Codex 会自动阅读内容，按照 LLM Wiki 的理念进行拆分，新增摘要、实体、关联引用等页面。完成后，它会告诉你具体新增了哪些内容，这篇文章就正式入库了。</p>
+<p><img src="assets/images/codex-d30a3916daa1-llm-wiki-codex-generated-pages.png" alt="llm-wiki-codex-generated-pages" width="1792" height="1318" loading="lazy" decoding="async" /></p>
+<h3 id="持续迭代">持续迭代<a class="heading-link" href="#持续迭代" aria-label="链接到持续迭代">#</a></h3>
+<p>后续想研究同一主题的更多内容，重复以下流程即可：</p>
+<ol>
+<li>用 <strong>Obsidian Web Clipper</strong> 把新文章保存到 <code>raw/</code></li>
+<li>让 Codex 将其拆分成多个 Wiki 页面，并更新相关文件的交叉引用</li>
+<li>随着内容积累，知识之间的关联会越来越清晰，形成真正结构化的第二大脑</li>
+</ol>
+<hr />
+<h2 id="参考来源">参考来源<a class="heading-link" href="#参考来源" aria-label="链接到参考来源">#</a></h2>
+<p>本文的操作思路参考了以下 B 站创作者的视频内容，感谢原作者的分享：</p>
+<ul>
+<li>📺 <strong>Codex 实践 LLM Wiki 知识库搭建教程</strong><br />来源：哔哩哔哩<br />链接：<a href="https://www.bilibili.com/video/BV1y19hBhEMT/" target="_blank" rel="noopener noreferrer">https://www.bilibili.com/video/BV1y19hBhEMT/</a></li>
+</ul>
+<blockquote>
+<p>本文截图均为作者本人实际操作所得，文字内容在参考基础上进行了重新整理与二次创作。如有侵权，请联系删除。</p>
+</blockquote>
+</article><nav class="docs-pagination" aria-label="相邻文章"><a href="codex-recipes-06-feishu-cli-codex.html"><small>← 上一篇</small><span>Codex × 飞书 CLI：一句话处理飞书数据</span></a><a href="codex-recipes-08-figma-mcp-codex.html"><small>下一篇 →</small><span>Codex × Figma MCP：让 AI 读懂你的设计稿</span></a></nav></main><aside class="docs-toc"><details open><summary>本页目录</summary><nav aria-label="本页目录"><a href="#1-参考-karpathy-的-github-仓库" class="depth-2">1. 参考 Karpathy 的 GitHub 仓库</a><a href="#2-在-obsidian-里创建-wiki-仓库" class="depth-2">2. 在 Obsidian 里创建 Wiki 仓库</a><a href="#3-如何使用" class="depth-2">3. 如何使用</a><a href="#安装-obsidian-web-clipper" class="depth-3">安装 Obsidian Web Clipper</a><a href="#抓取文章到-raw-文件夹" class="depth-3">抓取文章到 raw 文件夹</a><a href="#让-codex-完成入库" class="depth-3">让 Codex 完成入库</a><a href="#持续迭代" class="depth-3">持续迭代</a><a href="#参考来源" class="depth-2">参考来源</a></nav></details></aside></div><div class="docs-reading-status" hidden><span class="docs-reading-ring" role="progressbar" aria-label="正文浏览进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="track" cx="24" cy="24" r="20"/><circle class="fill" cx="24" cy="24" r="20" pathLength="100"/></svg><span>0%</span></span><a href="#content">回到顶部 ↑</a></div><div class="docs-reading-bar" aria-hidden="true" hidden></div><footer class="docs-footer"><a href="index.html">大象AI共学</a><a href="codex.html">Codex 内容中心</a><a href="course.html">学习路线</a></footer></body></html>

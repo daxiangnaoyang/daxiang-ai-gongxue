@@ -1,0 +1,142 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>线程管理 · 大象AI共学</title><meta name="description" content="Codex 线程管理指南：解释 thread、worktree、handoff 和 subagent 的层级关系，帮助你在正确的地方继续、并行和移交任务。"><link rel="canonical" href="https://daxiangai.cc/codex-advanced-08-thread-management.html"><meta property="og:title" content="线程管理 · 大象AI共学"><meta property="og:description" content="Codex 线程管理指南：解释 thread、worktree、handoff 和 subagent 的层级关系，帮助你在正确的地方继续、并行和移交任务。"><meta property="og:type" content="article"><meta property="og:url" content="https://daxiangai.cc/codex-advanced-08-thread-management.html"><link rel="icon" href="logo-blue.png"><link rel="stylesheet" href="codex.css"><script src="codex.js" defer></script></head><body><a class="docs-skip" href="#content">跳到正文</a><header class="docs-header"><a class="docs-brand" href="index.html"><img src="logo-blue-transparent-v2.png" alt="" width="44" height="44"><span>大象AI共学</span></a><nav aria-label="主导航"><a href="course.html">学习路线</a><a href="codex.html">Codex</a><a href="codex-start.html">快速上手</a><a href="codex-advanced.html" aria-current="page">进阶教程</a><a href="codex-recipes.html">实战案例</a></nav><a class="docs-home-link" href="index.html">官网 ↗</a></header><div class="docs-layout"><aside class="docs-sidebar" aria-label="内容目录"><details ><summary>快速上手<span>14</span></summary><nav aria-label="快速上手"><a href="codex-start.html">总览</a><a href="codex-start-01-what-is-codex.html">Codex 是什么</a><a href="codex-start-02-app-installation.html">Codex 桌面 App 下载与安装</a><a href="codex-start-03-account-plan.html">订阅 ChatGPT Plus / Pro</a><a href="codex-start-04-third-party-api.html">连接第三方 API</a><a href="codex-start-05-app-overview.html">了解 Codex 基本组成</a><a href="codex-start-06-first-task.html">用 Codex 完成第一个任务</a><a href="codex-start-07-task-design.html">任务设计</a><a href="codex-start-08-task-execution.html">任务执行与验证闭环</a><a href="codex-start-09-mobile-control.html">用手机远程操控 Codex</a><a href="codex-start-10-cli-installation.html">安装CLI</a><a href="codex-start-11-cli-first-run.html">运行 CLI</a><a href="codex-start-12-cli-options.html">CLI 选项与命令</a><a href="codex-start-13-ide-vscode.html">在 VS Code 中使用 Codex</a><a href="codex-start-14-cloud.html">使用 Codex Cloud</a></nav></details><details open><summary>进阶教程<span>11</span></summary><nav aria-label="进阶教程"><a href="codex-advanced.html">总览</a><a href="codex-advanced-01-cost-context.html">理解费用与上下文</a><a href="codex-advanced-02-agents-md.html">AGENTS.md</a><a href="codex-advanced-03-skills-plugins-mcp.html">Skills 和 Plugins</a><a href="codex-advanced-04-permissions-security.html">权限管理</a><a href="codex-advanced-05-automation.html">Scheduled tasks（计划任务）</a><a href="codex-advanced-06-hooks.html">Hooks</a><a href="codex-advanced-07-sandbox-approvals.html">沙盒与审批</a><a href="codex-advanced-08-thread-management.html" aria-current="page">线程管理</a><a href="codex-advanced-09-config-toml.html">配置文件 config.toml</a><a href="codex-advanced-10-team-playbook.html">团队实践</a><a href="codex-advanced-11-troubleshooting.html">排障手册</a></nav></details><details ><summary>实战案例<span>18</span></summary><nav aria-label="实战案例"><a href="codex-recipes.html">总览</a><a href="codex-recipes-01-ppt-skill-walkthrough.html">Codex × PPT Skill：一句话生成演示文稿</a><a href="codex-recipes-02-drawio-mcp.html">Codex × Draw.io MCP：AI 自动绘制架构图</a><a href="codex-recipes-03-playwright-mcp.html">Codex × Playwright MCP：让 AI 像人一样操控浏览器</a><a href="codex-recipes-04-hyperframes-animation.html">Codex × HyperFrames：用代码生成动画视频</a><a href="codex-recipes-05-obsidian-codex.html">Codex × Obsidian：在知识库中自动生成配图</a><a href="codex-recipes-06-feishu-cli-codex.html">Codex × 飞书 CLI：一句话处理飞书数据</a><a href="codex-recipes-07-llm-wiki-codex.html">Codex × LLM Wiki：在 Obsidian 中搭建 AI 知识库</a><a href="codex-recipes-08-figma-mcp-codex.html">Codex × Figma MCP：让 AI 读懂你的设计稿</a><a href="codex-recipes-09-notion-mcp-codex.html">Codex × Notion MCP：打通你的知识工作空间</a><a href="codex-recipes-10-dkfile-deploy-codex.html">Codex × DKFile：AI 网页一键发布到公网</a><a href="codex-recipes-11-remote-bug-fix.html">Codex × 云服务器：远程定位并修复 Bug</a><a href="codex-recipes-12-chrome-browser-plugin.html">Codex × Chrome：让 AI 直接控制浏览器</a><a href="codex-recipes-13-github-actions-ci-fix.html">Codex × GitHub Actions：CI 失败自动修复实测</a><a href="codex-recipes-14-clinical-literature-review.html">Codex × 临床文献综述：把医学问题整理成可复核证据表</a><a href="codex-recipes-15-hatch-pet-photo.html">Codex × Hatch Pet：用一张照片生成专属宠物</a><a href="codex-recipes-16-android-remote-control.html">Codex × 安卓手机：扫码连接，远程操控</a><a href="codex-recipes-17-desktop-pet.html">如何设置自己的 Codex 桌面宠物</a><a href="codex-recipes-18-codex-profiles.html">Codex × codex-profiles：分开个人与工作环境</a></nav></details></aside><main id="content" class="docs-article"><nav class="docs-breadcrumb" aria-label="面包屑"><a href="codex.html">Codex</a><span>/</span><a href="codex-advanced.html">进阶教程</a><span>/</span><span>正文</span></nav><header class="docs-article-head"><p class="docs-eyebrow">BUILD YOUR WORKFLOW</p><h1>线程管理</h1><p>Codex 线程管理指南：解释 thread、worktree、handoff 和 subagent 的层级关系，帮助你在正确的地方继续、并行和移交任务。</p><div class="docs-article-meta"><span>进阶教程</span><span>资料核对 2026-10-12</span><a href="codex.html#library">搜索更多内容 ↗</a></div></header><article class="docs-prose"><aside class="docs-callout tip">
+
+<p><strong>最后核对</strong></p>
+<p>官方资料最后核对日期：2026-10-12。本文参考 <a href="https://moonshotai.github.io/kimi-code/en/customization/agents" target="_blank" rel="noopener noreferrer">Kimi Code Agents and Sub-Agents</a>、<a href="https://developers.openai.com/codex/subagents" target="_blank" rel="noopener noreferrer">OpenAI Codex Subagents</a>、<a href="https://developers.openai.com/codex/cli/features" target="_blank" rel="noopener noreferrer">Codex CLI features</a>、<a href="https://developers.openai.com/codex/app/worktrees" target="_blank" rel="noopener noreferrer">Codex App Worktrees</a> 和 <a href="https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex" target="_blank" rel="noopener noreferrer">Using Goals in Codex</a> 整理。不同版本的 App、CLI 和移动端界面可能会变化，请以当前客户端为准。</p>
+</aside>
+
+
+<p>在 Codex 里，一次对话就是一个 <strong>thread</strong>（会话/线程）。你可以新建、继续或归档 thread。对于适合拆分的任务，当你明确要求使用 Subagent，或 <code>AGENTS.md</code>、Skill 等项目规则要求委派时，Codex 可以将独立的子任务交给 Subagent，再汇总它们的结果。</p>
+<p>这种方式适合长期任务、后台跟进和多路线探索。每个 Subagent 都在独立的 agent thread 中工作：探索记录、测试输出等中间过程保留在子线程中，主线程只接收汇总后的结果，从而减少上下文污染。</p>
+<p><img src="assets/images/codex-35b66335bbc6-codex-auto-thread-management-tools-watermarked-small.png" alt="Codex 线程与 Subagent 管理示例" width="970" height="574" loading="lazy" decoding="async" /></p>
+<h2 id="四个概念">四个概念<a class="heading-link" href="#四个概念" aria-label="链接到四个概念">#</a></h2>
+<div class="docs-table"><table>
+<thead>
+<tr>
+<th>概念</th>
+<th>是什么</th>
+<th>典型用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Thread</strong></td>
+<td>线程。用户可见的会话，有独立历史记录</td>
+<td>长期任务、后台运行、稍后继续</td>
+</tr>
+<tr>
+<td><strong>Worktree</strong></td>
+<td>Git 工作树，多个并行的代码检出</td>
+<td>让 Codex 在后台改代码，不打扰当前工作区</td>
+</tr>
+<tr>
+<td><strong>Handoff</strong></td>
+<td>把 chat 及其 Git 状态移到另一个位置</td>
+<td>在 Local 与 Worktree 之间切换</td>
+</tr>
+<tr>
+<td><strong>Subagent</strong></td>
+<td>主任务中被委派独立工作的子代理</td>
+<td>并行分析、审查、验证同一任务的不同方面</td>
+</tr>
+</tbody></table></div>
+<p>核心一句话：<strong>thread 是长期任务线，worktree 是并行代码工作区，handoff 负责把任务搬到合适的位置，subagent 是单次任务里的临时协作者。</strong></p>
+<h2 id="线程管理工具">线程管理工具<a class="heading-link" href="#线程管理工具" aria-label="链接到线程管理工具">#</a></h2>
+<p>下面这组工具来自 Codex App，主要用于查找、继续或管理线程。<strong>它们不是对外公开的 CLI 命令或 API，官方公开文档也没有保证这些名称长期不变。实际命名和可用性请以当前客户端为准。</strong></p>
+<div class="docs-table"><table>
+<thead>
+<tr>
+<th>工具</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>list_threads</code></td>
+<td>列出最近的线程，并可按关键词查找。</td>
+</tr>
+<tr>
+<td><code>read_thread</code></td>
+<td>读取某个线程的最近状态、摘要和历史片段。</td>
+</tr>
+<tr>
+<td><code>send_message_to_thread</code></td>
+<td>向已有线程发送后续指令，让它继续处理任务。</td>
+</tr>
+<tr>
+<td><code>set_thread_title</code></td>
+<td>重命名线程。</td>
+</tr>
+<tr>
+<td><code>set_thread_pinned</code></td>
+<td>置顶或取消置顶线程。</td>
+</tr>
+<tr>
+<td><code>set_thread_archived</code></td>
+<td>归档或取消归档线程。</td>
+</tr>
+<tr>
+<td><code>fork_thread</code></td>
+<td>从当前或指定线程分叉出新线程；具体可用位置取决于客户端。</td>
+</tr>
+<tr>
+<td><code>handoff_thread</code></td>
+<td>移交线程及其 Git 状态；公开文档明确介绍了 Local 与 Worktree 之间的 Handoff。</td>
+</tr>
+<tr>
+<td><code>get_handoff_status</code></td>
+<td>查询移交流程的进度。</td>
+</tr>
+<tr>
+<td><code>list_projects</code></td>
+<td>列出可用于创建线程的项目；可见范围取决于当前客户端和运行环境。</td>
+</tr>
+</tbody></table></div>
+<p>这些线程管理工具与 Subagent 的用途不同。如果你要将安全、测试和可维护性分别交给不同的子代理审查，应明确要求 Codex 使用 Subagent。在 CLI 中，你还可以使用 <code>/agent</code> 查看和切换 agent thread。</p>
+<h2 id="与-subagent-的区别">与 Subagent 的区别<a class="heading-link" href="#与-subagent-的区别" aria-label="链接到与 Subagent 的区别">#</a></h2>
+<p>线程管理和 Subagent 都能让 Codex 同时处理多个任务线，但层级不同。</p>
+<div class="docs-table"><table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>Thread</th>
+<th>Subagent</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>管理对象</td>
+<td>承载对话历史和任务状态的线程</td>
+<td>在独立 agent thread 中执行被委派任务的子代理</td>
+</tr>
+<tr>
+<td>主要用途</td>
+<td>查找、继续、分叉、移交会话</td>
+<td>并行探索、审查、验证、拆分复杂问题</td>
+</tr>
+<tr>
+<td>生命周期</td>
+<td>可长期保留，便于继续任务</td>
+<td>通常随一次委派任务创建，完成后可查看结果或关闭线程</td>
+</tr>
+<tr>
+<td>文件与沙盒</td>
+<td>可关联 Local 或 Worktree</td>
+<td>默认继承父任务的沙盒、权限模式和相关运行配置，自定义 agent 可覆盖部分设置</td>
+</tr>
+<tr>
+<td>上下文机制</td>
+<td>独立 transcript，拥有自己的完整历史</td>
+<td>接收主 Agent 传入的任务描述，中间过程不会完整混入主上下文</td>
+</tr>
+</tbody></table></div>
+<p>一句话：<strong>thread 是你长期整理的任务线，subagent 是 Codex 在单次任务里临时叫来的协作者。</strong></p>
+<h2 id="最佳实践">最佳实践<a class="heading-link" href="#最佳实践" aria-label="链接到最佳实践">#</a></h2>
+<p>通过以下步骤，配合 <code>/goal</code>，可以充分发挥线程和 Subagent 管理的能力：</p>
+<ol>
+<li><strong>文档驱动开发。</strong> 新建 <code>docs/</code> 文件夹存放<code>PRD.md</code>、<code>TRD.md</code>、<code>REQUIREMENT.md</code> 等项目文档，并用 <code>AGENTS.md</code> 告诉 Codex 应该先读哪些文件。</li>
+<li><strong>规范工作行为。</strong> 用 <code>GUIDE.md</code> 或项目规则写明工作准则，例如“应当在独立 Git 分支工作”“提交前必须跑测试”。</li>
+<li><strong>任命主线程。</strong> 让主线程承担调度角色：向 Subagent 分配独立任务、写明期望输出，并跟进运行情况。</li>
+<li><strong>明确完成条件。</strong> <code>/goal</code> 适合有明确结果、验证方式和约束的长任务。Goal 在线程空闲、没有待处理输入且预算允许时才会继续推进，不需要按固定时间轮询。</li>
+<li><strong>记录日志。</strong> 在提示词里要求 Codex 记录工作日志，尤其是文档之外需要它判断的关键决策。</li>
+<li><strong>定期复盘。</strong> 通过查看日志和实际决策，找出卡住或低效的原因，再改进文档、规则。</li>
+</ol>
+<h2 id="下一步">下一步<a class="heading-link" href="#下一步" aria-label="链接到下一步">#</a></h2>
+<p>下一步：<a href="codex-advanced-09-config-toml.html">配置文件 config.toml</a>。</p>
+</article><nav class="docs-pagination" aria-label="相邻文章"><a href="codex-advanced-07-sandbox-approvals.html"><small>← 上一篇</small><span>沙盒与审批</span></a><a href="codex-advanced-09-config-toml.html"><small>下一篇 →</small><span>配置文件 config.toml</span></a></nav></main><aside class="docs-toc"><details open><summary>本页目录</summary><nav aria-label="本页目录"><a href="#四个概念" class="depth-2">四个概念</a><a href="#线程管理工具" class="depth-2">线程管理工具</a><a href="#与-subagent-的区别" class="depth-2">与 Subagent 的区别</a><a href="#最佳实践" class="depth-2">最佳实践</a><a href="#下一步" class="depth-2">下一步</a></nav></details></aside></div><div class="docs-reading-status" hidden><span class="docs-reading-ring" role="progressbar" aria-label="正文浏览进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="track" cx="24" cy="24" r="20"/><circle class="fill" cx="24" cy="24" r="20" pathLength="100"/></svg><span>0%</span></span><a href="#content">回到顶部 ↑</a></div><div class="docs-reading-bar" aria-hidden="true" hidden></div><footer class="docs-footer"><a href="index.html">大象AI共学</a><a href="codex.html">Codex 内容中心</a><a href="course.html">学习路线</a></footer></body></html>

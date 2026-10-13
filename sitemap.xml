@@ -24,4 +24,51 @@
     <loc>https://daxiangai.cc/enterprise.html</loc>
     <lastmod>2026-09-19</lastmod>
   </url>
+  <url><loc>https://daxiangai.cc/codex.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-01-what-is-codex.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-02-app-installation.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-03-account-plan.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-04-third-party-api.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-05-app-overview.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-06-first-task.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-07-task-design.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-08-task-execution.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-09-mobile-control.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-10-cli-installation.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-11-cli-first-run.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-12-cli-options.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-13-ide-vscode.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-start-14-cloud.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-01-cost-context.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-02-agents-md.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-03-skills-plugins-mcp.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-04-permissions-security.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-05-automation.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-06-hooks.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-07-sandbox-approvals.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-08-thread-management.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-09-config-toml.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-10-team-playbook.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-advanced-11-troubleshooting.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-01-ppt-skill-walkthrough.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-02-drawio-mcp.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-03-playwright-mcp.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-04-hyperframes-animation.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-05-obsidian-codex.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-06-feishu-cli-codex.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-07-llm-wiki-codex.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-08-figma-mcp-codex.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-09-notion-mcp-codex.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-10-dkfile-deploy-codex.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-11-remote-bug-fix.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-12-chrome-browser-plugin.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-13-github-actions-ci-fix.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-14-clinical-literature-review.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-15-hatch-pet-photo.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-16-android-remote-control.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-17-desktop-pet.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://daxiangai.cc/codex-recipes-18-codex-profiles.html</loc><lastmod>2026-10-14</lastmod></url>
 </urlset>

@@ -6,6 +6,13 @@
   src: url("assets/fonts/zcool-kuaile-chinese-simplified-400-normal.woff2") format("woff2");
 }
 
+/* Codex reading entry; detailed reading styles are isolated in codex.css. */
+.codex-entry .article-cards>li:nth-child(1){border-top:5px solid #b5e5cf}
+.codex-entry .article-cards>li:nth-child(2){border-top:5px solid #a8d8ea}
+.codex-entry .article-cards>li:nth-child(3){border-top:5px solid #f4c7ab}
+.codex-entry-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px}
+.module-reading a{display:inline-block;color:#236580;text-decoration:underline;text-underline-offset:4px;font-size:14px;line-height:1.7}
+
 :root {
   color-scheme: light;
   --paper: #f5f0e8;
