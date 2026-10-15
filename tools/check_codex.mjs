@@ -28,10 +28,13 @@ for (const file of manifest.files) {
   const ids = nodes.map(e => e.attribs?.id).filter(Boolean);
   if (new Set(ids).size !== ids.length) issues.push(`${file}: duplicate IDs`);
   if (nodes.filter(e => e.name === 'h1').length !== 1) issues.push(`${file}: expected one h1`);
-  if (!nodes.find(e => e.name === 'link' && e.attribs.rel === 'canonical' && e.attribs.href === `https://daxiangai.cc/${file.replace(/\.html$/, '')}`)) issues.push(`${file}: canonical missing`);
+  if (!nodes.find(e => e.name === 'link' && e.attribs.rel === 'canonical' && e.attribs.href === `https://daxiangai.cc/${file}`)) issues.push(`${file}: canonical missing`);
   for (const e of nodes) {
     if (Object.keys(e.attribs || {}).some(a => /^on/i.test(a))) issues.push(`${file}: unexpected inline event handler`);
-    if (e.name === 'script' && (e.attribs.src !== 'codex.js' || getText(e).trim())) issues.push(`${file}: unexpected script`);
+    if (e.name === 'script' && e.attribs.type === 'application/ld+json') {
+      try { const data = JSON.parse(getText(e)); if (!data['@graph']?.some(n => n['@type'] === 'BreadcrumbList')) issues.push(`${file}: missing breadcrumb schema`); } catch { issues.push(`${file}: invalid JSON-LD`); }
+    }
+    if (e.name === 'script' && e.attribs.type !== 'application/ld+json' && (e.attribs.src !== 'codex.js' || getText(e).trim())) issues.push(`${file}: unexpected script`);
     const href = e.attribs?.href;
     const src = e.attribs?.src;
     for (const value of [href, src].filter(Boolean)) {

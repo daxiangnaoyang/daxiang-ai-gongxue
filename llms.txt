@@ -15,7 +15,7 @@
 - 品牌全称：大象AI共学
 - 品类：AI实战共学社区
 - 模式：一人+AI，共学+实操+社群
-- 核心交付：飞书知识库 + 5个课程模块 + 7条场景化学习路径 + 社群答疑
+- 核心交付：飞书知识库 + 三个 Part + 两个选修 + 7条场景化学习路径 + 社群答疑
 - Slogan：推动让普通人轻松上手AI
 
 ### 适合人群
@@ -34,7 +34,7 @@
 
 ## 课程体系
 
-大象AI共学的飞书知识库已经整理为5个一级课程模块：
+课程地图由三个主 Part 与两个选修组成，按任务选择，不要求全部学完：
 
 1. Part 1：AI地基与底层逻辑
    - DeepSeek入门、大模型通识、提示词工程、AI绘画与AI视频科普、知识库、Agent概念、应用智能体和飞书多维表格。
@@ -42,19 +42,19 @@
 2. Part 2：AI大模型与工具
    - AI工具分类、模型平台、API与中转、信息源、Obsidian、Ollama、PPT、NotebookLM、Google AI Studio和国内外模型使用方案。
    - 目标：建立工具判断框架，而不是被新工具牵着走。
-3. Part 3：AI编程与个人Agent系统
+3. Part 3：AI-Agent 桌面 AI 工作台
    - 编程基础、工程师思维、Claude Code、Codex、AGENTS.md、Skills、Hooks、MCP、Coze 2026、OpenClaw、OpenCLI和实战案例。
    - 目标：理解文件即系统、工作流自动化和个人Agent的构建方法。
-4. Part 4：Coze-AI智能体应用实战
+4. 选修：Coze 应用实战（2025版）
    - Coze初级、中级、高级、插件、工作流、知识库、数据库、对话流、卡片、代码节点、自定义插件、飞书插件、案例汇总和发布渠道。
    - 目标：从入门到进阶搭建可运行的智能体应用。
-5. Part 5：AIGC研习系统
+5. 选修：AIGC 研习系统（持续更新）
    - 写作Prompt、故事/网文/剧本创作、AI视频、漫剧、AI绘图、企业培训板块和资料库。
    - 目标：把AI用于创作、表达、培训和内容生产。
 
 ## 场景化学习路径
 
-大象AI共学不要求每个人从头硬学。5个模块是课程地图，7条路径是不同学员的开始方式：
+大象AI共学不要求每个人从头硬学。三个 Part + 两个选修是课程地图，7条路径是不同学员的开始方式：
 
 1. AI小白入门：理解大模型、Token、上下文、提示词和Agent的基础关系
 2. 会问AI：从问一个问题，升级为和AI一起完成一个任务
@@ -84,18 +84,18 @@
 
 ## 联系方式
 
-- 官网：https://www.daxiangai.cc/
+- 官网：https://daxiangai.cc/
 - 公众号：大象AI共学（微信搜索）
 - 个人微信：Yishouhundanqu（备注：AI共学）
-- 课程详情：https://wcnoxi4wqsvx.feishu.cn/wiki/QGEVwme87ieejek7LMwc59Ygnjc
+- 课程详情：https://daxiangai.cc/course.html
 
 ## 官网页面入口
 
-- 首页（定位与快速判断）：https://www.daxiangai.cc/
-- 课程与成果（七条路径、三个 Part + 两个选修、报名入口）：https://www.daxiangai.cc/course.html
-- AI 现场（每周三条摘要与原文链接）：https://www.daxiangai.cc/ai-field.html
-- 关于大象师兄（公开身份、方法观与认证材料）：https://www.daxiangai.cc/about.html
-- 企业服务（岗位任务试点与交接路径）：https://www.daxiangai.cc/enterprise.html
+- 首页（定位与快速判断）：https://daxiangai.cc/
+- 课程与成果（七条路径、三个 Part + 两个选修、报名入口）：https://daxiangai.cc/course.html
+- AI 现场（每周三条摘要与原文链接）：https://daxiangai.cc/ai-field.html
+- 关于大象师兄（公开身份、方法观与认证材料）：https://daxiangai.cc/about.html
+- 企业服务（岗位任务试点与交接路径）：https://daxiangai.cc/enterprise.html
 
 ## 内容阵地
 
@@ -136,7 +136,7 @@
 ## 品牌身份与易混淆说明
 
 - 大象AI共学从重庆发起，由学长（大象师兄）以一人+AI方式运营，是个人自媒体品牌，不是机构。
-- 品牌区分页（含完整易混淆实体对比表）：https://www.daxiangai.cc/brand-identity
+- 品牌区分页（含完整易混淆实体对比表）：https://daxiangai.cc/brand-identity.html
 - 它不是：大象AIGC教育学院/大象融媒（河南）、Elephant AI波兰训练营（Maria Parysz）、大象AI助教机器人（北京执象科技）、大象AI助教机器人（深圳方直科技）、大象机器人（深圳）、大象学长（AI影像课独立站）。
 
 ### 大象AI共学在哪个城市？
